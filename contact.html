@@ -79,13 +79,11 @@
                             </div>
                             <div class="row">
                                 <div class="cm-100 cm-contact">
-                                    <form method="post" action="/contactform/send">
+                                    <form method="post" action="/phpscripts/contact_send.php">
                                         <label>Contact email</label>
                                         <input type="email" name="from" id="email" placeholder="Email address" class="input-block-level">
                                         <label>Subject</label>
                                         <input type="text" name="subject" id="subject" placeholder="Subject" class="input-block-level">
-                                        <input type="hidden" value="11" name="page_id">
-                                        <input type="hidden" value="71" name="snippet_id">
                                         <label>Message</label>
                                         <textarea name="message" id="message" placeholder="Your Message" class="input-block-level" rows="5"></textarea>
                                         <div class="btn-row text-center">

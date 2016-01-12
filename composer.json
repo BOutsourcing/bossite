@@ -1,0 +1,17 @@
+{
+    "name": "boutsourcing/bossite",
+    "description": "Boutsourcing Web Presentation",
+    "require": {
+        "swiftmailer/swiftmailer": "^5.4",
+        "symfony/http-foundation": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {"BOS\\": "src/"}
+    },
+    "authors": [
+        {
+            "name": "Info",
+            "email": "hr@boutsourcing.com"
+        }
+    ]
+}

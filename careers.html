@@ -231,12 +231,13 @@
         <!-- Modal -->        
             <section class="modal modal-job-form">
                 <div class="modal-container">
-                    <button class="btn btn-modal-close btn-job-form-close" type="button">&#x2715;</button>
+                    <button class="btn btn-modal-close btn-job-form-close" id="close_careers_form" type="button">&#x2715;</button>
                     <div class="cm-80 cm-margin-left-10 cm-jobform">
                         <h2 class="text-center">Join Our Team</h2>
-                        <form method="post" action="/contactform/send">
+                        <div class="hidden" id="submit-message"></div>
+                        <form method="post" action="/phpscripts/careers_send.php" id="careers_form" enctype="multipart/form-data">
                             <div class="select-block-level">
-                                <select name="position" id="position">
+                                <select name="position" id="position" required="required">
                                     <option value="">Select Position</option>
                                     <option value="php-dev">PHP Developer</option>
                                     <option value="ui-dgn">UI Designer</option>
@@ -244,17 +245,17 @@
                                     <option value="gph-dgn">Graphic Designer</option>
                                 </select>
                             </div>
-                            <input type="text" name="name" id="name" placeholder="Name" class="input-block-level">
-                            <input type="email" name="email" id="email" placeholder="E-mail" class="input-block-level">
+                            <input type="text" name="name" id="name" placeholder="Name" class="input-block-level" required="required">
+                            <input type="email" name="email" id="email" placeholder="E-mail" class="input-block-level" required="required">
                             <input type="text" name="github" id="github" placeholder="Github (optional)" class="input-block-level">
                             <input type="text" name="linkedin" id="linkedin" placeholder="Linkedin (optional)" class="input-block-level">
                             <div class="fileUpload">
                                 <span>Upload CV</span>
-                                <input type="file" class="upload" />
+                                <input type="file" name="cv" class="upload" />
                             </div>
                             <textarea name="message" id="message" placeholder="Message" class="input-block-level" rows="5"></textarea>
                             <div class="btn-row text-center">
-                                <button class="btn btn-primary" type="button">Submit</button>
+                                <button class="btn btn-primary" type="submit">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -280,10 +281,36 @@
         <footer>
             &copy; Boutsourcing d.o.o. 2010-<script>document.write(new Date().getFullYear())</script> | All rights reserved.
         </footer>
+
         <!-- Scripts -->
         <script type="text/javascript">
             // Add class to loaded page
 
+            $(function(){
+                $("form#careers_form").on('submit', function(e) {
+                    var formData = new FormData($(this)[0]);
+
+                    $.ajax({
+                        url: $(this).attr("action"),
+                        type: 'POST',
+                        data: formData,
+                        success: function (data) {
+                            $('#submit-message').html('<h3>Your application is sent.</h3>');
+                            setTimeout(function(){
+                                $('#submit-message').html('').hide();
+                                $('#close_careers_form').trigger('click');
+                            }, 2000);
+
+                        },
+                        cache: false,
+                        contentType: false,
+                        processData: false
+                    });
+
+                    $('#submit-message').html('<h3>Thank you for applying. Please wait!</h3>').show();
+                    return false;
+                });
+            });
             if (document.readyState === 'complete') {
                 // good to go!
             }
@@ -368,27 +395,6 @@
                                 elemVisible = topOnScreen || bottomOnScreen;
                             self.toggleClass('visible', elemVisible);
 
-                            // animated elements
-
-                            /*
-                            if ($(".loaded .rw-heading-1").hasClass('visible')) {
-                                $(".loaded .rw-heading-1 h1").addClass('animated bounceInLeft');
-                            } else {
-                                $(".loaded .rw-heading-1 h1").removeClass('animated bounceInLeft');
-                            }
-                            */
-
-                            // end of animated elements
-                            console.log(JSON.stringify({
-                                "section": self[0].classList[0],
-                                "viewportTop": viewportTop,
-                                "top": top,
-                                "topOnScreen": topOnScreen,
-                                "viewportBottom": viewportBottom,
-                                "bottom": bottom,
-                                "bottomOnScreen": bottomOnScreen,
-                                "elemVisible": elemVisible
-                            }));
                         });
                     };
                 viewport.scroll(setVisible);
