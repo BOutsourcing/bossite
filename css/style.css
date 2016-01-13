@@ -222,10 +222,6 @@ body.loaded > footer,
 body.loaded > .footer-shadow,
 body.loaded > #particles {
     opacity: 1;
-    /*
-    -webkit-transition: opacity 1s 0.5s;
-    transition: opacity 1s 0.5s;
-    */
 }
 
 body > .nav-curtain { 
@@ -251,11 +247,14 @@ body.loaded > .modal.visible {
 body.home {
     height: 100%;
     overflow: hidden;
+    background-color: #0f3458;
+    /*
     background: #6E8298 url(../img/home-bg.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    */
 }
 
 #particles {
@@ -2801,6 +2800,12 @@ footer {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
+    .home .nav.in {
+        width: 100%;
+        padding: 0;
+        background-color: #0f3458;
+    }
+
     .nav ul {
         top: 50%;
         width: 275px;
@@ -2819,13 +2824,12 @@ footer {
         padding: 8px 0;
     }
 
-    .home .nav ul li a,
-    .home .nav ul li span {
-        color: #fff;
-    }
-
     .home .nav ul li span {
         color: #3dd4f2;
+    }
+
+    .home .nav ul li a {
+        color: #fff;
     }
 
     .home .nav ul li a:hover {
