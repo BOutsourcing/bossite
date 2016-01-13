@@ -202,23 +202,37 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-body > *,
+body > header,
+body > .page,
+body > .nav,
+body > .nav-button,
+body > .nav-shadow,
+body > footer,
+body > .footer-shadow,
 body > #particles {
     opacity: 0;
 }
 
-body.loaded > *,
+body.loaded > header,
+body.loaded > .page,
+body.loaded > .nav,
+body.loaded > .nav-button,
+body.loaded > .nav-shadow,
+body.loaded > footer,
+body.loaded > .footer-shadow,
 body.loaded > #particles {
     opacity: 1;
+    /*
     -webkit-transition: opacity 1s 0.5s;
     transition: opacity 1s 0.5s;
+    */
 }
 
-body.loaded > .nav-curtain { 
+body > .nav-curtain { 
     opacity: 0;   
 }
 
-body.loaded > .nav-curtain.in { 
+body > .nav-curtain.in { 
     opacity: 0.6;   
 }
 
@@ -1846,11 +1860,16 @@ body.contact .page {
     color: #666;
     backface-visibility: hidden;
     perspective: 1000;
-    -webkit-transition: width 0.2s 0.5s, height 0.2s 1s, top 0.2s 1s, margin-top 0.2s 1s, padding 0.2s 1s, background-color 0.2s 1.4s, box-shadow 0.2s 1.2s;
-    transition: width 0.2s 0.5s, height 0.2s 1s, top 0.2s 1s, margin-top 0.2s 1s, padding 0.2s 1s, background-color 0.2s 1.4s, box-shadow 0.2s 1.2s;
+    -webkit-transition: width 0.2s 0.6s, height 0.2s 1s, top 0.2s 1s, margin-top 0.2s 1s, padding 0.2s 1s, background-color 0.2s 1.4s, box-shadow 0.2s 1.2s;
+    transition: width 0.2s 0.6s, height 0.2s 1s, top 0.2s 1s, margin-top 0.2s 1s, padding 0.2s 1s, background-color 0.2s 1.4s, box-shadow 0.2s 1.2s;
 }
 
-.nav.in {
+.home .nav {
+    background-color: #fff;
+}
+
+.nav.in,
+.home .nav.in {
     top: 0;
     width: 365px;
     height: 100%;
@@ -1987,6 +2006,11 @@ body.contact .page {
     content: "";
 }
 
+.home .nav-button span {
+    background-color: #0f3458;
+    color: #0f3458;
+}
+
 .nav-button span:before {
     position: absolute;
     left: 0;
@@ -2003,6 +2027,11 @@ body.contact .page {
     content: "";
 }
 
+.home .nav-button span:before {
+    background-color: #0f3458;
+    color: #0f3458;
+}
+
 .nav-button span:after {
     position: absolute;
     left: 0;
@@ -2017,6 +2046,11 @@ body.contact .page {
     -webkit-transition: -webkit-transform 0.2s, background-color 0.4s 1.4s, top 0.2s;
     transition: transform 0.2s, background-color 0.4s 1.4s, top 0.2s;
     content: "";
+}
+
+.home .nav-button span:after {
+    background-color: #0f3458;
+    color: #0f3458;
 }
 
 .nav-button.in span {
@@ -2167,7 +2201,7 @@ header svg {
 }
 
 .absolute-center p {
-    margin-bottom: 100px;
+    margin-bottom: 160px;
 }
 
 
@@ -2886,7 +2920,7 @@ footer {
 
     .home footer .social ul {
         right: 10px;
-        bottom: 24px;
+        bottom: 2px;
     }
 
     .home footer .social ul li {
