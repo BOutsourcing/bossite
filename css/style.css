@@ -1847,11 +1847,13 @@ body.contact .page {
   margin-left: -1px;
   border: 0;
   font-size: 12px;
+  text-align: center;
 }
 
 .modal-job-form form .customfile-upload:hover {
   padding: 11px 4px;
 }
+
 .modal-job-form form .customfile-upload::-moz-focus-inner { /* Fix firefox padding */
   padding: 0; border: 0 
 }
