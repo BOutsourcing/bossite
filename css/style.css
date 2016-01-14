@@ -1658,7 +1658,8 @@ body.contact .page {
 .modal-job-form form input[name=github],
 .modal-job-form form input[name=linkedin],
 .modal-job-form form textarea[name=message],
-.modal-job-form form select[name=position] {
+.modal-job-form form select[name=position],
+.modal-job-form form input[name=doc] {
     padding-left: 45px;
     background-repeat: no-repeat;
     background-position: 15px 5px;
@@ -1687,38 +1688,8 @@ body.contact .page {
     padding: 6px 8px;
     background-position: -100px 5px;
 }
-
-
-.modal-job-form form .fileUpload {
-    position: relative;
-    overflow: hidden;
-    margin: 0 0 10px;
-    padding: 4px 8px 4px 45px;
-    border: 2px solid #F9F9F9;
-    background-color: #F9F9F9;
-    background-repeat: no-repeat;
-    background-position: 15px 5px;
+.modal-job-form form input[name=doc] {
     background-image: url(../img/icon-doc.png);
-    color: #7B90A3;
-}
-.modal-job-form form .fileUpload span {
-    display: inline-block;
-    float: left;
-    font-size: 14px;
-    lin-height: 22px;
-    font-family: ProximaNova-Regular;    
-}
-.modal-job-form form .fileUpload input.upload {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    opacity: 0;
-    filter: alpha(opacity=0);
 }
 
 .modal-job-form form .select-block-level {
@@ -1839,6 +1810,50 @@ body.contact .page {
 
 .modal-job-form .job-form.visible {
     max-height: 600px;
+}
+
+/* Custom file uploader */
+
+.modal-job-form form .customfile-container {
+  width: 300px;
+  background: #FFF2B8;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.modal-job-form form .customfile-container label:first-child {
+  width: 100px;
+  display: block;
+  margin-bottom: .5em;
+  font: bold 18px Arial, sans-serif;
+  color: #333;
+}
+
+.modal-job-form form .customfile-wrap {
+  position: relative;
+  padding: 0;
+  margin-bottom: .5em;
+}
+
+.modal-job-form form .customfile-filename {
+    display: inline-block;
+  width: 60%;
+}
+
+.modal-job-form form .customfile-upload {
+  display: inline-block;
+  width: 40%;
+  padding: 11px 4px;
+  margin-left: -1px;
+  border: 0;
+  font-size: 12px;
+}
+
+.modal-job-form form .customfile-upload:hover {
+  padding: 11px 4px;
+}
+.modal-job-form form .customfile-upload::-moz-focus-inner { /* Fix firefox padding */
+  padding: 0; border: 0 
 }
 
 
