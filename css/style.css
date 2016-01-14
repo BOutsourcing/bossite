@@ -1848,10 +1848,12 @@ body.contact .page {
   border: 0;
   font-size: 12px;
   text-align: center;
+  color: #fff;
 }
 
 .modal-job-form form .customfile-upload:hover {
   padding: 11px 4px;
+  color: #f4f4f4;
 }
 
 .modal-job-form form .customfile-upload::-moz-focus-inner { /* Fix firefox padding */
