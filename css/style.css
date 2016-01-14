@@ -1856,6 +1856,11 @@ body.contact .page {
   color: #f4f4f4;
 }
 
+.modal-job-form form label.customfile-upload,
+.modal-job-form form label.customfile-upload:hover {
+  padding: 5px 4px;
+}
+
 .modal-job-form form .customfile-upload::-moz-focus-inner { /* Fix firefox padding */
   padding: 0; border: 0 
 }
