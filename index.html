@@ -32,15 +32,9 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,600,700">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="js/device.min.js"></script>
-        <script src="js/jquery.mb.YTPlayer.min.js"></script>
     </head>
     <body class="home">
         <div class="preloader"></div>
-        <!-- Video background -->
-        <section class="big-background">
-            <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=xwEec3gbtrw',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:0.2}"></a>
-        </section>
         <!-- Logo -->
         <div class="logo">
             <a href="/"><img src="img/logo-white.png"></a>
@@ -107,41 +101,7 @@
                 if (document.readyState === 'complete') {
                     clearInterval(interval);
 
-                    // Video background
-
-                    (function($) {
-                        $(document).ready(function() {
-
-                        /* IF YOU WANT TO APPLY SOME BASIC JQUERY TO REMOVE THE VIDEO BACKGROUND ON A SPECIFIC VIEWPORT MANUALLY
-
-                        var is_mobile = false;
-
-                        if( $('.player').css('display')=='none') {
-                            is_mobile = true;       
-                        }
-                        if (is_mobile == true) {
-                            //Conditional script here
-                            $('.big-background, .small-background-section').addClass('big-background-default-image');
-                        }else{
-                            $(".player").mb_YTPlayer(); 
-                        }
-
-                        });
-
-                        */
-                        /*  IF YOU WANT TO USE DEVICE.JS TO DETECT THE VIEWPORT AND MANIPULATE THE OUTPUT  */
-
-                            //Device.js will check if it is Tablet or Mobile - http://matthewhudson.me/projects/device.js/
-
-                            if (!device.tablet() && !device.mobile()) {
-                                $(".player").mb_YTPlayer();
-                            } else {
-                                //jQuery will add the default background to the preferred class 
-                                $('.big-background, .small-background-section').addClass(
-                                    'big-background-default-image');
-                            }
-                        });
-                    })(jQuery);
+                    // Page is ready
 
                     $("body").addClass("loaded");
                 }
