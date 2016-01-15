@@ -248,13 +248,11 @@ body.home {
     height: 100%;
     overflow: hidden;
     background-color: #0f3458;
-    /*
-    background: #6E8298 url(../img/home-bg.jpg) no-repeat center center fixed; 
+    background: #0f3458 url(../img/home-bg.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    */
 }
 
 #particles {
