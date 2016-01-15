@@ -245,14 +245,24 @@
                                     <option value="gph-dgn">Graphic Designer</option>
                                 </select>
                             </div>
-                            <input type="text" name="name" id="name" placeholder="Name" class="input-block-level" required="required">
-                            <input type="email" name="email" id="email" placeholder="E-mail" class="input-block-level" required="required">
-                            <input type="text" name="github" id="github" placeholder="Github (optional)" class="input-block-level">
-                            <input type="text" name="linkedin" id="linkedin" placeholder="Linkedin (optional)" class="input-block-level">
-                            <div class="custom-file-upload">
-                                <input type="file" id="file" name="cv" multiple />
+                            <div class="input-row name">
+                                <input type="text" name="name" id="name" placeholder="Name" class="input-block-level" required="required">
+                            </div>                            
+                            <div class="input-row email">
+                                <input type="email" name="email" id="email" placeholder="E-mail" class="input-block-level" required="required">
                             </div>
-                            <textarea name="message" id="message" placeholder="Message" class="input-block-level" rows="5"></textarea>
+                            <div class="input-row github">
+                                <input type="text" name="github" id="github" placeholder="Github" class="input-block-level optional">
+                            </div>
+                            <div class="input-row linkedin">
+                                <input type="text" name="linkedin" id="linkedin" placeholder="Linkedin" class="input-block-level optional">
+                            </div>
+                            <div class="custom-file-upload">
+                                <input type="file" id="file" name="cv" required="required" multiple />
+                            </div>
+                            <div class="textarea-row message">
+                                <textarea name="message" id="message" placeholder="Message" class="input-block-level optional" rows="5"></textarea>
+                            </div>
                             <div class="btn-row text-center">
                                 <button class="btn btn-primary" type="submit">Submit</button>
                             </div>
@@ -378,6 +388,29 @@
                 $('.modal-job-form').removeClass("visible");
             });
 
+            $('.modal-job-form form .optional').after('<span class="optional-text">(optional)</span>');
+            
+            $('.modal-job-form form .input-row.github input').focusin(function() {
+                $('.modal-job-form form .input-row.github .optional-text').css('display', 'none');
+            });
+            $('.modal-job-form form .input-row.github input').focusout(function() {
+                $('.modal-job-form form .input-row.github .optional-text').css('display', 'inline-block');
+            });
+            
+            $('.modal-job-form form .input-row.linkedin input').focusin(function() {
+                $('.modal-job-form form .input-row.linkedin .optional-text').css('display', 'none');
+            });
+            $('.modal-job-form form .input-row.linkedin input').focusout(function() {
+                $('.modal-job-form form .input-row.linkedin .optional-text').css('display', 'inline-block');
+            });
+            
+            $('.modal-job-form form .textarea-row.message textarea').focusin(function() {
+                $('.modal-job-form form .textarea-row.message .optional-text').css('display', 'none');
+            });
+            $('.modal-job-form form .textarea-row.message textarea').focusout(function() {
+                $('.modal-job-form form .textarea-row.message .optional-text').css('display', 'inline-block');
+            });
+
             // Viewport  animation
 
             $(function() {
@@ -486,11 +519,11 @@
 
                   var $file = $(this).addClass('customfile'), // the original file input
                       $wrap = $('<div class="customfile-wrap">'),
-                      $input = $('<input type="text" class="input-block-level customfile-filename" name="doc" />'),
+                      $input = $('<input type="text" class="input-block-level customfile-filename" name="doc" placeholder="CV (.pdf, .doc)" />'),
                       // Button that will be used in non-IE browsers
-                      $button = $('<button type="button" class="btn customfile-upload">Upload CV</button>'),
+                      $button = $('<button type="button" class="btn customfile-upload">Upload</button>'),
                       // Hack for IE
-                      $label = $('<label class="btn customfile-upload" for="'+ $file[0].id +'">Upload CV</label>');
+                      $label = $('<label class="btn customfile-upload" for="'+ $file[0].id +'">Upload</label>');
 
                   // Hide by shifting to the left so we
                   // can still trigger events

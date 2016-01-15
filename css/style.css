@@ -1733,6 +1733,23 @@ body.contact .page {
     color: #0f3759;
 }
 
+.modal-job-form form .input-row,
+.modal-job-form form .textarea-row {
+    position: relative;
+}
+
+.modal-job-form form span.optional-text {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    content: "(optional)";
+    color: #7B90A3;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: ProximaNova-Regular;
+}
+
 .modal-job-form form label {
     display: none;
     color: #0f3759;
@@ -1815,54 +1832,54 @@ body.contact .page {
 /* Custom file uploader */
 
 .modal-job-form form .customfile-container {
-  width: 300px;
-  background: #FFF2B8;
-  padding: 1em;
-  margin: 0 auto;
+  	width: 300px;
+  	background: #FFF2B8;
+  	padding: 1em;
+	margin: 0 auto;
 }
 
 .modal-job-form form .customfile-container label:first-child {
-  width: 100px;
-  display: block;
-  margin-bottom: .5em;
-  font: bold 18px Arial, sans-serif;
-  color: #333;
+  	width: 100px;
+  	display: block;
+  	margin-bottom: .5em;
+  	font: bold 18px Arial, sans-serif;
+	color: #333;
 }
 
 .modal-job-form form .customfile-wrap {
-  position: relative;
-  padding: 0;
-  margin-bottom: .5em;
+  	position: relative;
+  	padding: 0;
+	margin-bottom: .5em;
 }
 
 .modal-job-form form .customfile-filename {
     display: inline-block;
-  width: 60%;
+	width: 70%;
 }
 
 .modal-job-form form .customfile-upload {
-  display: inline-block;
-  width: 40%;
-  padding: 11px 4px;
-  margin-left: -1px;
-  border: 0;
-  font-size: 12px;
-  text-align: center;
-  color: #fff;
+  	display: inline-block;
+  	width: 30%;
+  	padding: 11px 4px;
+  	margin-left: -1px;
+  	border: 0;
+  	font-size: 12px;
+  	text-align: center;
+	color: #fff;
 }
 
 .modal-job-form form .customfile-upload:hover {
-  padding: 11px 4px;
-  color: #f4f4f4;
+	padding: 11px 4px;
+	color: #f4f4f4;
 }
 
 .modal-job-form form label.customfile-upload,
 .modal-job-form form label.customfile-upload:hover {
-  padding: 5px 4px;
+	padding: 5px 4px;
 }
 
 .modal-job-form form .customfile-upload::-moz-focus-inner { /* Fix firefox padding */
-  padding: 0; border: 0 
+	padding: 0; border: 0 
 }
 
 
