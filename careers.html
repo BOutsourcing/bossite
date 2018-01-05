@@ -367,7 +367,7 @@
                                 <input type="text" name="linkedin" id="linkedin" placeholder="Linkedin" class="input-block-level optional">
                             </div>
                             <div class="custom-file-upload">
-                                <input type="file" id="file" name="cv" required="required" multiple />
+                                <input type="file" id="file" name="cv" multiple />
                             </div>
                             <div class="textarea-row message">
                                 <textarea name="message" id="message" placeholder="Message" class="input-block-level optional" rows="5"></textarea>
@@ -490,6 +490,7 @@
 
             $('.btn-job-form-open').click(function(event) {
                 event.preventDefault();
+                $('.modal-job-form form')[0].reset();
                 $('.modal-job-form').addClass("visible");
             });
             $('.btn-job-form-close').click(function(event) {
