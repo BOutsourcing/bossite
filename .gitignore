@@ -2,3 +2,4 @@ vendor/*
 .idea
 phpscripts/*
 composer.phar
+.DS_Store
