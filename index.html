@@ -29,100 +29,17 @@
         <meta name="theme-color" content="#0f3458">
         <meta name="msapplication-navbutton-color" content="#0f3458">
         <meta name="apple-mobile-web-app-status-bar-style" content="#0f3458">
+
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,600,700">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </head>
     <body class="home">
-        <div class="preloader"></div>
-        <!-- Logo -->
-        <div class="logo">
-            <a href="/"><img src="img/logo-white.png"></a>
-        </div>
-        <!-- Who we are -->
-        <div class="absolute-center">
-            <div class="absolute-center-container">
-                <h1>Software development experts</h1>
-                <h2>We make unique tools for all the things you find essential for your business</h2>
-                <p><a href="careers.html" class="btn btn-big btn-primary">Join our team</a></p>
-            </div>
-        </div>
-        <!-- Navigation -->
-        <nav class="nav">
-            <ul>
-                <li><span>Home</span></li>
-                <li><a href="what-we-do.html">What we do</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <!--<li><a href="news.html">News</a></li>-->
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="nav-button">
-            <span>Menu</span>
-        </div>
-        <div class="nav-curtain"></div>
-        <!-- Social -->
-        <footer>
-            <div class="social">
-                <p>
-                    <strong>Business Outsourcing Services</strong><br>
-                    Omladinskih brigada 21<br>
-                    Bruno invest Office Building | Floor II<br>
-                    11070 Novi Beograd, Sebia<br>
-                    <a href="mailto:office@boutsourcing.com">office@boutsourcing.com</a>
-                </p>
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/company/business-outsourcing-services-doo" target="_blank"><img src="img/linkedin.png"></a>
-                    </li>
-                    <li>
-                        <a href="http://instagram.com/boutsourcing" target="_blank"><img src="img/instagram.png"></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/boutsourcing" target="_blank"><img src="img/twitter.png"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/pages/Business-Outsourcing-Services-doo/164089493616696" target="_blank"><img src="img/facebook.png"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="social-shadow"></div>
-        </footer>
 
         <!-- Scripts -->
 
         <script type="text/javascript">
-            // Add class to loaded page
-
-            if (document.readyState === 'complete') {
-                // good to go!
-            }
-            var interval = setInterval(function() {
-                if (document.readyState === 'complete') {
-                    clearInterval(interval);
-
-                    // Page is ready
-
-                    $("body").addClass("loaded");
-                }
-            }, 100);
-
-            // Menu toogle class
-
-            $(document).ready(function() {
-                $(".nav-button").click(function() {
-                    $(this).toggleClass("in");
-                    $(".nav").toggleClass("in");
-                    $(".nav-curtain").toggleClass("in");
-                });
-                $(".nav-curtain").click(function() {
-                    $(this).removeClass("in");
-                    $(".nav-button").removeClass("in");
-                    $(".nav").removeClass("in");
-                });
-            });
-
             // Google Analytics
 
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
