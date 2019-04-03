@@ -30,17 +30,47 @@
         <meta name="msapplication-navbutton-color" content="#0f3458">
         <meta name="apple-mobile-web-app-status-bar-style" content="#0f3458">
 
-        <link rel="stylesheet" href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,600,700">
-        <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+        <script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <header class="container">
-            <div class="row">
+        <header class="container-fluid">
+            <div id="header" class="row align-items-center header">
                 <div class="col-4">
-                    <img src="/img/logo.png">
+                    <a href="#" data-target="header">
+                        <img class="logo" src="img/logo.png" alt="Business Outsourcing Services">
+                    </a>
+                </div>
+                <div class="col-8">
+                    <!--<div id="openMobileMenu" class="menu-icon d-lg-none">-->
+                        <!--&#9776;-->
+                    <!--</div>-->
+                    <div id="menu" class="menu-container float-right">
+                        <!--<div id="closeMobileMenu" class="menu-icon close-icon self-end d-lg-none">-->
+                            <!--&times;-->
+                        <!--</div>-->
+                        <ul class="row align-items-center menu">
+                            <li>
+                                <a href="#" data-target="header">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" data-target="services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#" data-target="references">References</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="li-composite">
+                                <a href="#" data-target="careers" class="d-block">Careers</a>
+                                <a href="#" data-target="contactUs" class="d-block">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
