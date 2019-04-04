@@ -71,6 +71,7 @@ ul.menu li:hover .sub-menu,
     width: 400%;
     display: none;
     z-index: 10;
+    background-color: #FFFFFF;
 }
 ul.sub-menu li {
     text-transform: uppercase;

@@ -1,0 +1,109 @@
+.heading-border-line {
+    margin-top: 1rem;
+    box-sizing: border-box;
+    height: 0.1rem;
+    width: 30%;
+    border: 0.4rem solid #19E69B;
+}
+.dedicated-development-teams-section {
+    min-height: 500px;
+    background-color: #F3F6FD;
+}
+.section-heading {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.3;
+    color: #243647;
+}
+.dedicated-development-teams-section .section-heading {
+    display: table-caption;
+}
+.image-fit {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.flexible-team-section .section-heading {
+    margin: 1rem 0 4rem 0;
+}
+.heading-text {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -0.19px;
+    line-height: 36px;
+}
+.subheading-text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 31px;
+    color: #748494;
+}
+.all-in-one-service-section {
+    padding-top: 30px;
+}
+.emphasize-heading {
+    border-bottom: 3px solid #19E69B;
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: -0.34px;
+    line-height: 55px;
+    display: inline-block;
+    margin: 6rem 0;
+}
+p.heading-text {
+    color: #243647;
+}
+ul.key-benefits-list li {
+    position: relative;
+    height: 12rem;
+}
+ul.key-benefits-list li:before {
+    content:"";
+    position: absolute;
+    left: 35px;
+    border-left: 1px solid black;
+    height: 100%;
+    width: 3px;
+    top: 50%;
+}
+ul.key-benefits-list li:first-child:before {
+    top: 70px;
+}
+
+ul.key-benefits-list li:last-child:before {
+    display: none;
+}
+ul.key-benefits-list .media img {
+    width: 70px;
+    height: 70px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+ul.key-benefits-list li.completed img {
+    -webkit-filter: none;
+    filter: none;
+    z-index: 1;
+}
+ul.key-benefits-list li.completed:before {
+    border-color: #19E69B;
+}
+.how-to-engage-boutsourcing-section h3 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -0.41px;
+    line-height: 66px;
+    text-align: center;
+}
+.describe-your-business-section {
+    padding: 10rem 0;
+}
+.describe-your-business-section > div > a {
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: -0.19px;
+    line-height: 31px;
+    border-bottom: 8px solid #19E69B;
+    color: #243647;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
