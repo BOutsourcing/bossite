@@ -1,0 +1,173 @@
+.section-lead {
+    height: 492px;
+}
+.section-lead-info-box {
+    padding: 70px 60px;
+}
+.section-lead-info-box .info {
+    width: 270px;
+    margin-bottom: 80px;
+}
+.section-lead-info-box .info p {
+    color: #243647;
+}
+.section-lead-hero {
+    background: #242F4E url("../img/screen/large/software-development-experts.png") no-repeat;
+    background-size: cover;
+    padding: 70px 50px;
+}
+.section-lead-hero .info {
+    width: 400px;
+}
+.section-lead-hero .title {
+    font-size: 56px;
+    line-height: 72px;
+    color: #ffffff;
+}
+
+.service-box {
+    padding: 70px 20px 50px;
+    border-style: solid;
+    border-color: #E7EAF2;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    text-align: center;
+}
+.service-box .icon {
+    margin-bottom: 40px;
+}
+.service-box .icon-product-development {
+    margin-top: 8px;
+}
+.service-box .icon-design {
+    margin-top: 8px;
+    margin-bottom: 46px;
+}
+.services-info {
+    padding: 50px;
+    border-bottom: 1px solid #E7EAF2;
+}
+.service-box,
+.services-info,
+.section-services a.d-block,
+.portfolio-box,
+.portfolio-boxes a.d-block {
+    height: 100%;
+}
+
+.section-portfolio {
+    margin-top: 80px;
+}
+.portfolio-boxes {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 50px;
+}
+.portfolio-boxes .col-12 {
+    margin-bottom: 20px;
+}
+.portfolio-box, .portfolio-box .subtitle {
+    color: #ffffff;
+}
+.portfolio-box {
+    padding: 75px 80px 55px;
+}
+.portfolio-monitoring-tool {
+    background: url("../img/screen/large/employee-monitoring-tool.png") no-repeat;
+    background-size: cover;
+}
+.portfolio-management-system {
+    background: url("../img/screen/large/competency-management-system.png") no-repeat;
+    background-size: cover;
+}
+.portfolio-management-solution {
+    background: url("../img/screen/large/access-management-solution.png") no-repeat;
+    background-size: cover;
+}
+.portfolio-box .subtitle {
+    margin-bottom: 100px;
+}
+.portfolio-management-solution .subtitle {
+    margin-bottom: 58px;
+}
+.portfolio-box hr {
+    width: 130px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border-top: 5px solid #19E69B;
+}
+.portfolio-box p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.section-what-clients-say {
+    padding-top: 60px;
+    margin-top: 150px;
+    border-top: 1px solid #C7CFDF;
+}
+.video-boxes {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 30px;
+}
+.video {
+    height: 380px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.video .info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 50px 80px;
+    background-color: rgba(36, 54, 71, 0.5);
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    transform: translateY(100%);
+    transition: transform 0.1s linear;
+}
+.video:hover .info {
+    transform: translateY(0);
+    transition: transform 0.2s linear;
+}
+.video-appsco {
+    background: #242F4E url("../img/home/client-appsco.png") no-repeat;
+    background-size: cover;
+}
+.video-dossier {
+    background: #242F4E url("../img/home/client-dossier.png") no-repeat;
+    background-size: cover;
+}
+
+.section-schedule-consultation, .section-contact {
+    margin-top: 100px;
+}
+.section-schedule-consultation {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.schedule-consultation {
+    margin-bottom: 50px;
+}
+.schedule-consultation h1 {
+    margin-bottom: 30px;
+}
+.schedule-consultation a {
+    margin-top: 50px;
+    color: #243647;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+    border-bottom: 8px #19E69B solid;
+}
+
+.contact-form form {
+    padding: 80px 100px;
+    margin-top: 45px;
+}
