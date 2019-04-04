@@ -38,27 +38,39 @@
         <script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <header class="container-fluid">
-            <div id="header" class="row align-items-center header">
+        <header class="container-fluid header">
+            <div id="header" class="row">
                 <div class="col-4">
                     <a href="#" data-target="header">
                         <img class="logo" src="img/logo.png" alt="Business Outsourcing Services">
                     </a>
                 </div>
                 <div class="col-8">
-                    <!--<div id="openMobileMenu" class="menu-icon d-lg-none">-->
-                        <!--&#9776;-->
-                    <!--</div>-->
                     <div id="menu" class="menu-container">
-                        <!--<div id="closeMobileMenu" class="menu-icon close-icon self-end d-lg-none">-->
-                            <!--&times;-->
-                        <!--</div>-->
                         <ul class="row text-center menu">
                             <li>
                                 <a href="#" data-target="header">Home</a>
                             </li>
                             <li>
                                 <a href="#" data-target="services">Services</a>
+                                <ul class="sub-menu text-left" data-submenu>
+                                    <li>
+                                        <img src="img/menu/dedicated.png">
+                                        <a href="#" data-target="dedicated-teams">Dedicated Teams</a>
+                                    </li
+                                    ><li>
+                                        <img src="img/menu/design.png">
+                                        <a href="#" data-target="dedicated-teams">Design</a>
+                                    </li
+                                    ><li>
+                                        <img src="img/menu/development.png">
+                                        <a href="#" data-target="dedicated-teams">Product Development</a>
+                                    </li
+                                    ><li>
+                                        <img src="img/menu/technical.png">
+                                        <a href="#" data-target="dedicated-teams">Technical & Customer Support</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#" data-target="references">References</a>
