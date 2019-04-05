@@ -1,3 +1,6 @@
+footer {
+    margin-top:40px;
+}
 footer h3 {
     color: #ffffff;
     font-size: 20px;
@@ -7,20 +10,20 @@ footer h3 {
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
-#footer > div:first-child {
+footer > div.row > div:first-child {
     background-color: #242F4E;
     color: #ffffff;
 }
-#footer > div:last-child {
+footer > div.row > div:last-child {
     background-color: #F3F6FD;
 }
-#footer address {
+footer address {
     color: #ffffff;
     font-size: 16px;
     letter-spacing: -0.13px;
     line-height: 32px;
 }
-#footer .copyright {
+footer .copyright {
     color: #ffffff;
     font-size: 14px;
     letter-spacing: -0.11px;
@@ -33,12 +36,10 @@ ul.footer-menu li {
 ul.footer-menu li a {
     display: block;
     font-size: 14px;
-    font-weight: bold;
-    letter-spacing: -0.08px;
-    line-height: 19px;
+    font-weight: 700;
     text-transform: uppercase;
     color: #243647;
-    padding: 0.9rem 0;
+    padding: 16px 0;
 }
 ul.footer-submenu > li > a {
     font-weight: normal;
