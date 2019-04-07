@@ -120,6 +120,14 @@ textarea.form-control, textarea.form-control:focus {
     border: 1px solid #C7CFDF;
     resize: none;
 }
+.section-link {
+    text-transform: uppercase;
+    border-bottom: 8px solid #19E69B;
+    display: inline-block;
+}
+.section-link > * {
+    margin: 0;
+}
 
 /**
 Hover effect on div with background.
