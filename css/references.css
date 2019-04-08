@@ -1,0 +1,119 @@
+.section-lead {
+    height: 500px;
+}
+.section-lead .info h1 {
+    margin-top: 130px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    font-size: 50px;
+    line-height: 66px;
+}
+.section-lead .info p {
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 38px;
+}
+.section-lead-hero {
+    background: #242F4E url("../img/screen/large/references/references-hero.png") no-repeat;
+    background-size: cover;
+}
+
+.section {
+    padding-left: 130px;
+    padding-right: 130px;
+}
+.section-clients {
+    margin-top: 80px;
+}
+.section-clients .title {
+    margin-bottom: 60px;
+}
+.row-clients {
+    margin-bottom: 80px;
+}
+.client-box {
+    height: 100%;
+    background-color: #F3F6FD;
+}
+.client-box .preview {
+    height: 350px;
+    position: relative;
+}
+.client-box .preview.evolution {
+    background: url("../img/screen/large/references/evolution.png") no-repeat;
+    background-size: cover;
+}
+.client-box .preview.dossier {
+    background: url("../img/screen/large/references/dossier.png") no-repeat;
+    background-size: cover;
+}
+.client-box .preview.appsco {
+    background: url("../img/screen/large/references/appsco.png") no-repeat;
+    background-size: cover;
+}
+.client-box .preview.brocon {
+    background: url("../img/screen/large/references/brocon.png") no-repeat;
+    background-size: cover;
+}
+.client-box .preview.club-collaborator {
+    background: url("../img/screen/large/references/club-collaborator.png") no-repeat;
+    background-size: cover;
+}
+.client-box .preview.mysiteshop {
+    background: url("../img/screen/large/references/mysiteshop.png") no-repeat;
+    background-size: cover;
+}
+.preview .sticky-label {
+    min-width: 80%;
+    height: 68px;
+    padding: 5px 15px;
+    color: #243647;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 62px;
+    opacity: 0.9;
+    background-color: #50E29D;
+    position: absolute;
+    bottom: -32px;
+    left: 15px;
+}
+.client-box .info {
+    height: 370px;
+    padding: 60px 30px 20px;
+    position: relative;
+}
+.pos-abs-bottom {
+    position: absolute;
+    left: 30px;
+    right: 0;
+    bottom: 20px;
+}
+.client-box .name {
+    margin-bottom: 40px;
+    font-size: 46px;
+    line-height: 58px;
+}
+.client-box .description {
+    margin-bottom: 20px;
+}
+.client-box .website {
+    margin-bottom: 0;
+    color: #748494;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+@media (max-width: 1440px) {
+    .section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media (max-width: 1200px) {
+    .row-clients {
+        margin-bottom: 0;
+    }
+    .row-clients > [class*='col-'] {
+        margin-bottom: 80px;
+    }
+}
