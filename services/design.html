@@ -110,7 +110,100 @@
         </div>
     </div>
 </div>
+<div class="container-fluid two-column--white dotted-background">
+    <div class="row">
+        <div class="col-12 p-2">
+            <div class="media pt-5">
+                <img class="align-self-center mr-3 associated" src="/img/services/design/design.svg" alt="UI/UX design">
+                <div class="media-body align-self-center">
+                    <h3 class="strong font-lg">Type something</h3>
+                    <p class="pt-5 strong font-24">If you are looking for a reliable dedicated development team, with flexibility in mind, we have the recruitment capacity and an existing talent pool to help you create a team which fulfills your needs. The hiring and on-boarding process can be tailored to your requirements, so you are always in control in today's changing business environment. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" style="height: 20px;">
+            <img class="illustration" src="/img/services/design/illustration/discovery.svg">
+            <img class="illustration" src="/img/services/design/illustration/research.svg">
+            <img class="illustration" src="/img/services/design/illustration/create.svg">
+            <img class="illustration" src="/img/services/design/illustration/implement.svg">
+        </div>
+    </div>
+    <div class="row key-benefits-section">
+        <div class="col-6 p-5">
+            <h3 class="section-heading mb-5 p-5">How do we do it?</h3>
+            <div class="ml-5">
+                <ul class="check_list pr-5">
+                    <li class="media completed">
+                        <img class="align-self-top mr-3" src="/img/services/design/checklist/1.svg" alt="Generic placeholder image">
+                        <div class="media-body align-self-top ml-5">
+                            <p class="title strong font-24">Discovery</p>
+                            <p class="heading-text">
+                                Defining the business vision,<br>
+                                collecting the requirements <br>
+                                and insights, learning about <br>
+                                your pain points & <br>
+                                consulting
+                            </p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="align-self-top mr-3" src="/img/services/design/checklist/2.svg" alt="Generic placeholder image">
+                        <div class="media-body align-self-top ml-5">
+                            <p class="title strong font-24">Research</p>
+                            <p class="heading-text">
+                                In-depth analysis,<br>
+                                understanding your market<br>
+                                sefment, your style, target<br>
+                                groups and key values
+                            </p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="align-self-top mr-3" src="/img/services/design/checklist/3.svg" alt="Generic placeholder image">
+                        <div class="media-body align-self-top ml-5">
+                            <p class="title strong font-24">Create</p>
+                            <p class="heading-text">
+                                Combining your experience<br>
+                                with the research results in<br>
+                                order to create a tailor<br>
+                                made solution and meet <br>
+                                your business objectives
+                            </p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="align-self-top mr-3" src="/img/services/design/checklist/4.svg" alt="Generic placeholder image">
+                        <div class="media-body align-self-top ml-5">
+                            <p class="title strong font-24">Implement</p>
+                            <p class="heading-text">
+                                We've got you covered! By<br>
+                                using our development<br>
+                                team to implement your<br>
+                                new design, you can, reduce <br>
+                                the time-to-market and <br>
+                                launch your product
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-6 p-5 text-left">
+<!--            <img class="illustration" src="/img/services/design/illustration/discovery.svg">-->
+        </div>
+    </div>
+</div>
 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 text-center" style="background-color: white; padding: 100px 0 60px 0">
+            <p class="strong">SCHEDULE A FREE CONSULTATION</p>
+            <div class="separator-green" style="display: inline-block;"></div>
+        </div>
+    </div>
+</div>
 
 <footer class="container-fluid">
     <div id="footer" class="row">
@@ -198,6 +291,45 @@
 <script src="/vendor/components/jquery/jquery.min.js"></script>
 <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript">
+    function isVisible(elem) {
+        if (!(elem instanceof Element)) throw Error('DomUtil: elem is not an element.');
+        const style = getComputedStyle(elem);
+        if (style.display === 'none') return false;
+        if (style.visibility !== 'visible') return false;
+        if (style.opacity < 0.1) return false;
+        if (elem.offsetWidth + elem.offsetHeight + elem.getBoundingClientRect().height +
+            elem.getBoundingClientRect().width === 0) {
+            return false;
+        }
+        const elemCenter   = {
+            x: elem.getBoundingClientRect().left + elem.offsetWidth / 2,
+            y: elem.getBoundingClientRect().top + elem.offsetHeight / 2
+        };
+        if (elemCenter.x < 0) return false;
+        if (elemCenter.x > (document.documentElement.clientWidth || window.innerWidth)) return false;
+        if (elemCenter.y < 0) return false;
+        if (elemCenter.y > (document.documentElement.clientHeight || window.innerHeight)) return false;
+        let pointContainer = document.elementFromPoint(elemCenter.x, elemCenter.y);
+        do {
+            if (pointContainer === elem) return true;
+        } while (pointContainer = pointContainer.parentNode);
+        return false;
+    }
+
+    let keyBenefitsListItems = document.querySelectorAll('ul.check_list li');
+    document.querySelector('.key-benefits-section').addEventListener('scroll', scrollHandler);
+    function scrollHandler() {
+        let lastVisible = 0;
+        keyBenefitsListItems.forEach(function(elem, index){
+            document.querySelectorAll('.illustration')[index].classList.add('hidden');
+            if(isVisible(elem)) {
+                elem.classList.add('completed');
+                lastVisible = index;
+            }
+        })
+        document.querySelectorAll('.illustration')[lastVisible].classList.remove('hidden');
+    };
+    scrollHandler();
 </script>
 <script type="text/javascript">
     // Google Analytics
