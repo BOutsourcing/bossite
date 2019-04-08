@@ -9,7 +9,7 @@ body {
     overflow-x: hidden;
 }
 body, p, a, h1, h2, h3 {
-    font-family: 'Mont';
+    font-family: 'Mont', serif;
 }
 h1, h2, h3, h4 {
     color: #243647;
@@ -64,6 +64,9 @@ body p {
     display: flex;
     flex-direction: column;
 }
+.row.display-flex > [class*='col-'] > * {
+    height: 100%;
+}
 .margin-l-auto {
     margin-left: auto;
 }
@@ -116,6 +119,37 @@ form .form-group:last-of-type {
 textarea.form-control, textarea.form-control:focus {
     border: 1px solid #C7CFDF;
     resize: none;
+}
+
+/**
+Hover effect on div with background.
+ */
+a.box-link {
+    overflow: hidden;
+}
+a.box-link .box, a.box-link .box:before {
+    transition: all 0.1s linear;
+}
+a.box-link:hover .box, a.box-link:hover .box:before {
+    transition: all 0.2s linear;
+}
+a.box-link:hover .box {
+    transform: scale(1.05);
+}
+a.box-link .box:before {
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+a.box-link:hover .box:before {
+    opacity: 1;
+    visibility: visible;
 }
 
 /**
