@@ -9,7 +9,7 @@ body {
     overflow-x: hidden;
 }
 body, p, a, h1, h2, h3 {
-    font-family: 'Mont';
+    font-family: 'Mont', serif;
 }
 h1, h2, h3, h4 {
     color: #243647;
@@ -63,6 +63,9 @@ body p {
 .row.display-flex > [class*='col-'] {
     display: flex;
     flex-direction: column;
+}
+.row.display-flex > [class*='col-'] > * {
+    height: 100%;
 }
 .margin-l-auto {
     margin-left: auto;
