@@ -36,6 +36,7 @@
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="stylesheet" type="text/css" href="/css/header.css">
         <link rel="stylesheet" type="text/css" href="/css/product.css">
+        <link rel="stylesheet" type="text/css" href="/css/carousel.css">
         <link rel="stylesheet" type="text/css" href="/css/footer.css">
     </head>
     <body>
@@ -92,7 +93,7 @@
         <div class="container-fluid px-0">
             <div class="row no-gutters">
                 <div class="col">
-                    <div class="row align-items-center section-lead section-lead-hero">
+                    <div class="row align-items-center section-lead section-lead-hero appsco">
                         <div class="col col-lg-10 offset-lg-1 align-self-center info text-center">
                             <h1>AppsCo, Cloud Identity & Access Management Solution</h1>
                             <p>
@@ -107,10 +108,10 @@
             </div>
         </div>
 
-        <div class="container-fluid section section-appsco">
+        <div class="container-fluid section section-product-info">
             <div class="row">
                 <div class="col-12 col-lg-10">
-                    <img class="appsco-logo" src="/img/pages/appsco/appsco-logo.svg" alt="AppsCo">
+                    <img class="product-logo" src="/img/pages/appsco/appsco-logo.svg" alt="AppsCo">
                     <p>
                         By creating a well rounded dedicated team of experts we
                         supported AppsCo's expansion on the international market
@@ -123,9 +124,42 @@
                     </p>
                 </div>
             </div>
+        </div>
+
+        <div class="container-fluid px-0 product-preview">
             <div class="row">
-                <div class="col text-center">
-                    <img class="appsco-preview" src="/img/pages/appsco/appsco-preview.png" alt="AppsCo">
+                <div class="col">
+                    <div id="carouselComponent" class="carousel slide"
+                         data-ride="carousel">
+                        <div class="carousel-inner row" role="listbox">
+                            <div class="carousel-item col-12 col-md-4 active">
+                                <img src="/img/pages/appsco/appsco-preview.png" class="img-fluid mx-auto d-block" alt="AppsCo">
+                            </div>
+                            <div class="carousel-item col-12 col-md-4">
+                                <img src="/img/pages/appsco/appsco-preview.png" class="img-fluid mx-auto d-block" alt="AppsCo">
+                            </div>
+                            <div class="carousel-item col-12 col-md-4">
+                                <img src="/img/pages/appsco/appsco-preview.png" class="img-fluid mx-auto d-block" alt="AppsCo">
+                            </div>
+                            <div class="carousel-item col-12 col-md-4">
+                                <img src="/img/pages/appsco/appsco-preview.png" class="img-fluid mx-auto d-block" alt="AppsCo">
+                            </div>
+                            <div class="carousel-item col-12 col-md-4">
+                                <img src="/img/pages/appsco/appsco-preview.png" class="img-fluid mx-auto d-block" alt="AppsCo">
+                            </div>
+                            <div class="carousel-item col-12 col-md-4">
+                                <img src="/img/pages/appsco/appsco-preview.png" class="img-fluid mx-auto d-block" alt="AppsCo">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselComponent" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselComponent" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -325,8 +359,9 @@
             </div>
         </footer>
         <!-- Scripts -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="/vendor/components/jquery/jquery.min.js"></script>
         <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/carousel.js"></script>
         <script type="text/javascript">
             // Google Analytics
 

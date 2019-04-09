@@ -33,8 +33,12 @@
     right: 0;
     margin: auto;
 }
-.section-lead-hero {
+.section-lead-hero.appsco {
     background: #242F4E url("../img/screen/large/appsco/appsco-hero.png") no-repeat;
+    background-size: cover;
+}
+.section-lead-hero.evolution {
+    background: #242F4E url("../img/screen/large/evolution/evolution-hero.png") no-repeat;
     background-size: cover;
 }
 
@@ -51,9 +55,6 @@
 }
 .section-product-info {
     margin-top: 120px;
-}
-.product-logo {
-    margin-bottom: 45px;
 }
 .product-preview {
     margin-top: 60px;
