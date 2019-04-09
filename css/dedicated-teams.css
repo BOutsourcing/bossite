@@ -18,11 +18,6 @@
 .dedicated-development-teams-section .section-heading {
     display: table-caption;
 }
-.image-fit {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
 .flexible-team-section .section-heading {
     margin: 1rem 0 4rem 0;
 }
@@ -71,19 +66,17 @@ ul.key-benefits-list li:before {
 ul.key-benefits-list li:first-child:before {
     display: none;
 }
-ul.key-benefits-list .media img {
+ul.key-benefits-list .media .check-mark {
     width: 70px;
     height: 70px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: all 0.3s ease-in-out;
+    background-image: url("/img/services/dedicated-teams/check-mark-60-gs.svg");
+    background-size: cover;
 }
 ul.key-benefits-list li.completed p {
     margin: 0;
 }
-ul.key-benefits-list li.completed img {
-    -webkit-filter: none;
-    filter: none;
+ul.key-benefits-list li.completed .check-mark {
+    background-image: url("/img/services/dedicated-teams/check-mark-60.svg");
 }
 ul.key-benefits-list li.completed:before {
     background-color: #19E69B;

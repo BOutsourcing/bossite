@@ -16,15 +16,6 @@
     line-height: 36px;
     color: #243647;
 }
-
-.separator-green {
-    margin: 16px 0;
-    height: 0.5rem;
-    width: 30%;
-    background-color: #19E69B;
-    content: '';
-}
-
 .two-column--white img.associated {
     height: 512px;
     padding: 0 5rem;
@@ -53,13 +44,22 @@ ul.check_list li:after {
 ul.check_list li:last-child:after {
     display: none;
 }
-ul.check_list .media img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+ul.check_list .media .check-mark {
+    width: 69px;
+    height: 69px;
+    background-size: cover;
 }
-ul.check_list li.completed img {
-    -webkit-filter: none;
-    filter: none;
+ul.check_list li:nth-child(1) .check-mark { background-image: url("/img/services/design/checklist/1-grey.svg"); }
+ul.check_list li:nth-child(2) .check-mark { background-image: url("/img/services/design/checklist/2-grey.svg"); }
+ul.check_list li:nth-child(3) .check-mark { background-image: url("/img/services/design/checklist/3-grey.svg"); }
+ul.check_list li:nth-child(4) .check-mark { background-image: url("/img/services/design/checklist/4-grey.svg"); }
+
+ul.check_list li.completed:nth-child(1) .check-mark { background-image: url("/img/services/design/checklist/1.svg"); }
+ul.check_list li.completed:nth-child(2) .check-mark { background-image: url("/img/services/design/checklist/2.svg"); }
+ul.check_list li.completed:nth-child(3) .check-mark { background-image: url("/img/services/design/checklist/3.svg"); }
+ul.check_list li.completed:nth-child(4) .check-mark { background-image: url("/img/services/design/checklist/4.svg"); }
+
+ul.check_list li.completed .check-mark {
     z-index: 1;
 }
 
@@ -68,7 +68,6 @@ img.illustration {
     left: 50%;
     position: absolute;
     z-index: 0;
-    /*display: none;*/
 }
 img.illustration.hidden {
     display: none;
