@@ -37,6 +37,7 @@
     <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
     <link rel="stylesheet" type="text/css" href="/css/technical-customer-support.css">
+    <link rel="stylesheet" type="text/css" href="/css/check-mark-list.css">
 </head>
 <body>
 
@@ -135,27 +136,27 @@
         <div class="col-12 p-5">
             <h3 class="section-heading mb-5 p-5">Key benefits</h3>
             <div class="ml-5">
-                <ul class="check_list pr-5">
+                <ul class="check-mark-list pr-5" data-check-mark-list>
                     <li class="media">
-                        <img class="align-self-center mr-3" src="/img/services/dedicated-teams/check-mark.svg" alt="">
+                        <div class="check-mark align-self-center mr-3"></div>
                         <div class="media-body align-self-center ml-5">
                             <p class="heading-text font-24 strong">Remote dedicated team to increase the quality and performance of your business</p>
                         </div>
                     </li>
                     <li class="media">
-                        <img class="align-self-center mr-3" src="/img/services/dedicated-teams/check-mark.svg" alt="">
+                        <div class="check-mark align-self-center mr-3"></div>
                         <div class="media-body align-self-center ml-5">
                             <p class="heading-text font-24 strong">Efficient and proven practices established through years of experience</p>
                         </div>
                     </li>
                     <li class="media">
-                        <img class="align-self-center mr-3" src="/img/services/dedicated-teams/check-mark.svg" alt="">
+                        <div class="check-mark align-self-center mr-3"></div>
                         <div class="media-body align-self-center ml-5">
                             <p class="heading-text font-24 strong">Customizable and tailored according to your business process requirements</p>
                         </div>
                     </li>
                     <li class="media">
-                        <img class="align-self-center mr-3" src="/img/services/dedicated-teams/check-mark.svg" alt="">
+                        <div class="check-mark align-self-center mr-3"></div>
                         <div class="media-body align-self-center ml-5">
                             <p class="heading-text font-24 strong">One stop - access to our software development experts, QA and infrastructure specialists</p>
                         </div>
@@ -277,33 +278,7 @@
 
 <script src="/vendor/components/jquery/jquery.min.js"></script>
 <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript">
-    var keyBenefitsListItems = document.querySelectorAll('ul.check_list li');
-    window.addEventListener('scroll', scrollHandler);
-
-    function scrollHandler() {
-        for (var x = 0; x < keyBenefitsListItems.length; x++) {
-            var listItem = keyBenefitsListItems[x];
-            if (!listItem.classList.contains('completed') && isInViewport(listItem)) {
-                markIndexCompleted(x);
-            }
-        }
-        if (document.querySelectorAll('ul.check_list li:not(.completed)').length === 0) {
-            window.removeEventListener('scroll', scrollHandler);
-        }
-    }
-
-    function markIndexCompleted(index) {
-        for (var x = 0; x <= index; x++) {
-            keyBenefitsListItems[x].classList.add('completed');
-        }
-    }
-
-    function isInViewport(element) {
-        var bounding = element.getBoundingClientRect();
-        return bounding.top >= 0 && bounding.bottom <= (window.innerHeight * 0.8 || document.documentElement.clientHeight * 0.8);
-    }
-</script>
+<script src="/js/check-mark-list.js"></script>
 <script type="text/javascript">
     // Google Analytics
 

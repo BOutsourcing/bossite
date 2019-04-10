@@ -30,45 +30,6 @@
     padding: 0 5rem;
 }
 
-ul.check_list li {
-    position: relative;
-    height: 12rem;
-}
-ul.check_list li:before {
-    content:"";
-    position: absolute;
-    left: 34px;
-    height: calc(100% - 70px);
-    width: 2px;
-    background-color: #DCE2EF;
-    top: calc(-50% + 35px);
-    transition: background-color 0.3s ease-in-out;
-}
-
-ul.check_list li:first-child:before {
-    display: none;
-}
-ul.check_list .media img {
-    width: 70px;
-    height: 70px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: all 0.3s ease-in-out;
-}
-ul.check_list li.completed p {
-    margin: 0;
-}
-ul.check_list li.completed img {
-    -webkit-filter: none;
-    filter: none;
-}
-ul.check_list li.completed:before {
-    background-color: #19E69B;
-}
-
-ul.green-list {
-
-}
 ul.green-list {
     list-style: none;
     font-size: 24px;
