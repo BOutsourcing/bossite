@@ -1,0 +1,77 @@
+.strong {
+    font-weight: 700;
+}
+.font-24 {
+    font-size: 24px;
+}
+.font-18 {
+    font-size: 18px;
+}
+.font-lg {
+    font-size: 3rem;
+    line-height: 1.3;
+    color: #243647;
+}
+.font-default {
+    color: #243647;
+}
+.thin {
+    font-weight: 300;
+}
+.separator {
+    margin: 16px 0;
+    height: 0.2rem;
+    width: 30%;
+    background-color: #243647;
+    content: '';
+    display: inline-block;
+}
+.background-gray {
+    background-color: #F3F6FD;
+}
+
+ul.open-positions {
+
+}
+ul.open-positions li {
+    display: inline-block;
+    width: calc(50% - 100px);
+    background-color: #19E69B;
+    margin: 50px;
+    font-size: 20px;
+    padding: 40px 10px 40px 30px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.fot-1, .fot-2, .fot-3 {
+    height: calc(100vw * 0.27);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fot-1 {
+    background-image: url("/img/careers/fot_1.png");
+}
+.fot-2 {
+    background-image: url("/img/careers/fot_2.png");
+}
+.fot-3 {
+    background-image: url("/img/careers/fot_3.png");
+}
+div.dotted-background {
+    position: relative;
+}
+img.dotted-background {
+    position: absolute;
+    top: 340px;
+    left: 35%;
+    z-index: -1;
+}
+.work-life_header {
+    height: 256px;
+}
+.work-life_header h3 {
+}
+.work-life_header * {
+    display: inline-block;
+}
