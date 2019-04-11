@@ -11,7 +11,7 @@
         height: 111px;
     }
     .header .logo {
-        padding-top:20px;
+        padding-top: 30px;
         width: 168px;
         display: block;
     }
@@ -53,17 +53,19 @@
     }
     ul.menu li:hover .sub-menu,
     .sub-menu:hover {
-        display: block;
+        transform: scaleY(1);
     }
     /* Sub-menu */
     .sub-menu {
         position: absolute;
-        top: 109px;
+        top: 111px;
         border-top: 1px solid #C7CFDF;
         width: 400%;
-        display: none;
         z-index: 10;
         background-color: #FFFFFF;
+        transform: scaleY(0);
+        transform-origin: 0 0;
+        transition: all .2s ease-in-out;
     }
     ul.sub-menu li {
         text-transform: uppercase;
@@ -80,8 +82,7 @@
         content: '';
         width: 10px;
         height: 10px;
-        border: 1px solid #C7CFDF;
-        background-color: white;
+        background-color: #C7CFDF;
         position: absolute;
         display: block;
         right: -6px;

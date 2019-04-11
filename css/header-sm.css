@@ -11,13 +11,13 @@
         height: 111px;
     }
     .header .logo {
-        padding-top:20px;
+        padding-top: 30px;
         width: 168px;
         display: block;
     }
     .header .logo-sm {
         display: none;
-        padding-top:20px;
+        padding-top: 30px;
         width: 168px;
     }
     .header.sm-active .logo-sm {
