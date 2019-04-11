@@ -1,0 +1,85 @@
+.section-lead {
+    height: 500px;
+}
+.section-lead .info h2 {
+    margin-top: 120px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    font-size: 36px;
+}
+.section-lead .info p {
+    color: #FFFFFF;
+    line-height: 30px;
+}
+.section-lead-hero {
+    background: #242F4E url("../img/screen/large/about-us/about-us-hero.png") no-repeat;
+    background-size: cover;
+}
+
+.section {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.section p {
+    color: #243647;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+}
+.section-what-we-do {
+    margin-top: 100px;
+}
+.section-what-we-do .title {
+    margin-bottom: 50px;
+}
+
+.section-core-values,
+.section-services,
+.section-management,
+.section-offices {
+    margin-top: 150px;
+}
+.section-services .title,
+.section-management .title,
+.section-offices .title {
+    margin-bottom: 60px;
+}
+.service-box {
+    padding: 60px 20px 50px;
+    border-style: solid;
+    border-color: #E7EAF2;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    text-align: center;
+}
+.service-box .icon {
+    margin-bottom: 50px;
+}
+.service-box .icon-product-development {
+    margin-top: 8px;
+}
+.service-box .icon-design {
+    margin-top: 8px;
+    margin-bottom: 55px;
+}
+.service-box .icon-technical-and-customer-support {
+    margin-bottom: 48px;
+}
+
+.profile img {
+    margin-bottom: 20px;
+}
+.profile .name, .profile .position {
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 30px;
+}
+.profile .name {
+    font-weight: normal;
+}
+@media (max-width: 992px) {
+    .profile {
+        margin-bottom: 40px;
+    }
+}

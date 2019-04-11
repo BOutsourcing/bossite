@@ -1,0 +1,36 @@
+p.heading-text {
+    color: #243647;
+}
+ul.check-mark-list li {
+    position: relative;
+    height: 10rem;
+}
+ul.check-mark-list li:before {
+    content:"";
+    position: absolute;
+    left: 34px;
+    height: calc(100% - 70px);
+    width: 2px;
+    background-color: #DCE2EF;
+    top: calc(-50% + 35px);
+    transition: background-color 0.3s ease-in-out;
+}
+
+ul.check-mark-list li:first-child:before {
+    display: none;
+}
+ul.check-mark-list .media .check-mark {
+    width: 70px;
+    height: 70px;
+    background-image: url("/img/check-mark-list/check-mark-60-gs.svg");
+    background-size: cover;
+}
+ul.check-mark-list li.completed p {
+    margin: 0;
+}
+ul.check-mark-list li.completed .check-mark {
+    background-image: url("/img/check-mark-list/check-mark-60.svg");
+}
+ul.check-mark-list li.completed:before {
+    background-color: #19E69B;
+}
