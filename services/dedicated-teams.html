@@ -37,6 +37,7 @@
     <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
     <link rel="stylesheet" type="text/css" href="/css/dedicated-teams.css">
+    <link rel="stylesheet" type="text/css" href="/css/check-mark-list.css">
 </head>
 <body>
     <header class="container-fluid header">
@@ -119,7 +120,7 @@
         <div class="row expertise-flexibility-section pt-5">
             <div class="col-6 p-2 pl-5">
                 <div class="col-12">
-                    <img src="/img/services/dedicated-teams/check-mark-60.svg" class="my-4">
+                    <img src="/img/check-mark-list/check-mark-60.svg" class="my-4">
                 </div>
                 <div class="col-12">
                     <h3 class="section-heading mb-3">Expertise</h3>
@@ -128,7 +129,7 @@
             </div>
             <div class="col-6 p-2 pl-5">
                 <div class="col-12">
-                    <img src="/img/services/dedicated-teams/check-mark-60.svg" class="my-4">
+                    <img src="/img/check-mark-list/check-mark-60.svg" class="my-4">
                 </div>
                 <div class="col-12">
                     <h3 class="section-heading mb-3">Flexibility</h3>
@@ -153,7 +154,7 @@
             <div class="col-12 p-5">
                 <h3 class="section-heading mb-5 p-5">Key benefits</h3>
                 <div class="ml-5">
-                    <ul class="key-benefits-list pr-5">
+                    <ul class="check-mark-list pr-5" data-check-mark-list>
                         <li class="media completed">
                             <div class="check-mark align-self-center mr-3"></div>
                             <div class="media-body align-self-center ml-5">
@@ -280,33 +281,7 @@
     </footer>
     <script src="/vendor/components/jquery/jquery.min.js"></script>
     <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-        var keyBenefitsListItems = document.querySelectorAll('ul.key-benefits-list li');
-        window.addEventListener('scroll', scrollHandler);
-
-        function scrollHandler() {
-            for (var x = 0; x < keyBenefitsListItems.length; x++) {
-                var listItem = keyBenefitsListItems[x];
-                if (!listItem.classList.contains('completed') && isInViewport(listItem)) {
-                    markIndexCompleted(x);
-                }
-            }
-            if (document.querySelectorAll('ul.key-benefits-list li:not(.completed)').length === 0) {
-                window.removeEventListener('scroll', scrollHandler);
-            }
-        }
-
-        function markIndexCompleted(index) {
-            for (var x = 0; x <= index; x++) {
-                keyBenefitsListItems[x].classList.add('completed');
-            }
-        }
-
-        function isInViewport(element) {
-            var bounding = element.getBoundingClientRect();
-            return bounding.top >= 0 && bounding.bottom <= (window.innerHeight * 0.8 || document.documentElement.clientHeight * 0.8);
-        }
-    </script>
+    <script src="/js/check-mark-list.js"></script>
     <script type="text/javascript">
         // Google Analytics
 

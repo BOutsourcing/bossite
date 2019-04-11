@@ -45,42 +45,6 @@
     display: inline-block;
     margin: 6rem 0;
 }
-p.heading-text {
-    color: #243647;
-}
-ul.key-benefits-list li {
-    position: relative;
-    height: 12rem;
-}
-ul.key-benefits-list li:before {
-    content:"";
-    position: absolute;
-    left: 34px;
-    height: calc(100% - 70px);
-    width: 2px;
-    background-color: #DCE2EF;
-    top: calc(-50% + 35px);
-    transition: background-color 0.3s ease-in-out;
-}
-
-ul.key-benefits-list li:first-child:before {
-    display: none;
-}
-ul.key-benefits-list .media .check-mark {
-    width: 70px;
-    height: 70px;
-    background-image: url("/img/services/dedicated-teams/check-mark-60-gs.svg");
-    background-size: cover;
-}
-ul.key-benefits-list li.completed p {
-    margin: 0;
-}
-ul.key-benefits-list li.completed .check-mark {
-    background-image: url("/img/services/dedicated-teams/check-mark-60.svg");
-}
-ul.key-benefits-list li.completed:before {
-    background-color: #19E69B;
-}
 .how-to-engage-boutsourcing-section h3 {
     font-size: 50px;
     font-weight: bold;
