@@ -1,0 +1,51 @@
+.section-lead {
+    height: 564px;
+    z-index: 5;
+}
+.section-lead .info * {
+    color: #FFFFFF;
+}
+.section-lead .info .title {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.section-lead .info p {
+    margin-bottom: 70px;
+    font-size: 22px;
+    line-height: 30px;
+}
+.section-lead-hero {
+    background: #242F4E url("../img/screen/large/contact-us/contact-us-hero.png") no-repeat;
+    background-size: cover;
+}
+
+.section-contact {
+    margin-top: -90px;
+    z-index: 6;
+}
+.contact-form {
+    padding: 60px 100px;
+}
+.contact-form form {
+    padding: 0;
+}
+.form-title {
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 54px;
+}
+
+.section-info {
+    margin-top: 100px;
+}
+.section-info .subtitle {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.section-info address {
+    font-size: 16px;
+    line-height: 28px;
+    color: #243647;
+}
