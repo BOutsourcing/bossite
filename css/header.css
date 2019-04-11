@@ -1,128 +1,120 @@
-.header {
-    padding: 0 0 0 65px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    z-index: 10;
-    height: 111px;
-}
-.header .logo {
-    padding-top:20px;
-    width: 168px;
-    display: block;
-}
-.menu-container {
-    box-sizing: border-box;
-}
-.menu {
-    list-style-type: none;
-}
-ul.menu > li {
-    cursor: pointer;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    position: relative;
-}
-ul.menu > li:last-child {
-    padding-top: 20px;
-}
-ul.menu > li > a {
-    font-size: 16px;
-    font-weight: 600;
-    color: inherit;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: block;
-}
-ul.menu li {
-    width: 20%;
-}
-ul.menu > li:last-child a:first-child {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #C7CFDF;
-}
-ul.menu > li:last-child a:last-child {
-    padding-top: 20px;
-}
-@media (max-width: 1440px) {
-    ul.menu > li a {
-        font-size: 14px;
+@media (min-width: 992px) {
+    .header {
+        padding: 0 0 0 65px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        z-index: 10;
+        height: 111px;
     }
-}
-@media (max-width: 992px) {
-    .menu {
+    .header .logo {
+        padding-top:20px;
+        width: 168px;
+        display: block;
+    }
+    .header .logo-sm {
         display: none;
     }
-}
+    .menu-container {
+        box-sizing: border-box;
+    }
+    .menu {
+        list-style-type: none;
+    }
+    ul.menu > li {
+        cursor: pointer;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    ul.menu > li:last-child {
+        padding-top: 20px;
+    }
+    ul.menu > li > a {
+        font-size: 16px;
+        font-weight: 600;
+        color: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+    }
+    ul.menu li {
+        width: 20%;
+    }
+    ul.menu > li:last-child a:first-child {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #C7CFDF;
+    }
+    ul.menu > li:last-child a:last-child {
+        padding-top: 20px;
+    }
+    ul.menu li:hover .sub-menu,
+    .sub-menu:hover {
+        display: block;
+    }
+    /* Sub-menu */
+    .sub-menu {
+        position: absolute;
+        top: 109px;
+        border-top: 1px solid #C7CFDF;
+        width: 400%;
+        display: none;
+        z-index: 10;
+        background-color: #FFFFFF;
+    }
+    ul.sub-menu li {
+        text-transform: uppercase;
+        display: inline-block;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 30px 20px;
+        vertical-align: middle;
+        height: 105px;
+        position: relative;
+    }
+    /* Little circle in the middle*/
+    ul.sub-menu li:nth-child(odd):nth-last-child(n+3):after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border: 1px solid #C7CFDF;
+        background-color: white;
+        position: absolute;
+        display: block;
+        right: -6px;
+        bottom: -5px;
+        z-index: 10;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+    ul.sub-menu li:nth-child(odd){
+        border-right: 1px solid #C7CFDF;
+    }
+    ul.sub-menu li:nth-child(n+3) {
+        border-top: 1px solid #C7CFDF;
+    }
+    ul.sub-menu li img,
+    ul.sub-menu li a {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    ul.sub-menu li img {
+        margin-right: 30px;
+        width: 45px;
+        height: 45px;
+    }
+    ul.sub-menu li a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+        text-transform: uppercase;
+        line-height: 1.2rem;
+    }
 
-ul.menu li:hover .sub-menu,
-.sub-menu:hover {
-    display: block;
-}
-
-/* Sub-menu */
-.sub-menu {
-    position: absolute;
-    top: 109px;
-    border-top: 1px solid #C7CFDF;
-    width: 400%;
-    display: none;
-    z-index: 10;
-    background-color: #FFFFFF;
-}
-ul.sub-menu li {
-    text-transform: uppercase;
-    display: inline-block;
-    width: 50%;
-    box-sizing: border-box;
-    padding: 30px 20px;
-    vertical-align: middle;
-    height: 105px;
-    position: relative;
-}
-/* Little circle in the middle*/
-ul.sub-menu li:nth-child(odd):nth-last-child(n+3):after {
-    content: '';
-    width: 10px;
-    height: 10px;
-    border: 1px solid #C7CFDF;
-    background-color: white;
-    position: absolute;
-    display: block;
-    right: -6px;
-    bottom: -5px;
-    z-index: 10;
-    border-radius: 50%;
-    box-sizing: border-box;
-}
-ul.sub-menu li:nth-child(odd){
-    border-right: 1px solid #C7CFDF;
-}
-ul.sub-menu li:nth-child(n+3) {
-    border-top: 1px solid #C7CFDF;
-}
-ul.sub-menu li img,
-ul.sub-menu li a {
-    display: inline-block;
-    vertical-align: middle;
-}
-ul.sub-menu li img {
-    margin-right: 30px;
-    width: 45px;
-    height: 45px;
-}
-ul.sub-menu li a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    color: black;
-    text-transform: uppercase;
-    line-height: 1.2rem;
-}
-@media (min-width: 992px) {
     ul.sub-menu li a {
         width: 130px;
         font-size: 12px;
@@ -130,24 +122,30 @@ ul.sub-menu li a {
     ul.sub-menu li img {
         margin-right: 10px;
     }
+    .menu-burger {
+        display: none;
+    }
 }
-@media (min-width: 1024px) {
+@media (min-width: 922px) and (max-width: 1440px) {
+    ul.menu > li a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1180px) {
     ul.sub-menu li a {
         width: 140px;
     }
 }
-@media (min-width: 1180px) {
+@media (min-width: 1180px) and (max-width: 1440px) {
     ul.sub-menu li a {
-        width: 180px;
+        width: 200px;
     }
 }
-@media (min-width: 1440px) {
-    ul.sub-menu li a {
-        width: 240px;
-    }
-}
-@media (min-width: 1600px) {
+@media (min-width: 1440px){
     ul.sub-menu li a {
         width: auto;
+        font-size: 16px;
     }
 }
+

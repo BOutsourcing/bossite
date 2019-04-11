@@ -1,0 +1,117 @@
+@media (max-width: 992px) {
+    .header {
+        padding: 0 0 0 65px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        z-index: 10;
+        height: 111px;
+    }
+    .header .logo {
+        padding-top:20px;
+        width: 168px;
+        display: block;
+    }
+    .header .logo-sm {
+        display: none;
+        padding-top:20px;
+        width: 168px;
+    }
+    .header.sm-active .logo-sm {
+        display: block;
+    }
+    .header.sm-active .logo {
+        display: none;
+    }
+    .header.sm-active {
+        position: fixed;
+        top: 0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        z-index: 9000;
+        background-color: #232747;
+        height: 100vh;
+    }
+    .header.sm-active .menu {
+        display: block;
+    }
+    .menu-burger {
+        font-size: 44px;
+        background-color: #19E69B;
+        color: #232747;
+        padding: 32px;
+        display: inline-block;
+        height: 111px;
+        position: relative;
+        z-index: 9999;
+        /*display: none;*/
+    }
+    .header.sm-active .menu-burger {
+        background-color: transparent;
+        color: #19E69B;
+    }
+    .menu {
+        display: none;
+        color: white;
+        margin-left:-65px !important;
+    }
+    ul.menu li.active > a{
+        background-color: #f3f5fd;
+        color: #242F4E;
+    }
+    ul.menu li.active .sub-menu{
+        display: block;
+        left: 50%;
+        right: 0;
+        /*transition: all 2s linear;*/
+    }
+    ul.menu li a{
+        padding:30px 0 30px 65px;
+        display: block;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #748494;
+    }
+    ul.menu li {
+        display: block;
+        text-align: left;
+        position: relative;
+    }
+    ul.menu.row {
+        /*display: block;*/
+        margin: 0;
+    }
+    .sub-menu {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        right: -50%;
+        bottom: 0;
+        display: none;
+        background-color: #f3f5fd;
+        color: #242F4E;
+        z-index: 9004;
+    }
+    ul.menu li ul.sub-menu li:first-child {
+        margin-top: 116px;
+    }
+    ul.menu li ul.sub-menu li img {
+        height: 40px;
+        width: 40px;
+    }
+    ul.menu li ul.sub-menu li a {
+        display: inline-block;
+        vertical-align: top;
+        padding: 12px 0 0 20px;
+        font-size: 14px;
+    }
+    ul.menu li ul.sub-menu li {
+        margin: 40px;
+    }
+
+}

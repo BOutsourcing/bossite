@@ -32,9 +32,11 @@
 
         <link rel="stylesheet" type="text/css" href="/css/fonts.css">
         <link rel="stylesheet" href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/vendor/components/font-awesome/css/fontawesome-all.css">
         <link rel="stylesheet" type="text/css" href="/css/reset.css">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="stylesheet" type="text/css" href="/css/header.css">
+        <link rel="stylesheet" type="text/css" href="/css/header-sm.css">
         <link rel="stylesheet" type="text/css" href="/css/home.css">
         <link rel="stylesheet" type="text/css" href="/css/footer.css">
     </head>
@@ -44,17 +46,23 @@
                 <div class="col-4">
                     <a href="/" data-target="header">
                         <img class="logo" src="/img/logo.png" alt="Business Outsourcing Services">
+                        <img class="logo-sm" src="/img/logo-negativ.svg" alt="Business Outsourcing Services">
                     </a>
                 </div>
-                <div class="col-8">
+                <div class="col-8 d-lg-none text-right">
+                    <div class="menu-burger" data-activate-menu>
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div class="col-lg-8 text-right">
                     <div id="menu" class="menu-container">
-                        <ul class="row text-center menu">
+                        <ul class="row text-center menu" >
                             <li>
                                 <a href="/" data-target="header">Home</a>
                             </li>
-                            <li>
-                                <a href="#" data-target="services">Services</a>
-                                <ul class="sub-menu text-left" data-submenu>
+                            <li data-submenu>
+                                <a href="#" data-target="services" >Services</a>
+                                <ul class="sub-menu text-left">
                                     <li>
                                         <img src="/img/menu/dedicated-teams.svg">
                                         <a href="/services/dedicated-teams.html" data-target="dedicated-teams">Dedicated
@@ -83,7 +91,7 @@
                                 <a href="#">Blog</a>
                             </li>
                             <li >
-                                <a href="#" data-target="careers" class="d-block">Careers</a>
+                                <a href="/careers.html" data-target="careers" class="d-block">Careers</a>
                                 <a href="#" data-target="contactUs" class="d-block">Contact Us</a>
                             </li>
                         </ul>
@@ -387,6 +395,7 @@
         <!-- Scripts -->
         <script src="/vendor/components/jquery/jquery.min.js"></script>
         <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/header.js"></script>
         <script type="text/javascript">
             // Google Analytics
 

@@ -60,6 +60,7 @@ ul.open-positions li {
 }
 div.dotted-background {
     position: relative;
+    overflow-x: hidden;
 }
 img.dotted-background {
     position: absolute;
