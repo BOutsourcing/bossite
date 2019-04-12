@@ -9,15 +9,16 @@
         background-color: #ffffff;
         z-index: 10;
         height: 111px;
+        transition: background-color 0.1s 0.1s, height 0.1s linear;
     }
     .header .logo {
-        padding-top:20px;
+        padding-top: 30px;
         width: 168px;
         display: block;
     }
     .header .logo-sm {
         display: none;
-        padding-top:20px;
+        padding-top: 30px;
         width: 168px;
     }
     .header.sm-active .logo-sm {
@@ -35,6 +36,7 @@
         z-index: 9000;
         background-color: #232747;
         height: 100vh;
+        transition: background-color 0.1s, height 0.1s 0.1s linear;
     }
     .header.sm-active .menu {
         display: block;
