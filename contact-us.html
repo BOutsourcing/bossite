@@ -42,21 +42,21 @@
     </head>
     <body>
     <header class="container-fluid header">
-        <div id="header" class="row">
+        <div id="header" class="row display-flex align-items-center header-container">
             <div class="col-4">
                 <a href="/" data-target="header">
                     <img class="logo" src="/img/logo.png" alt="Business Outsourcing Services">
                     <img class="logo-sm" src="/img/logo-negativ.svg" alt="Business Outsourcing Services">
                 </a>
             </div>
-            <div class="col-8 d-lg-none text-right">
+            <div class="col-8 d-lg-none text-right h-100 d-block">
                 <div class="menu-burger cursor-pointer" data-activate-menu>
                     <i class="fas fa-bars"></i>
                 </div>
             </div>
-            <div class="col-lg-8 text-right">
+            <div class="col-lg-8 text-right h-100">
                 <div id="menu" class="menu-container">
-                    <ul class="row text-center menu" >
+                    <ul class="row text-center menu h-100">
                         <li>
                             <a href="/" data-target="header">Home</a>
                         </li>
@@ -64,24 +64,29 @@
                             <a href="#" data-target="services" >Services</a>
                             <ul class="sub-menu text-left">
                                 <li>
-                                    <img src="/img/menu/dedicated-teams.svg">
-                                    <a href="/services/dedicated-teams.html" data-target="dedicated-teams">Dedicated
-                                        Teams</a>
-                                </li
-                                ><li>
-                                <img src="/img/menu/design.svg">
-                                <a href="/services/design.html" data-target="dedicated-teams">Design</a>
-                            </li
-                            ><li>
-                                <img src="/img/menu/development.svg">
-                                <a href="/services/product-development.html" data-target="dedicated-teams">Product
-                                    Development</a>
-                            </li
-                            ><li>
-                                <img src="/img/menu/technical.svg">
-                                <a href="/services/technical_&_customer_support.html" data-target="dedicated-teams">Technical
-                                    & Customer Support</a>
-                            </li>
+                                    <a href="/services/dedicated-teams.html" class="h-100" data-target="dedicated-teams">
+                                        <img src="/img/menu/dedicated-teams.svg">
+                                        Dedicated Teams
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/services/design.html" class="h-100" data-target="design">
+                                        <img src="/img/menu/design.svg">
+                                        Design
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/services/product-development.html" class="h-100" data-target="development">
+                                        <img src="/img/menu/development.svg">
+                                        Product Development
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/services/technical_&_customer_support.html" class="h-100" data-target="technical_&_customer_support">
+                                        <img src="/img/menu/technical.svg">
+                                        Technical & Customer Support
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li>
@@ -178,89 +183,87 @@
             </div>
         </div>
 
-        <footer class="container-fluid">
-            <div class="row">
-                <div class="col-7">
-                    <div class="row p-5">
-                        <div class="col-4">
-                            <img class="align-self-start mr-3 pr-5" src="/img/logo-negativ.svg" alt="Boutsourcing">
-                        </div>
-                        <div class="col-8">
-                            <h3>Business outsourcing services</h3>
-                            <address>Omladinskih brigada 21<br>
-                                Bruno invest Office Building | Floor II<br>
-                                11070 Novi Beograd, Sebia<br>
-                                <a href="mailto:office@boutsourcing.com">office@boutsourcing.com</a>
-                            </address>
-                            <div class="row my-3">
-                                <div class="col-auto pr-4">
-                                    <a href="#">
-                                        <img src="/img/footer/linkedin.svg">
-                                    </a>
-                                </div>
-                                <div class="col-auto pr-4">
-                                    <a href="#">
-                                        <img src="/img/footer/twitter.svg">
-                                    </a>
-                                </div>
-                                <div class="col-auto pr-4">
-                                    <a href="#">
-                                        <img src="/img/footer/instagram.svg">
-                                    </a>
-                                </div>
-                                <div class="col-auto">
-                                    <a href="#">
-                                        <img src="/img/footer/facebook.svg">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row my-3">
-                                <span class="copyright">© Boutsourcing d.o.o. 2019 | All rights reserved.</span>
-                            </div>
-                        </div>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-7">
+                <div class="row p-5">
+                    <div class="col-4">
+                        <img class="align-self-start mr-3 pr-5" src="/img/logo-negativ.svg" alt="Boutsourcing">
                     </div>
-                </div>
-                <div class="col-5">
-                    <div class="row p-5">
-                        <div class="col-8">
-                            <ul class="footer-menu">
-                                <li>
-                                    <a href="#">Services</a>
-                                    <ul class="footer-submenu">
-                                        <li>
-                                            <a href="/services/dedicated-teams.html">Dedicated Teams</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Design</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Product Development</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Technical & Customer Support</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Design</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                    <div class="col-8">
+                        <h3>Business outsourcing services</h3>
+                        <address>Omladinskih brigada 21<br>
+                            Bruno invest Office Building | Floor II<br>
+                            11070 Novi Beograd, Sebia<br>
+                            <a href="mailto:office@boutsourcing.com">office@boutsourcing.com</a>
+                        </address>
+                        <div class="row my-3">
+                            <div class="col-auto pr-4">
+                                <a href="https://www.linkedin.com/company/business-outsourcing-services-doo/">
+                                    <img src="/img/footer/linkedin.svg">
+                                </a>
+                            </div>
+                            <div class="col-auto pr-4">
+                                <a href="https://twitter.com/boutsourcing">
+                                    <img src="/img/footer/twitter.svg">
+                                </a>
+                            </div>
+                            <div class="col-auto pr-4">
+                                <a href="http://instagram.com/boutsourcing">
+                                    <img src="/img/footer/instagram.svg">
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://www.facebook.com/pages/Business-Outsourcing-Services-doo/164089493616696">
+                                    <img src="/img/footer/facebook.svg">
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <ul class="footer-menu">
-                                <li>
-                                    <a href="#">References</a>
-                                    <a href="#">Blog</a>
-                                    <a href="#">Careers</a>
-                                    <a href="#">Contact us</a>
-                                </li>
-                            </ul>
+                        <div class="row my-3">
+                            <span class="copyright">© Boutsourcing d.o.o. 2019 | All rights reserved.</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Scripts -->
+            <div class="col-5">
+                <div class="row p-5">
+                    <div class="col-8">
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="#">Services</a>
+                                <ul class="footer-submenu">
+                                    <li>
+                                        <a href="/services/dedicated-teams.html">Dedicated Teams</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/design.html">Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/product-development.html">Product Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/technical_&_customer_support.html">Technical & Customer Support</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="/references.html">References</a>
+                                <a href="/about-us.html">About Us</a>
+                                <a href="/careers.html">Careers</a>
+                                <a href="/contact-us.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
         <script src="/vendor/components/jquery/jquery.min.js"></script>
         <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="/js/header.js"></script>
