@@ -24,7 +24,7 @@
         <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
         <link rel="manifest" href="/favicon/manifest.json">
         <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#0f3458">
-        <meta name="msapplication-TileColor" content="http://localhost:8033/img/about-us/carousel/offices-4.png#0f3458">
+        <meta name="msapplication-TileColor" content="#0f3458">
         <meta name="msapplication-TileImage" content="/mstile-144x144.png">
         <meta name="theme-color" content="#0f3458">
         <meta name="msapplication-navbutton-color" content="#0f3458">
@@ -32,30 +32,32 @@
 
         <link rel="stylesheet" type="text/css" href="/css/fonts.css">
         <link rel="stylesheet" href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/vendor/components/font-awesome/css/fontawesome-all.css">
         <link rel="stylesheet" type="text/css" href="/css/reset.css">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="stylesheet" type="text/css" href="/css/header.css">
+        <link rel="stylesheet" type="text/css" href="/css/header-sm.css">
         <link rel="stylesheet" type="text/css" href="/css/product.css">
         <link rel="stylesheet" type="text/css" href="/css/carousel.css">
         <link rel="stylesheet" type="text/css" href="/css/footer.css">
     </head>
     <body>
     <header class="container-fluid header">
-        <div id="header" class="row">
+        <div id="header" class="row display-flex align-items-center header-container">
             <div class="col-4">
                 <a href="/" data-target="header">
                     <img class="logo" src="/img/logo.png" alt="Business Outsourcing Services">
                     <img class="logo-sm" src="/img/logo-negativ.svg" alt="Business Outsourcing Services">
                 </a>
             </div>
-            <div class="col-8 d-lg-none text-right">
+            <div class="col-8 d-lg-none text-right h-100 d-block">
                 <div class="menu-burger cursor-pointer" data-activate-menu>
                     <i class="fas fa-bars"></i>
                 </div>
             </div>
-            <div class="col-lg-8 text-right">
+            <div class="col-lg-8 text-right h-100">
                 <div id="menu" class="menu-container">
-                    <ul class="row text-center menu" >
+                    <ul class="row text-center menu h-100">
                         <li>
                             <a href="/" data-target="header">Home</a>
                         </li>
@@ -63,24 +65,29 @@
                             <a href="#" data-target="services" >Services</a>
                             <ul class="sub-menu text-left">
                                 <li>
-                                    <img src="/img/menu/dedicated-teams.svg">
-                                    <a href="/services/dedicated-teams.html" data-target="dedicated-teams">Dedicated
-                                        Teams</a>
-                                </li
-                                ><li>
-                                <img src="/img/menu/design.svg">
-                                <a href="/services/design.html" data-target="dedicated-teams">Design</a>
-                            </li
-                            ><li>
-                                <img src="/img/menu/development.svg">
-                                <a href="/services/product-development.html" data-target="dedicated-teams">Product
-                                    Development</a>
-                            </li
-                            ><li>
-                                <img src="/img/menu/technical.svg">
-                                <a href="/services/technical_&_customer_support.html" data-target="dedicated-teams">Technical
-                                    & Customer Support</a>
-                            </li>
+                                    <a href="/services/dedicated-teams.html" class="h-100" data-target="dedicated-teams">
+                                        <img src="/img/menu/dedicated-teams.svg">
+                                        Dedicated Teams
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/services/design.html" class="h-100" data-target="design">
+                                        <img src="/img/menu/design.svg">
+                                        Design
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/services/product-development.html" class="h-100" data-target="development">
+                                        <img src="/img/menu/development.svg">
+                                        Product Development
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/services/technical_&_customer_support.html" class="h-100" data-target="technical_&_customer_support">
+                                        <img src="/img/menu/technical.svg">
+                                        Technical & Customer Support
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li>
@@ -442,9 +449,11 @@
             </div>
         </div>
     </footer>
+
         <!-- Scripts -->
         <script src="/vendor/components/jquery/jquery.min.js"></script>
         <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/header.js"></script>
         <script src="/js/carousel.js"></script>
         <script type="text/javascript">
             // Google Analytics
