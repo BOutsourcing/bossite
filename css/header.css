@@ -1,3 +1,7 @@
+.header-container {
+    height: 100%;
+}
+
 @media (min-width: 992px) {
     .header {
         padding: 0 0 0 65px;
@@ -8,10 +12,9 @@
         box-sizing: border-box;
         background-color: #ffffff;
         z-index: 10;
-        height: 111px;
+        height: 110px;
     }
     .header .logo {
-        padding-top: 30px;
         width: 168px;
         display: block;
     }
@@ -26,30 +29,29 @@
     }
     ul.menu > li {
         cursor: pointer;
-        padding-top: 50px;
-        padding-bottom: 20px;
         position: relative;
     }
-    ul.menu > li:last-child {
-        padding-top: 20px;
-    }
     ul.menu > li > a {
+        padding: 20px 0;
         font-size: 16px;
         font-weight: 600;
         color: inherit;
         text-decoration: none;
         text-transform: uppercase;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
     ul.menu li {
         width: 20%;
+        height: 100%;
     }
-    ul.menu > li:last-child a:first-child {
-        padding-bottom: 20px;
-        border-bottom: 1px solid #C7CFDF;
+    ul.menu > li:last-child a {
+        height: 50%;
     }
     ul.menu > li:last-child a:last-child {
-        padding-top: 20px;
+        border-top: 1px solid #C7CFDF;
     }
     ul.menu li:hover .sub-menu,
     .sub-menu:hover {
@@ -58,11 +60,14 @@
     /* Sub-menu */
     .sub-menu {
         position: absolute;
-        top: 111px;
+        top: 100%;
+        left: 0;
         border-top: 1px solid #C7CFDF;
         width: 400%;
         z-index: 10;
         background-color: #FFFFFF;
+        display: flex;
+        flex-wrap: wrap;
         transform: scaleY(0);
         transform-origin: 0 0;
         transition: all .2s ease-in-out;
@@ -72,7 +77,7 @@
         display: inline-block;
         width: 50%;
         box-sizing: border-box;
-        padding: 30px 20px;
+        padding: 20px;
         vertical-align: middle;
         height: 105px;
         position: relative;
@@ -113,11 +118,11 @@
         font-weight: 400;
         color: black;
         text-transform: uppercase;
-        line-height: 1.2rem;
+        display: flex;
+        align-items: center;
     }
 
     ul.sub-menu li a {
-        width: 130px;
         font-size: 12px;
     }
     ul.sub-menu li img {
@@ -132,20 +137,8 @@
         font-size: 14px;
     }
 }
-
-@media (min-width: 992px) and (max-width: 1180px) {
-    ul.sub-menu li a {
-        width: 140px;
-    }
-}
-@media (min-width: 1180px) and (max-width: 1440px) {
-    ul.sub-menu li a {
-        width: 200px;
-    }
-}
 @media (min-width: 1440px){
     ul.sub-menu li a {
-        width: auto;
         font-size: 16px;
     }
 }

@@ -42,21 +42,21 @@
 </head>
 <body>
 <header class="container-fluid header">
-    <div id="header" class="row">
+    <div id="header" class="row display-flex align-items-center header-container">
         <div class="col-4">
             <a href="/" data-target="header">
                 <img class="logo" src="/img/logo.png" alt="Business Outsourcing Services">
                 <img class="logo-sm" src="/img/logo-negativ.svg" alt="Business Outsourcing Services">
             </a>
         </div>
-        <div class="col-8 d-lg-none text-right">
+        <div class="col-8 d-lg-none text-right h-100 d-block">
             <div class="menu-burger cursor-pointer" data-activate-menu>
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-        <div class="col-lg-8 text-right">
+        <div class="col-lg-8 text-right h-100">
             <div id="menu" class="menu-container">
-                <ul class="row text-center menu" >
+                <ul class="row text-center menu h-100">
                     <li>
                         <a href="/" data-target="header">Home</a>
                     </li>
@@ -64,24 +64,29 @@
                         <a href="#" data-target="services" >Services</a>
                         <ul class="sub-menu text-left">
                             <li>
-                                <img src="/img/menu/dedicated-teams.svg">
-                                <a href="/services/dedicated-teams.html" data-target="dedicated-teams">Dedicated
-                                    Teams</a>
-                            </li
-                            ><li>
-                            <img src="/img/menu/design.svg">
-                            <a href="/services/design.html" data-target="dedicated-teams">Design</a>
-                        </li
-                        ><li>
-                            <img src="/img/menu/development.svg">
-                            <a href="/services/product-development.html" data-target="dedicated-teams">Product
-                                Development</a>
-                        </li
-                        ><li>
-                            <img src="/img/menu/technical.svg">
-                            <a href="/services/technical_&_customer_support.html" data-target="dedicated-teams">Technical
-                                & Customer Support</a>
-                        </li>
+                                <a href="/services/dedicated-teams.html" class="h-100" data-target="dedicated-teams">
+                                    <img src="/img/menu/dedicated-teams.svg">
+                                    Dedicated Teams
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/services/design.html" class="h-100" data-target="design">
+                                    <img src="/img/menu/design.svg">
+                                    Design
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/services/product-development.html" class="h-100" data-target="development">
+                                    <img src="/img/menu/development.svg">
+                                    Product Development
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/services/technical_&_customer_support.html" class="h-100" data-target="technical_&_customer_support">
+                                    <img src="/img/menu/technical.svg">
+                                    Technical & Customer Support
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li>
@@ -293,6 +298,7 @@
         </div>
     </div>
 </div>
+
 <footer class="container-fluid">
     <div class="row">
         <div class="col-7">
@@ -372,6 +378,7 @@
         </div>
     </div>
 </footer>
+
 <!-- Scripts -->
 <script src="/vendor/components/jquery/jquery.min.js"></script>
 <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
