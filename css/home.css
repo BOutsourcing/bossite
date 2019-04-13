@@ -63,14 +63,21 @@
     padding-right: 55px;
     margin-top: 50px;
 }
-.portfolio-boxes .col-12 {
-    margin-bottom: 20px;
-}
 .portfolio-box, .portfolio-box .subtitle {
     color: #ffffff;
 }
 .portfolio-box {
-    padding: 75px 80px 55px;
+    height: 412px;
+    padding: 75px 60px 55px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.portfolio-box .pos-abs-bottom {
+    padding: 0 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 55px;
 }
 .portfolio-monitoring-tool {
     background: url("../img/screen/large/employee-monitoring-tool.png") no-repeat;
@@ -117,7 +124,7 @@
     position: relative;
     overflow: hidden;
 }
-.video .info {
+.video-box .info {
     position: absolute;
     top: 0;
     right: 0;
@@ -131,6 +138,13 @@
     line-height: 40px;
     transform: translateY(100%);
     transition: transform 0.1s linear;
+}
+.video-box .info .quote-icon {
+    font-size: 30px;
+    color: #50E29D;
+    position: absolute;
+    top: -10px;
+    left: -30px;
 }
 .video:hover .info {
     transform: translateY(0);
@@ -158,7 +172,7 @@
 .schedule-consultation h1 {
     margin-bottom: 30px;
 }
-.schedule-consultation a {
+.schedule-consultation-a {
     margin-top: 50px;
     color: #243647;
     font-size: 22px;
@@ -170,4 +184,219 @@
 .contact-form form {
     padding: 80px 100px;
     margin-top: 45px;
+}
+
+@media (max-width: 1440px) {
+    .portfolio-box {
+        padding: 50px 40px 40px;
+    }
+    .portfolio-box .pos-abs-bottom {
+        bottom: 40px;
+    }
+}
+@media (max-width: 1200px) {
+    .portfolio-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .video-box .info {
+        padding: 20px 60px;
+        font-size: 26px;
+        line-height: 36px;
+        transform: translateY(0);
+    }
+    .video-box .info .quote-icon {
+        font-size: 26px;
+        left: -20px;
+    }
+}
+@media (max-width: 992px) {
+    .section-lead {
+        height: 350px;
+    }
+    .section-lead-info-box,
+    .section-lead-hero,
+    .services-info,
+    .section-portfolio,
+    .section-schedule-consultation {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-lead-info-box, .section-lead-hero {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .section-lead-info-box .info {
+        width: auto;
+        margin-bottom: 80px;
+    }
+    .section-lead-hero .info {
+        width: auto;
+    }
+
+    .portfolio-boxes,
+    .video-boxes {
+        padding: 0;
+    }
+    .portfolio-box {
+        padding: 75px 60px 55px;
+        margin-bottom: 40px;
+    }
+    .portfolio-box .pos-abs-bottom {
+        bottom: 55px;
+    }
+
+    .video-box {
+        margin-bottom: 50px;
+    }
+
+    .section-what-clients-say,
+    .section-contact {
+        margin-top: 50px;
+    }
+    .section-schedule-consultation {
+        margin-top: 0;
+    }
+    .schedule-consultation {
+        text-align: center;
+    }
+}
+@media (max-width: 767px) {
+    .section-lead-hero {
+        height: 250px;
+    }
+    .section-lead-info-box, .section-lead-hero {
+        padding: 25px 30px;
+    }
+    .section-lead-info-box {
+        height: auto;
+        padding-bottom: 50px;
+        position: relative;
+    }
+    .section-lead-info-box .info {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .section-lead-info-box .btn {
+        position: absolute;
+        right: 0;
+        bottom: -22px;
+        left: 0;
+        width: 140px;
+        margin: auto;
+    }
+    .section-lead-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-lead-hero .info {
+        width: 250px;
+        text-align: center;
+    }
+    .section-lead-hero .title {
+        font-size: 32px;
+        line-height: 46px;
+        margin-bottom: 0;
+    }
+
+    .section-services,
+    .section-portfolio {
+        margin-top: 50px;
+    }
+    .services-info {
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    .service-box {
+        padding: 35px 40px ;
+    }
+    .service-box .icon {
+        margin-bottom: 20px;
+    }
+    .service-box .icon-dedicated-teams {
+        width: 30px;
+    }
+    .service-box .icon-product-development {
+        width: 38px;
+        margin-top: 4px;
+    }
+    .service-box .icon-design {
+        width: 40px;
+        margin-top: 4px;
+        margin-bottom: 24px;
+    }
+    .service-box .icon-technical-and-customer-support {
+        width: 38px;
+    }
+    .service-box .subtitle {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 16px;
+    }
+
+    .portfolio-boxes,
+    .video-boxes {
+        margin-top: 0;
+    }
+    .portfolio-box {
+        height: 250px;
+        padding: 50px 35px;
+        margin-bottom: 20px;
+    }
+    .portfolio-box .subtitle {
+        margin-bottom: 0;
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .portfolio-box hr {
+        margin-bottom: 10px;
+    }
+    .portfolio-box .pos-abs-bottom {
+        bottom: 20px;
+    }
+
+    .section-what-clients-say {
+        padding-top: 0;
+        border-top: none;
+    }
+    .video-box .info {
+        padding: 0 20px;
+        margin-top: 20px;
+        position: relative;
+        background-color: transparent;
+        font-size: 14px;
+        color: #243647;
+        line-height: 20px;
+    }
+    .video {
+         margin-bottom: 15px;
+     }
+    .video-box .subtitle {
+        padding: 0 20px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .video-box .info .quote-icon {
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 30px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .schedule-consultation h1 {
+        margin-bottom: inherit;
+        text-align: center;
+    }
+    .schedule-consultation-a {
+        font-size: 16px;
+        line-height: 22px;
+        border-bottom-width: 5px;
+    }
+    .brainstorming img {
+        margin-bottom: 50px;
+    }
 }
