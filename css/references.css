@@ -1,6 +1,9 @@
 .section-lead {
     height: 500px;
 }
+.section-lead .info {
+    padding: 10px 20px;
+}
 .section-lead .info h1 {
     margin-top: 130px;
     margin-bottom: 50px;
@@ -28,7 +31,7 @@
 .section-clients .title {
     margin-bottom: 60px;
 }
-.row-clients {
+.row-clients > [class*='col-'] {
     margin-bottom: 80px;
 }
 .client-box {
@@ -83,11 +86,12 @@
     position: relative;
 }
 .pos-abs-bottom {
-    position: absolute;
-    left: 30px;
-    right: 0;
-    bottom: 20px;
-}
+     position: absolute;
+     left: 0;
+     right: 0;
+     bottom: 20px;
+     padding: 0 30px;
+ }
 .client-box .name {
     margin-bottom: 40px;
     font-size: 46px;
@@ -109,11 +113,87 @@
         padding-right: 50px;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
+    .client-box .info,
+    .pos-abs-bottom {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .section-lead {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .section-lead-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-lead .info h1 {
+        margin: 0;
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .lead-info {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    .lead-info p {
+        color: #243647;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-clients {
+        margin-top: 50px;
+    }
+    .section-clients .title {
+        margin-bottom: 20px;
+        text-align: left;
+    }
     .row-clients {
-        margin-bottom: 0;
+        margin-left: -10px;
+        margin-right: -10px;
     }
     .row-clients > [class*='col-'] {
-        margin-bottom: 80px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .client-box .preview {
+        height: 140px;
+    }
+    .preview .sticky-label {
+        height: 26px;
+        padding: 5px 10px;
+        font-size: 12px;
+        line-height: 16px;
+        bottom: -13px;
+        left: 10px;
+    }
+    .client-box .info {
+        height: 150px;
+        padding-top: 30px;
+    }
+    .client-box .name {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .client-box .description {
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .client-box .info,
+    .pos-abs-bottom {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

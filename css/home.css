@@ -73,7 +73,7 @@
     position: relative;
 }
 .portfolio-box .pos-abs-bottom {
-    padding: 0 20px;
+    padding: 0 10px;
     position: absolute;
     left: 0;
     right: 0;
@@ -341,8 +341,9 @@
         margin-top: 0;
     }
     .portfolio-box {
-        height: 250px;
-        padding: 50px 35px;
+        min-height: 250px;
+        height: auto;
+        padding: 50px 20px 80px;
         margin-bottom: 20px;
     }
     .portfolio-box .subtitle {
