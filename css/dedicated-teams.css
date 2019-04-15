@@ -52,6 +52,11 @@ ul.key-benefits-list li {
     position: relative;
     height: 12rem;
 }
+@media (max-width: 992px) {
+    ul.key-benefits-list li {
+        height: 300px;
+    }
+}
 ul.key-benefits-list li:before {
     content:"";
     position: absolute;
@@ -100,4 +105,20 @@ ul.key-benefits-list li.completed:before {
     color: #243647;
     text-transform: uppercase;
     padding-bottom: 5px;
+}
+@media (max-width: 550px) {
+    .check-mark {
+        display: none;
+    }
+    ul.key-benefits-list li:before {
+        display: none;
+    }
+    ul.key-benefits-list .media-body {
+        margin:0 !important;
+        padding:0 !important;
+    }
+    ul.key-benefits-list li {
+        height: auto;
+        padding: 20px 0;
+    }
 }
