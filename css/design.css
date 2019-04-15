@@ -98,3 +98,25 @@ img.illustration.hidden {
         width: 40%;
     }
 }
+@media (max-width: 550px) {
+    .check-mark {
+        display: none;
+    }
+    ul.check_list li:after {
+        display: none;
+    }
+    ul.check_list .media-body {
+        margin:0 !important;
+        padding:0 !important;
+    }
+    ul.check_list li {
+        height: auto;
+        padding: 20px 0;
+    }
+    .key-benefits-section {
+        height: auto;
+    }
+    .key-benefits-section > div {
+        padding-left:0 !important;
+    }
+}
