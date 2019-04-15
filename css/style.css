@@ -125,12 +125,16 @@ textarea.form-control, textarea.form-control:focus {
     padding: 8px;
 }
 .section-link {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
     text-transform: uppercase;
     border-bottom: 8px solid #19E69B;
-    display: inline-block;
+    display: inline;
 }
-.section-link > * {
-    margin: 0;
+.section-link,
+.section-link:hover {
+    color: #243647;
 }
 
 /**
@@ -178,6 +182,9 @@ a.box-link:hover .box:before {
 .cursor-pointer {
     cursor: pointer;
 }
+.section-lead {
+    margin: 0;
+}
 /**
 Common END
  */
@@ -194,5 +201,10 @@ Common END
         padding: 12px 40px;
         font-size: 14px;
         line-height: 20px;
+    }
+    .section-link {
+        font-size: 16px;
+        line-height: 24px;
+        border-bottom-width: 4px;
     }
 }
