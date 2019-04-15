@@ -198,9 +198,13 @@ Common END
         line-height: 32px;
     }
     .btn-primary {
-        padding: 12px 40px;
+        padding: 12px 28px;
         font-size: 14px;
         line-height: 20px;
+    }
+    .form-control, .form-control:focus {
+        font-size: 14px;
+        line-height: 18px;
     }
     .section-link {
         font-size: 16px;

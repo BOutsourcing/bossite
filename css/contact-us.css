@@ -39,9 +39,6 @@
 .section-info {
     margin-top: 100px;
 }
-.map {
-    margin-bottom: 40px;
-}
 .map iframe {
     width: 100%;
     min-height: 450px;
@@ -55,4 +52,73 @@
     font-size: 16px;
     line-height: 28px;
     color: #243647;
+}
+
+@media (max-width: 767px) {
+    .section-lead {
+        height: 200px;
+        padding: 0;
+    }
+    .section-lead-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-lead .info .title {
+        margin: 0;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .section-lead-info {
+        margin-top: -50px;
+        z-index: 6;
+    }
+    .lead-info {
+        padding: 15px 25px 55px;
+        margin-bottom: 40px;
+    }
+    .lead-info p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #243647;
+        line-height: 24px;
+    }
+
+    .section-contact {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 50px;
+    }
+    .contact-form {
+        padding: 55px 30px 30px;
+    }
+    .form-title {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .section-info {
+        margin-top: 80px;
+    }
+    .section-info .subtitle {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .section-info address {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .section-info .info {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 20px;
+    }
+    .section-info .map {
+        margin-bottom: 0;
+    }
+    .section-info .map iframe {
+        min-height: 280px;
+    }
 }
