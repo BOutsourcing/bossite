@@ -43,15 +43,15 @@
     <body>
     <header class="container-fluid header">
         <div id="header" class="row display-flex align-items-center header-container">
-            <div class="col-4">
-                <a href="/" data-target="header">
-                    <img class="logo" src="/img/logo.png" alt="Business Outsourcing Services">
-                    <img class="logo-sm" src="/img/logo-negativ.svg" alt="Business Outsourcing Services">
+            <div class="col-6 col-lg-4 flex-none">
+                <a href="/" data-target="header" class="logo-container">
+                    <img class="logo flex-none" src="/img/logo.png" alt="Business Outsourcing Services">
+                    <img class="logo-sm flex-none" src="/img/logo-negativ.svg" alt="Business Outsourcing Services">
                 </a>
             </div>
-            <div class="col-8 d-lg-none text-right h-100 d-block">
+            <div class="col-6 col-lg-8 d-lg-none text-right h-100 d-block">
                 <div class="menu-burger cursor-pointer" data-activate-menu>
-                    <i class="fas fa-bars"></i>
+                    <i class="fa fa-bars"></i>
                 </div>
             </div>
             <div class="col-lg-8 text-right h-100">
@@ -60,9 +60,16 @@
                         <li>
                             <a href="/" data-target="header">Home</a>
                         </li>
-                        <li data-submenu>
-                            <a href="#" data-target="services" >Services</a>
+                        <li data-submenu="container">
+                            <a href="#" data-target="services">
+                                Services
+                                <i class="fa fa-chevron-right d-inline-block d-lg-none float-right"></i>
+                            </a>
                             <ul class="sub-menu text-left">
+                                <li class="d-block d-lg-none cursor-pointer lead-li" data-submenu>
+                                    <i class="fa fa-chevron-left d-inline-block"></i>
+                                    Services
+                                </li>
                                 <li>
                                     <a href="/services/dedicated-teams.html" class="h-100" data-target="dedicated-teams">
                                         <img src="/img/menu/dedicated-teams.svg">

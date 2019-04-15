@@ -43,15 +43,15 @@
     <body>
     <header class="container-fluid header">
         <div id="header" class="row display-flex align-items-center header-container">
-            <div class="col-4">
-                <a href="/" data-target="header">
-                    <img class="logo" src="/img/logo.png" alt="Business Outsourcing Services">
-                    <img class="logo-sm" src="/img/logo-negativ.svg" alt="Business Outsourcing Services">
+            <div class="col-6 col-lg-4 flex-none">
+                <a href="/" data-target="header" class="logo-container">
+                    <img class="logo flex-none" src="/img/logo.png" alt="Business Outsourcing Services">
+                    <img class="logo-sm flex-none" src="/img/logo-negativ.svg" alt="Business Outsourcing Services">
                 </a>
             </div>
-            <div class="col-8 d-lg-none text-right h-100 d-block">
+            <div class="col-6 col-lg-8 d-lg-none text-right h-100 d-block">
                 <div class="menu-burger cursor-pointer" data-activate-menu>
-                    <i class="fas fa-bars"></i>
+                    <i class="fa fa-bars"></i>
                 </div>
             </div>
             <div class="col-lg-8 text-right h-100">
@@ -60,9 +60,16 @@
                         <li>
                             <a href="/" data-target="header">Home</a>
                         </li>
-                        <li data-submenu>
-                            <a href="#" data-target="services" >Services</a>
+                        <li data-submenu="container">
+                            <a href="#" data-target="services">
+                                Services
+                                <i class="fa fa-chevron-right d-inline-block d-lg-none float-right"></i>
+                            </a>
                             <ul class="sub-menu text-left">
+                                <li class="d-block d-lg-none cursor-pointer lead-li" data-submenu>
+                                    <i class="fa fa-chevron-left d-inline-block"></i>
+                                    Services
+                                </li>
                                 <li>
                                     <a href="/services/dedicated-teams.html" class="h-100" data-target="dedicated-teams">
                                         <img src="/img/menu/dedicated-teams.svg">
@@ -105,12 +112,20 @@
         </div>
     </header>
 
-        <div class="container-fluid px-0" style="overflow-x: hidden;">
+        <div class="container-fluid px-0">
             <div class="row no-gutters">
                 <div class="col">
                     <div class="row section-lead section-lead-hero">
-                        <div class="col col-lg-10 offset-lg-1 info text-center">
+                        <div class="col-12 col-lg-10 offset-lg-1 info text-center">
                             <h1>References</h1>
+                            <p class="d-none d-md-block">
+                                We are proud to say that we have contributed to a variety of projects as a long-term partner
+                                and helped our customers transform their business and increase their revenue.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row d-block d-md-none">
+                        <div class="col-12 col-lg-10 offset-lg-1 lead-info">
                             <p>
                                 We are proud to say that we have contributed to a variety of projects as a long-term partner
                                 and helped our customers transform their business and increase their revenue.
@@ -130,7 +145,7 @@
             <div class="row display-flex">
                 <div class="col">
                     <div class="row display-flex row-clients">
-                        <div class="col-12 col-lg-4">
+                        <div class="col-6 col-xl-4">
                             <a href="/portfolio/evolution.html" class="d-block box-link">
                                 <div class="client-box">
                                     <div class="box preview evolution">
@@ -140,13 +155,13 @@
                                         <h1 class="name">4Human <br> Evolution</h1>
                                         <div class="pos-abs-bottom">
                                             <h3 class="description">Employee <br> Monitoring Tool</h3>
-                                            <p class="website">www.4human.no</p>
+                                            <p class="website d-none d-md-block">www.4human.no</p>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4">
+                        <div class="col-6 col-xl-4">
                             <a href="#" class="d-block box-link">
                                 <div class="client-box">
                                     <div class="box preview dossier">
@@ -156,13 +171,13 @@
                                         <h1 class="name">Dossier</h1>
                                         <div class="pos-abs-bottom">
                                             <h3 class="description">Competency <br> Management <br> System</h3>
-                                            <p class="website">www.dossiersolutions.com</p>
+                                            <p class="website d-none d-md-block">www.dossiersolutions.com</p>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4">
+                        <div class="col-6 col-xl-4">
                             <a href="/portfolio/appsco.html" class="d-block box-link">
                                 <div class="client-box">
                                     <div class="box preview appsco">
@@ -172,15 +187,13 @@
                                         <h1 class="name">AppsCo</h1>
                                         <div class="pos-abs-bottom">
                                             <h3 class="description">Cloud Identity & <br> Access Management <br> Solution</h3>
-                                            <p class="website">www.appsco.com</p>
+                                            <p class="website d-none d-md-block">www.appsco.com</p>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="row display-flex row-clients">
-                        <div class="col-12 col-lg-4">
+                        <div class="col-6 col-xl-4">
                             <a href="#" class="d-block box-link">
                                 <div class="client-box">
                                     <div class="box preview brocon">
@@ -190,13 +203,13 @@
                                         <h1 class="name">Brocon <br> Solvent</h1>
                                         <div class="pos-abs-bottom">
                                             <h3 class="description">Debt Collection <br> Software</h3>
-                                            <p class="website">www.brocon.no</p>
+                                            <p class="website d-none d-md-block">www.brocon.no</p>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4">
+                        <div class="col-6 col-xl-4">
                             <a href="#" class="d-block box-link">
                                 <div class="client-box">
                                     <div class="box preview club-collaborator">
@@ -206,13 +219,13 @@
                                         <h1 class="name">Club <br> Collaborator</h1>
                                         <div class="pos-abs-bottom">
                                             <h3 class="description">Membership <br> Management <br> Software</h3>
-                                            <p class="website">www.clubcollaborator.com</p>
+                                            <p class="website d-none d-md-block">www.clubcollaborator.com</p>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-lg-4">
+                        <div class="col-6 col-xl-4">
                             <a href="#" class="d-block box-link">
                                 <div class="client-box">
                                     <div class="box preview mysiteshop">
@@ -222,7 +235,7 @@
                                         <h1 class="name">MySiteShop</h1>
                                         <div class="pos-abs-bottom">
                                             <h3 class="description">Website <br> Creation Tool</h3>
-                                            <p class="website">www.mysiteshop.com</p>
+                                            <p class="website d-none d-md-block">www.mysiteshop.com</p>
                                         </div>
                                     </div>
                                 </div>

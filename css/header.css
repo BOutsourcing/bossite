@@ -63,6 +63,7 @@
         top: 100%;
         left: 0;
         border-top: 1px solid #C7CFDF;
+        border-bottom: 1px solid #C7CFDF;
         width: 400%;
         z-index: 10;
         background-color: #FFFFFF;
@@ -83,7 +84,7 @@
         position: relative;
     }
     /* Little circle in the middle*/
-    ul.sub-menu li:nth-child(odd):nth-last-child(n+3):after {
+    ul.sub-menu li:nth-child(even):nth-last-child(n+4):after {
         content: '';
         width: 10px;
         height: 10px;
@@ -96,10 +97,10 @@
         border-radius: 50%;
         box-sizing: border-box;
     }
-    ul.sub-menu li:nth-child(odd){
+    ul.sub-menu li:nth-child(even){
         border-right: 1px solid #C7CFDF;
     }
-    ul.sub-menu li:nth-child(n+3) {
+    ul.sub-menu li:nth-child(n+4) {
         border-top: 1px solid #C7CFDF;
     }
     ul.sub-menu li img,
