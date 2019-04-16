@@ -118,8 +118,27 @@
             <div class="row no-gutters">
                 <div class="col">
                     <div class="row section-lead section-lead-hero">
-                        <div class="col col-lg-10 offset-lg-1 info text-center">
-                            <h2>
+                        <div class="col col-lg-10 offset-lg-1 info text-center d-none d-md-block">
+                            <h2 class="title">
+                                You're an expert in your industry - we are experts in creating on-demand dedicated teams,
+                                bespoke software solutions, and consultancy services.
+                            </h2>
+                            <p>
+                                Our mission is to help you transform your business,
+                                increase your revenue and save time and operating costs.
+                                Through transparent communication, efficient processes
+                                and consultancy we take care of your technology challenges and deliver end-to-end solutions.
+                                We enable you to focus on your business model, expand
+                                and add value by creating an innovative product in your market segment.
+                            </p>
+                        </div>
+                        <div class="col col-lg-10 offset-lg-1 info text-center d-block d-md-none">
+                            <h1 class="title d-inline">About us</h1>
+                        </div>
+                    </div>
+                    <div class="row no-gutters d-block d-md-none">
+                        <div class="col-12 col-lg-10 offset-lg-1 lead-info">
+                            <h2 class="title">
                                 You're an expert in your industry - we are experts in creating on-demand dedicated teams,
                                 bespoke software solutions, and consultancy services.
                             </h2>
@@ -201,7 +220,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 align-self-center">
+                <div class="col-12 col-lg-6 align-self-center d-none d-lg-block">
                     <div>
                         <img src="/img/about-us/core-values.svg" alt="Core Values">
                     </div>
@@ -218,23 +237,23 @@
             <div class="row no-gutters display-flex">
                 <div class="col-12 col-lg-6">
                     <div class="row no-gutters display-flex">
-                        <div class="col-12 col-md-6">
+                        <div class="col-6">
                             <a href="/services/dedicated-teams.html" class="d-block">
-                                <div class="service-box h-100">
+                                <div class="service-box h-100 border-left-n">
                                     <img src="img/services/dedicated-teams.svg"
                                          alt="Dedicated Teams"
-                                         class="icon">
-                                    <h4>Dedicated Teams</h4>
+                                         class="icon icon-dedicated-teams">
+                                    <h4 class="subtitle">Dedicated Teams</h4>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-6">
                             <a href="/services/product-development.html" class="d-block">
                                 <div class="service-box h-100">
                                     <img src="img/services/product-development.svg"
                                          alt="Product development"
                                          class="icon icon-product-development">
-                                    <h4>Product development</h4>
+                                    <h4 class="subtitle">Product development</h4>
                                 </div>
                             </a>
                         </div>
@@ -242,23 +261,23 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="row no-gutters display-flex">
-                        <div class="col-12 col-md-6">
+                        <div class="col-6">
                             <a href="/services/design.html" class="d-block">
-                                <div class="service-box h-100">
+                                <div class="service-box h-100 border-top-n border-left-n">
                                     <img src="img/services/design.svg"
                                          alt="Design"
                                          class="icon icon-design">
-                                    <h4>Design</h4>
+                                    <h4 class="subtitle">Design</h4>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-6">
                             <a href="/services/technical_&_customer_support.html" class="d-block">
-                                <div class="service-box h-100">
+                                <div class="service-box h-100 border-top-n">
                                     <img src="img/services/technical-and-customer-support.svg"
                                          alt="Technical & customer support"
                                          class="icon icon-technical-and-customer-support">
-                                    <h4>Technical & customer support</h4>
+                                    <h4 class="subtitle">Technical & customer support</h4>
                                 </div>
                             </a>
                         </div>
@@ -274,10 +293,10 @@
                 </div>
             </div>
             <div class="row display-flex">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-sm-6">
                     <div class="row display-flex">
                         <div class="col-12 col-md-6">
-                            <div class="profile text-center">
+                            <div class="profile text-center border-top-xs-none">
                                 <img src="/img/about-us/founder.png" alt="Marko Jevtovic">
                                 <h4 class="name">Marko Jevtovic</h4>
                                 <h4 class="position">Founder and CEO</h4>
@@ -292,7 +311,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-sm-6">
                     <div class="row display-flex">
                         <div class="col-12 col-md-6">
                             <div class="profile text-center">
@@ -319,7 +338,7 @@
                     <h1 class="title text-center">Offices</h1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="col-12">
                     <div id="carouselComponent" class="carousel slide"
                          data-ride="carousel">
@@ -381,10 +400,13 @@
         <div class="row">
             <div class="col-12 col-lg-7">
                 <div class="row p-5">
-                    <div class="col-4">
+                    <div class="col-lg-4 d-none d-lg-block">
                         <img class="align-self-start mr-3 pr-5" src="/img/logo-negativ.svg" alt="Boutsourcing">
                     </div>
-                    <div class="col-8">
+                    <div class="col-12 d-lg-none pb-5 text-left">
+                        <img src="/img/logo-negativ.svg" alt="Boutsourcing">
+                    </div>
+                    <div class="col-12 col-lg-8">
                         <h3>Business outsourcing services</h3>
                         <address>Omladinskih brigada 21<br>
                             Bruno invest Office Building | Floor II<br>
