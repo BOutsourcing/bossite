@@ -116,16 +116,16 @@
             <div class="row no-gutters">
                 <div class="col">
                     <div class="row section-lead section-lead-hero">
-                        <div class="col col-lg-8 offset-lg-2 info text-center">
+                        <div class="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 info text-center">
                             <h1 class="title">Contact Us</h1>
-                            <p>
+                            <p class="d-none d-md-block">
                                 With over 7 years of experience in providing software services
                                 across various sectors of the IT industry,
                                 we don't just build software - we create strong and lasting synergies with our clients,
                                 helping them build their businesses on technology.
                             </p>
-                            <a href="" class="section-link">
-                                <h4>Describe your business/Tell us about your project</h4>
+                            <a href="" class="section-link d-none d-md-block">
+                                Describe your business/Tell us about your project
                             </a>
                         </div>
                     </div>
@@ -133,8 +133,32 @@
             </div>
         </div>
 
-        <div class="container-fluid section section-contact">
+        <div class="container-fluid section section-lead-info d-block d-md-none">
             <div class="row">
+                <div class="col-12">
+                    <div class="lead-info bg-gray">
+                        <p>
+                            With over 7 years of experience in providing software services
+                            across various sectors of the IT industry,
+                            we don't just build software - we create strong and lasting synergies with our clients,
+                            helping them build their businesses on technology.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <a href="" class="section-link">
+                            Describe your business/Tell us about your project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid section section-contact">
+            <div class="row no-gutters">
                 <div class="col-12 col-lg-8 offset-lg-2">
                     <div class="contact-form text-center bg-gray">
                         <h2 class="form-title">Contact us and let's create something great together!</h2>
@@ -163,16 +187,8 @@
         <div class="container-fluid section section-info">
             <div class="row">
                 <div class="col-12 col-lg-8 offset-lg-2">
-                    <div class="row display-flex">
-                        <div class="col-12 col-lg-6">
-                            <div class="map bg-gray">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.615833525183!2d20.40213181553561!3d44.80901727909859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6565c1f17e05%3A0x62ec8d39c98e6627!2sBusiness+Outsourcing+Services!5e0!3m2!1sen!2s!4v1554988272983!5m2!1sen!2s"
-                                        frameborder="0"
-                                        allowfullscreen>
-                                </iframe>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
+                    <div class="row display-flex flex-md-row-reverse">
+                        <div class="col-12 col-md-6">
                             <div class="info">
                                 <h4 class="subtitle">Business outsourcing services</h4>
                                 <address>
@@ -185,90 +201,102 @@
                                 <a href="mailto:office@boutsourcing.com"></a>
                             </div>
                         </div>
+                        <div class="col-12 col-md-6">
+                            <div class="map bg-gray">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.615833525183!2d20.40213181553561!3d44.80901727909859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6565c1f17e05%3A0x62ec8d39c98e6627!2sBusiness+Outsourcing+Services!5e0!3m2!1sen!2s!4v1554988272983!5m2!1sen!2s"
+                                        frameborder="0"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-7">
-                <div class="row p-5">
-                    <div class="col-4">
-                        <img class="align-self-start mr-3 pr-5" src="/img/logo-negativ.svg" alt="Boutsourcing">
-                    </div>
-                    <div class="col-8">
-                        <h3>Business outsourcing services</h3>
-                        <address>Omladinskih brigada 21<br>
-                            Bruno invest Office Building | Floor II<br>
-                            11070 Novi Beograd, Sebia<br>
-                            <a href="mailto:office@boutsourcing.com">office@boutsourcing.com</a>
-                        </address>
-                        <div class="row my-3">
-                            <div class="col-auto pr-4">
-                                <a href="https://www.linkedin.com/company/business-outsourcing-services-doo/">
-                                    <img src="/img/footer/linkedin.svg">
-                                </a>
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <div class="row p-5">
+                        <div class="col-lg-4 d-none d-lg-block">
+                            <img class="align-self-start mr-3 pr-5" src="/img/logo-negativ.svg" alt="Boutsourcing">
+                        </div>
+                        <div class="col-12 d-lg-none pb-5 text-left">
+                            <img src="/img/logo-negativ.svg" alt="Boutsourcing">
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <h3>Business outsourcing services</h3>
+                            <address>Omladinskih brigada 21<br>
+                                Bruno invest Office Building | Floor II<br>
+                                11070 Novi Beograd, Sebia<br>
+                                <a href="mailto:office@boutsourcing.com">office@boutsourcing.com</a>
+                            </address>
+                            <div class="row my-3">
+                                <div class="col-auto pr-4">
+                                    <a href="https://www.linkedin.com/company/business-outsourcing-services-doo/">
+                                        <img src="/img/footer/linkedin.svg">
+                                    </a>
+                                </div>
+                                <div class="col-auto pr-4">
+                                    <a href="https://twitter.com/boutsourcing">
+                                        <img src="/img/footer/twitter.svg">
+                                    </a>
+                                </div>
+                                <div class="col-auto pr-4">
+                                    <a href="http://instagram.com/boutsourcing">
+                                        <img src="/img/footer/instagram.svg">
+                                    </a>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="https://www.facebook.com/pages/Business-Outsourcing-Services-doo/164089493616696">
+                                        <img src="/img/footer/facebook.svg">
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-auto pr-4">
-                                <a href="https://twitter.com/boutsourcing">
-                                    <img src="/img/footer/twitter.svg">
-                                </a>
-                            </div>
-                            <div class="col-auto pr-4">
-                                <a href="http://instagram.com/boutsourcing">
-                                    <img src="/img/footer/instagram.svg">
-                                </a>
-                            </div>
-                            <div class="col-auto">
-                                <a href="https://www.facebook.com/pages/Business-Outsourcing-Services-doo/164089493616696">
-                                    <img src="/img/footer/facebook.svg">
-                                </a>
+                            <div class="row my-3">
+                                <span class="copyright">© Boutsourcing d.o.o. 2019 | All rights reserved.</span>
                             </div>
                         </div>
-                        <div class="row my-3">
-                            <span class="copyright">© Boutsourcing d.o.o. 2019 | All rights reserved.</span>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="row p-5">
+                        <div class="col-8">
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="#">Services</a>
+                                    <ul class="footer-submenu">
+                                        <li>
+                                            <a href="/services/dedicated-teams.html">Dedicated Teams</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/design.html">Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/product-development.html">Product Development</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/technical_&_customer_support.html">Technical & Customer Support</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="/references.html">References</a>
+                                    <a href="/about-us.html">About Us</a>
+                                    <a href="/careers.html">Careers</a>
+                                    <a href="/contact-us.html">Contact us</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 d-none d-lg-block">
-                <div class="row p-5">
-                    <div class="col-8">
-                        <ul class="footer-menu">
-                            <li>
-                                <a href="#">Services</a>
-                                <ul class="footer-submenu">
-                                    <li>
-                                        <a href="/services/dedicated-teams.html">Dedicated Teams</a>
-                                    </li>
-                                    <li>
-                                        <a href="/services/design.html">Design</a>
-                                    </li>
-                                    <li>
-                                        <a href="/services/product-development.html">Product Development</a>
-                                    </li>
-                                    <li>
-                                        <a href="/services/technical_&_customer_support.html">Technical & Customer Support</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-4">
-                        <ul class="footer-menu">
-                            <li>
-                                <a href="/references.html">References</a>
-                                <a href="/about-us.html">About Us</a>
-                                <a href="/careers.html">Careers</a>
-                                <a href="/contact-us.html">Contact us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+
         <!-- Scripts -->
         <script src="/vendor/components/jquery/jquery.min.js"></script>
         <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

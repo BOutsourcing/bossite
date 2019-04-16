@@ -232,8 +232,8 @@
         bottom: -14px;
     }
     .lead-info {
-        padding-left: 45px;
-        padding-right: 45px;
+        padding-left: 30px!important;
+        padding-right: 30px!important;
     }
     .lead-info p {
         font-size: 14px;
@@ -306,6 +306,7 @@
 
     .section-what-clients-say p {
         margin-bottom: 20px;
+        text-align: left;
     }
     .video-boxes {
         margin-top: 0;
@@ -334,5 +335,10 @@
         font-size: 30px;
         margin-bottom: 10px;
         display: block;
+    }
+}
+@media (max-width: 575px) {
+    .video-ceo {
+        background-position-x: center;
     }
 }

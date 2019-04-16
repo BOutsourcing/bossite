@@ -136,8 +136,8 @@
         line-height: 28px;
     }
     .lead-info {
-        padding-left: 45px;
-        padding-right: 45px;
+        padding-left: 30px!important;
+        padding-right: 30px!important;
     }
     .lead-info p {
         color: #243647;
@@ -147,19 +147,21 @@
     }
 
     .section {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .section-clients {
         margin-top: 50px;
     }
     .section-clients .title {
+        padding-left: 15px;
+        padding-right: 15px;
         margin-bottom: 20px;
         text-align: left;
     }
     .row-clients {
-        margin-left: -10px;
-        margin-right: -10px;
+        margin-left: -5px;
+        margin-right: -5px;
     }
     .row-clients > [class*='col-'] {
         margin-bottom: 10px;
