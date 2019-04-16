@@ -313,7 +313,7 @@
         text-align: center;
     }
     .service-box {
-        padding: 35px 40px ;
+        padding: 35px 20px;
     }
     .service-box .icon {
         margin-bottom: 20px;
@@ -337,6 +337,7 @@
         font-size: 14px;
         font-weight: normal;
         line-height: 16px;
+        margin-bottom: 0;
     }
 
     .portfolio-boxes,

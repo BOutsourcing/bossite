@@ -34,3 +34,30 @@ ul.check-mark-list li.completed .check-mark {
 ul.check-mark-list li.completed:before {
     background-color: #19E69B;
 }
+
+@media (max-width: 767px) {
+    ul.check-mark-list {
+        padding-right: 0 !important;
+    }
+    ul.check-mark-list li {
+        height: 6rem;
+    }
+    ul.check-mark-list li:before {
+        left: 18px;
+        height: calc(100% - 36px);
+        top: calc(-50% + 18px);
+    }
+    ul.check-mark-list .media-body {
+        margin-left: 0 !important;
+    }
+    p.heading-text {
+        color: #243647;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+    }
+    ul.check-mark-list .media .check-mark {
+        width: 36px;
+        height: 36px;
+    }
+}
