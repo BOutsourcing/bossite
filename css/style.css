@@ -185,6 +185,9 @@ a.box-link:hover .box:before {
 .section-lead {
     margin: 0;
 }
+.container-fluid {
+    overflow: hidden;
+}
 /**
 Common END
  */

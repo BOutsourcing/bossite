@@ -1,3 +1,6 @@
+.overflow-v {
+    overflow: visible;
+}
 .section-lead {
     height: 492px;
 }
@@ -399,5 +402,10 @@
     }
     .brainstorming img {
         margin-bottom: 50px;
+    }
+}
+@media (max-width: 575px) {
+    .video-ceo {
+        background-position-x: center;
     }
 }
