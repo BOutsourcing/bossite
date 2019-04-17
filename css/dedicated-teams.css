@@ -36,55 +36,28 @@
 .all-in-one-service-section {
     padding-top: 30px;
 }
+.all-in-one-service-headline {
+    margin: 4rem 0;
+}
 .emphasize-heading {
     border-bottom: 3px solid #19E69B;
     text-align: center;
     font-size: 42px;
     letter-spacing: -0.34px;
     line-height: 55px;
-    display: inline-block;
-    margin: 6rem 0;
+    display: inline;
 }
 p.heading-text {
     color: #243647;
 }
-ul.key-benefits-list li {
+ul.check-mark-list li {
     position: relative;
     height: 12rem;
 }
 @media (max-width: 992px) {
-    ul.key-benefits-list li {
+    ul.check-mark-list li {
         height: 300px;
     }
-}
-ul.key-benefits-list li:before {
-    content:"";
-    position: absolute;
-    left: 34px;
-    height: calc(100% - 70px);
-    width: 2px;
-    background-color: #DCE2EF;
-    top: calc(-50% + 35px);
-    transition: background-color 0.3s ease-in-out;
-}
-
-ul.key-benefits-list li:first-child:before {
-    display: none;
-}
-ul.key-benefits-list .media .check-mark {
-    width: 70px;
-    height: 70px;
-    background-image: url("/img/services/dedicated-teams/check-mark-60-gs.svg");
-    background-size: cover;
-}
-ul.key-benefits-list li.completed p {
-    margin: 0;
-}
-ul.key-benefits-list li.completed .check-mark {
-    background-image: url("/img/services/dedicated-teams/check-mark-60.svg");
-}
-ul.key-benefits-list li.completed:before {
-    background-color: #19E69B;
 }
 .how-to-engage-boutsourcing-section h3 {
     font-size: 50px;
@@ -94,31 +67,53 @@ ul.key-benefits-list li.completed:before {
     text-align: center;
 }
 .describe-your-business-section {
-    padding: 10rem 0;
+    padding: 4rem 0;
 }
-.describe-your-business-section > div > a {
-    font-size: 23px;
-    font-weight: bold;
-    letter-spacing: -0.19px;
-    line-height: 31px;
-    border-bottom: 8px solid #19E69B;
-    color: #243647;
-    text-transform: uppercase;
-    padding-bottom: 5px;
-}
-@media (max-width: 550px) {
-    .check-mark {
-        display: none;
+@media (max-width: 767px) {
+    .dedicated-development-teams-section {
+        min-height: unset;
+        height: 200px;
+        overflow: hidden;
     }
-    ul.key-benefits-list li:before {
-        display: none;
+    .dedicated-development-teams-section .section-heading {
+        font-size: 22px;
+        line-height: 28px;
     }
-    ul.key-benefits-list .media-body {
-        margin:0 !important;
-        padding:0 !important;
+    .section-heading,
+    .how-to-engage-boutsourcing-section h3 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px !important;
     }
-    ul.key-benefits-list li {
-        height: auto;
-        padding: 20px 0;
+    .flexible-team-section .section-heading {
+        margin: 0;
+    }
+    p.heading-text {
+        color: #243647;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+    .separator-green {
+        height: 3px;
+        width: 100px;
+        margin: 0;
+        background-color: #19E69B;
+    }
+    ul.check-mark-list li {
+        height: 6rem;
+    }
+    .expertise-flexibility-section img {
+        width: 44px;
+        height: 44px;
+    }
+    .subheading-text {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .emphasize-heading {
+        font-size: 22px;
+        line-height: 32px;
     }
 }
