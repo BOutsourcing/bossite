@@ -78,6 +78,7 @@ ul.check-mark-list li {
     .dedicated-development-teams-section .section-heading {
         font-size: 22px;
         line-height: 28px;
+        margin-bottom: 10px !important;
     }
     .section-heading,
     .how-to-engage-boutsourcing-section h3 {
