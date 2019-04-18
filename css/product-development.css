@@ -29,3 +29,52 @@
     height: 512px;
     /*padding: 0 5rem;*/
 }
+
+@media (max-width: 767px) {
+    .container-fluid.hero, .hero .image-fit {
+        height: 200px;
+    }
+    .hero_heading {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 10px !important;
+    }
+    .hero_info {
+        margin-top: 10px;
+    }
+    .section-heading {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px !important;
+    }
+    .media p {
+        color: #243647;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 20px;
+    }
+    p.heading-text {
+        color: #243647;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+    .section-industries .heading-text {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+    .section-industries img {
+        width: 64px;
+        margin-bottom: 15px;
+    }
+    .separator-green {
+        height: 3px;
+        width: 100px;
+        margin: 0;
+        background-color: #19E69B;
+    }
+    .two-column--white img.associated {
+        height: auto;
+    }
+}
