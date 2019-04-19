@@ -98,25 +98,64 @@ img.illustration.hidden {
         width: 40%;
     }
 }
-@media (max-width: 550px) {
-    .check-mark {
-        display: none;
+@media (max-width: 992px) {
+    .separator-green {
+        width: 100px;
     }
-    ul.check_list li:after {
-        display: none;
+}
+@media (max-width: 767px) {
+    .container-fluid.hero, .hero .image-fit {
+        height: 200px;
     }
-    ul.check_list .media-body {
-        margin:0 !important;
-        padding:0 !important;
+    .hero_heading, .hero_info, .media .title {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 10px !important;
     }
-    ul.check_list li {
-        height: auto;
-        padding: 20px 0;
+    .hero_info {
+        margin-top: 10px;
     }
+    .section-heading {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px !important;
+    }
+    p.heading-text {
+        color: #243647;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+    .media p.heading-text {
+        color: #748494;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 20px;
+    }
+    .separator-green {
+        height: 3px;
+        width: 100px;
+        margin: 0;
+        background-color: #19E69B;
+    }
+
     .key-benefits-section {
         height: auto;
     }
-    .key-benefits-section > div {
-        padding-left:0 !important;
+    ul.check_list li {
+        height: 180px;
+    }
+    ul.check_list li:after {
+        height: calc(100% - 36px);
+        top: 36px;
+        left: 18px;
+    }
+    ul.check_list .media .check-mark {
+        width: 36px;
+        height: 36px;
+    }
+    ul.check_list .media-body {
+        padding-top: 5px;
+        margin: 0 !important;
     }
 }

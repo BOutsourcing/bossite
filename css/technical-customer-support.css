@@ -30,45 +30,6 @@
     padding: 0 5rem;
 }
 
-ul.check_list li {
-    position: relative;
-    height: 12rem;
-}
-ul.check_list li:before {
-    content:"";
-    position: absolute;
-    left: 34px;
-    height: calc(100% - 70px);
-    width: 2px;
-    background-color: #DCE2EF;
-    top: calc(-50% + 35px);
-    transition: background-color 0.3s ease-in-out;
-}
-
-ul.check_list li:first-child:before {
-    display: none;
-}
-ul.check_list .media img {
-    width: 70px;
-    height: 70px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: all 0.3s ease-in-out;
-}
-ul.check_list li.completed p {
-    margin: 0;
-}
-ul.check_list li.completed img {
-    -webkit-filter: none;
-    filter: none;
-}
-ul.check_list li.completed:before {
-    background-color: #19E69B;
-}
-
-ul.green-list {
-
-}
 ul.green-list {
     list-style: none;
     font-size: 24px;
@@ -90,35 +51,72 @@ ul.green-list li:before {
     margin-right: 40px;
     vertical-align: middle;
 }
-@media (max-width: 550px) {
-    .check-mark {
-        display: none;
+
+@media (max-width: 767px) {
+    .container-fluid.hero, .hero .image-fit {
+        height: 200px;
     }
-    ul.check_list li:before {
-        display: none;
+    .hero_heading {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 10px !important;
     }
-    ul.check_list .media-body {
-        margin:0 !important;
-        padding:0 !important;
+    .hero_info {
+        margin-top: 10px;
     }
-    ul.check_list li {
+    .section-heading {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px !important;
+    }
+    .media p {
+        color: #243647;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 20px;
+    }
+    p.heading-text {
+        color: #243647;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+    .section-industries .heading-text {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+    .section-industries img {
+        width: 64px;
+        margin-bottom: 15px;
+    }
+    .separator-green {
+        height: 3px;
+        width: 100px;
+        margin: 0;
+        background-color: #19E69B;
+    }
+    .two-column--white img.associated {
         height: auto;
-        padding: 20px 0;
-    }
-    .key-benefits-section {
-        height: auto;
-    }
-    .key-benefits-section > div {
-        padding-left:0 !important;
+        padding: 0 1rem;
     }
     ul.green-list {
-        margin:0;
+        margin: 0 1rem;
     }
     ul.green-list li {
         margin: 0;
-        padding: 20px 0;
+        padding: 20px 0 20px 36px;
+        font-size: 16px;
+        line-height: 22px;
+        position: relative;
     }
     ul.green-list li:before {
-        display: none;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
     }
 }

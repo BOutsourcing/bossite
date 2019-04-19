@@ -50,7 +50,7 @@ ul.check-mark-list li.completed:before {
     ul.check-mark-list .media-body {
         margin-left: 0 !important;
     }
-    p.heading-text {
+    ul.check-mark-list p.heading-text {
         color: #243647;
         font-size: 14px;
         font-weight: bold;
