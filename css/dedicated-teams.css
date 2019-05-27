@@ -1,120 +1,55 @@
-.heading-border-line {
-    margin-top: 1rem;
-    box-sizing: border-box;
-    height: 0.1rem;
-    width: 30%;
-    border: 0.4rem solid #19E69B;
+.section-lead-hero {
+    background: #242F4E url("../img/services/dedicated-teams/dedicated-development-teams.png") no-repeat;
+    background-size: cover;
 }
-.dedicated-development-teams-section {
-    min-height: 500px;
-    background-color: #F3F6FD;
-}
-.section-heading {
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 1.3;
-    color: #243647;
-}
-.dedicated-development-teams-section .section-heading {
-    display: table-caption;
-}
-.flexible-team-section .section-heading {
-    margin: 1rem 0 4rem 0;
-}
-.heading-text {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: -0.19px;
-    line-height: 36px;
-}
-.subheading-text {
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 31px;
-    color: #748494;
-}
-.all-in-one-service-section {
-    padding-top: 30px;
-}
-.all-in-one-service-headline {
-    margin: 4rem 0;
-}
-.emphasize-heading {
-    border-bottom: 3px solid #19E69B;
-    text-align: center;
+.section h2 {
     font-size: 42px;
-    letter-spacing: -0.34px;
-    line-height: 55px;
+    line-height: 48px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.all-in-one-service-headline,
+.how-to-engage-boutsourcing-section .title {
+    margin-bottom: 80px;
+}
+.all-in-one-service-headline h2 {
+    border-bottom: 3px solid #50E29D;
     display: inline;
 }
-p.heading-text {
-    color: #243647;
-}
-ul.check-mark-list li {
-    position: relative;
-    height: 12rem;
-}
-@media (max-width: 992px) {
-    ul.check-mark-list li {
-        height: 300px;
+
+@media (min-width: 992px) {
+    .pr-lg-40 {
+        padding-right: 40px;
     }
-}
-.how-to-engage-boutsourcing-section h3 {
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: -0.41px;
-    line-height: 66px;
-    text-align: center;
-}
-.describe-your-business-section {
-    padding: 4rem 0;
+    .pl-lg-40 {
+        padding-left: 40px;
+    }
 }
 @media (max-width: 767px) {
-    .dedicated-development-teams-section {
-        min-height: unset;
-        height: 200px;
-        overflow: hidden;
-    }
-    .dedicated-development-teams-section .section-heading {
+    .section h2 {
         font-size: 22px;
         line-height: 28px;
-        margin-bottom: 10px !important;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
-    .section-heading,
-    .how-to-engage-boutsourcing-section h3 {
-        font-size: 24px;
-        line-height: 32px;
-        margin-bottom: 20px !important;
+    .expertise-flexibility-section > .row > [class*='col-'] {
+        margin-bottom: 30px;
     }
-    .flexible-team-section .section-heading {
-        margin: 0;
-    }
-    p.heading-text {
-        color: #243647;
-        font-size: 14px;
-        font-weight: bold;
-        line-height: 24px;
-    }
-    .separator-green {
-        height: 3px;
-        width: 100px;
-        margin: 0;
-        background-color: #19E69B;
-    }
-    ul.check-mark-list li {
-        height: 120px;
-    }
-    .expertise-flexibility-section img {
+    .check-mark-icon {
         width: 44px;
         height: 44px;
     }
-    .subheading-text {
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 20px;
+    .all-in-one-service-section .media {
+        display: block;
+        text-align: center;
     }
-    .emphasize-heading {
-        font-size: 22px;
-        line-height: 32px;
+    .all-in-one-service-section .media-body {
+        margin-top: 40px;
+        margin-left: 0;
+        text-align: left;
+    }
+    .all-in-one-service-headline,
+    .how-to-engage-boutsourcing-section .title {
+        margin-bottom: 40px;
     }
 }

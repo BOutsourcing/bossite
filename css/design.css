@@ -1,26 +1,7 @@
-.hero {
-    background-color: #F3F6FD;
+.section-lead-hero {
+    background: #242F4E url("../img/services/design/hero.png") no-repeat;
+    background-size: cover;
 }
-.strong {
-    font-weight: 700;
-}
-
-.font-lg {
-    font-size: 3rem;
-    line-height: 1.3;
-    color: #243647;
-}
-
-.font-24 {
-    font-size: 24px;
-    line-height: 36px;
-    color: #243647;
-}
-.two-column--white img.associated {
-    height: 512px;
-    padding: 0 5rem;
-}
-
 ul.check_list li.completed:after {
     background-color: #19E69B;
 }
@@ -40,7 +21,6 @@ ul.check_list li:after {
     width: 1px;
     top: 70px;
 }
-
 ul.check_list li:last-child:after {
     display: none;
 }
@@ -48,6 +28,10 @@ ul.check_list .media .check-mark {
     width: 69px;
     height: 69px;
     background-size: cover;
+}
+ul.check_list .media .subtitle {
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 ul.check_list li:nth-child(1) .check-mark { background-image: url("/img/services/design/checklist/1-grey.svg"); }
 ul.check_list li:nth-child(2) .check-mark { background-image: url("/img/services/design/checklist/2-grey.svg"); }
@@ -64,8 +48,8 @@ ul.check_list li.completed .check-mark {
 }
 
 img.illustration {
-    margin-top: 100px;
-    left: 50%;
+    margin-top: 60px;
+    left: 56%;
     position: absolute;
     z-index: 0;
 }
@@ -73,7 +57,9 @@ img.illustration.hidden {
     display: none;
 }
 .key-benefits-section {
-    height: 512px;
+    height: 350px;
+    margin-top: 30px;
+    padding-top: 50px;
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;
@@ -84,7 +70,7 @@ img.illustration.hidden {
 }
 .dotted-background {
     background-image: url('/img/services/design/dots.svg');
-    background-position: right 400px;
+    background-position: right 650px;
     background-repeat: no-repeat;
     background-size: 64%;
 }
@@ -92,55 +78,21 @@ img.illustration.hidden {
     .dotted-background {
         background-image: none;
     }
-}
-@media (max-width: 1300px) {
     img.illustration {
-        width: 40%;
+        width: 46%;
+        margin-top: 110px;
     }
 }
-@media (max-width: 992px) {
-    .separator-green {
-        width: 100px;
+@media (max-width: 991px) {
+    .section-lead-hero {
+        background-position-x: center;
     }
 }
 @media (max-width: 767px) {
-    .container-fluid.hero, .hero .image-fit {
-        height: 200px;
-    }
-    .hero_heading, .hero_info, .media .title {
-        font-size: 22px;
-        line-height: 28px;
-        margin-bottom: 10px !important;
-    }
-    .hero_info {
-        margin-top: 10px;
-    }
-    .section-heading {
-        font-size: 24px;
-        line-height: 32px;
-        margin-bottom: 20px !important;
-    }
-    p.heading-text {
-        color: #243647;
-        font-size: 14px;
-        font-weight: bold;
-        line-height: 24px;
-    }
-    .media p.heading-text {
-        color: #748494;
-        font-size: 12px;
-        font-weight: normal;
-        line-height: 20px;
-    }
-    .separator-green {
-        height: 3px;
-        width: 100px;
-        margin: 0;
-        background-color: #19E69B;
-    }
-
     .key-benefits-section {
         height: auto;
+        padding-top: 35px;
+        margin-top: 0;
     }
     ul.check_list li {
         height: 180px;
@@ -153,6 +105,12 @@ img.illustration.hidden {
     ul.check_list .media .check-mark {
         width: 36px;
         height: 36px;
+    }
+    ul.check_list .media .subtitle {
+        font-size: 22px;
+        line-height: 28px;
+        margin-top: 2px;
+        margin-bottom: 10px;
     }
     ul.check_list .media-body {
         padding-top: 5px;
