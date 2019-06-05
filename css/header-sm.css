@@ -1,4 +1,7 @@
 @media (max-width: 992px) {
+    body {
+        padding-top: 110px;
+    }
     .header {
         padding: 0 0 0 20px;
         position: fixed;
@@ -132,6 +135,9 @@
     }
 }
 @media (max-width: 767px) {
+    body {
+        padding-top: 74px;
+    }
     .header {
         height: 74px;
     }
