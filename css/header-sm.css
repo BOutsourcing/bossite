@@ -1,4 +1,4 @@
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     body {
         padding-top: 110px;
     }
@@ -53,6 +53,7 @@
         background-color: #232747;
         height: 100vh;
         transition: background-color 0.1s, height 0.1s 0.1s linear;
+        overflow: auto;
     }
     .header.sm-active .menu {
         display: block;

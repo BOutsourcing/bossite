@@ -1,57 +1,98 @@
+
 .overflow-v {
-    overflow: visible;
+    overflow: visible !important;
 }
 .section-lead {
-    height: 492px;
-}
-.section-lead-info-box {
-    padding: 70px 60px;
-}
-.section-lead-info-box .info {
-    width: 270px;
-    margin-bottom: 80px;
-}
-.section-lead-info-box .info p {
+    height: 610px;
+    padding: 50px;
     color: #243647;
 }
-.section-lead-hero {
-    background: #242F4E url("../img/screen/large/software-development-experts.png") no-repeat;
-    background-size: cover;
-    padding: 70px 50px;
+.section-lead .info {
+    margin-top: -20px;
 }
-.section-lead-hero .info {
-    width: 400px;
-}
-.section-lead-hero .title {
+.section-lead .title {
     font-size: 56px;
     line-height: 72px;
-    color: #ffffff;
+}
+.section-lead p {
+    font-size: 22px;
+    line-height: 30px;
+}
+.section-lead .btn {
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 32px;
 }
 
+.section-services {
+    margin-top: 80px;
+}
+.service-boxes {
+    margin-top: 40px;
+}
 .service-box {
-    padding: 70px 20px 50px;
-    border-style: solid;
-    border-color: #E7EAF2;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
+    height: 300px;
+    padding: 100px 20px 40px;
     text-align: center;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
+.service-box:hover {
+    background-color: #F5F7FC;
+    border-bottom: 4px solid #50E29D;
 }
 .service-box .icon {
-    margin-bottom: 40px;
+    margin: 0 auto 30px;
+    transition: all 0.2s linear;
+}
+.service-box .icon-dedicated-teams {
+    width: 62px;
+    height: 76px;
+    background: url("../img/services/dedicated-teams.svg") no-repeat;
+    background-size: cover;
+}
+.service-box:hover .icon-dedicated-teams {
+    background: url("../img/services/dedicated-teams-hover.svg") no-repeat;
+    background-size: cover;
 }
 .service-box .icon-product-development {
-    margin-top: 8px;
+    width: 76px;
+    height: 67px;
+    background: url("../img/services/product-development.svg") no-repeat;
+    background-size: cover;
+    margin-top: 6px;
+    margin-bottom: 33px;
+}
+.service-box:hover .icon-product-development {
+    background: url("../img/services/product-development-hover.svg") no-repeat;
+    background-size: cover;
 }
 .service-box .icon-design {
-    margin-top: 8px;
-    margin-bottom: 46px;
+    width: 86px;
+    height: 65px;
+    background: url("../img/services/design.svg") no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+    margin-bottom: 35px;
 }
-.services-info {
-    padding: 50px;
-    border-bottom: 1px solid #E7EAF2;
+.service-box:hover .icon-design {
+    background: url("../img/services/design-hover.svg") no-repeat;
+    background-size: cover;
 }
-.service-box,
-.services-info,
+.service-box .icon-technical-and-customer-support {
+    width: 78px;
+    height: 75px;
+    background: url("../img/services/technical-and-customer-support.svg") no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+.service-box:hover .icon-technical-and-customer-support {
+    background: url("../img/services/technical-and-customer-support-hover.svg") no-repeat;
+    background-size: cover;
+}
+.service-box .subtitle {
+    text-transform: uppercase;
+}
 .section-services a.d-block,
 .portfolio-box,
 .portfolio-boxes a.d-block {
@@ -72,7 +113,6 @@
 .portfolio-box {
     height: 412px;
     padding: 75px 60px 55px;
-    margin-bottom: 20px;
     position: relative;
 }
 .portfolio-box .pos-abs-bottom {
@@ -83,15 +123,15 @@
     bottom: 55px;
 }
 .portfolio-monitoring-tool {
-    background: url("../img/screen/large/employee-monitoring-tool.png") no-repeat;
+    background: url("../img/screen/large/home/employee-monitoring-tool.png") no-repeat;
     background-size: cover;
 }
 .portfolio-management-system {
-    background: url("../img/screen/large/competency-management-system.png") no-repeat;
+    background: url("../img/screen/large/home/competency-management-system.png") no-repeat;
     background-size: cover;
 }
 .portfolio-management-solution {
-    background: url("../img/screen/large/access-management-solution.png") no-repeat;
+    background: url("../img/screen/large/home/access-management-solution.png") no-repeat;
     background-size: cover;
 }
 .portfolio-box .subtitle {
@@ -111,55 +151,133 @@
     font-weight: bold;
 }
 
-.section-what-clients-say {
-    padding-top: 60px;
-    margin-top: 150px;
-    border-top: 1px solid #C7CFDF;
+.section-what-clients-say,
+.section-what-employees-say {
+    margin-top: 100px;
 }
-.video-boxes {
+.client-boxes {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 45px;
+}
+.client-quote,
+.client-quote .quote-icon,
+.client-quote p {
+    transition: all 0.2s linear;
+}
+.client-quote .info {
+    padding: 35px 55px 90px 110px;
+}
+.client-box p {
+    font-size: 20px;
+    line-height: 26px;
+}
+.quote-icon {
+    width: 43px;
+    height: 34px;
+    background: url("../img/home/quotation-icon-grey.svg") no-repeat;
+    background-size: cover;
+}
+.client-quote .quote-icon {
+    position: absolute;
+    top: 4px;
+    left: -73px;
+}
+.client-box:hover .client-quote {
+    background-color: #F2F4F8;
+}
+.client-box:hover .client-quote .quote-icon {
+    background: url("../img/home/quotation-icon-green.svg") no-repeat;
+    background-size: cover;
+}
+.client-box:hover .client-quote p {
+    color: #243647;
+}
+.client-info {
+    padding-left: 110px;
+    padding-right: 55px;
+    margin-top: -60px;
+}
+.client-info .name {
+    margin-top: 20px;
+    color: #243647;
+}
+
+.section-work-life-balance {
+    padding: 40px 80px;
+    margin-top: 150px;
+    height: 160px;
+    background-color: #F8F9FD;
+}
+.work-life-balance-info {
+    padding: 4px 20px;
+    margin-left: 135px;
+    border-left: 8px solid #50E29D;
+}
+.work-life-balance-img {
+    height: auto !important;
+    position: absolute;
+    left: 0;
+    top: -95px;
+}
+
+
+.employee-boxes {
     padding-left: 55px;
     padding-right: 55px;
     margin-top: 30px;
 }
-.video {
+.employee {
     height: 380px;
-    margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
-.video-box .info {
+.employee-box .info {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 50px 80px;
-    background-color: rgba(36, 54, 71, 0.5);
-    color: #FFFFFF;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 40px;
+    padding: 60px 55px 60px 110px;
+    background-color: rgba(36, 54, 71, 0.3);
     transform: translateY(100%);
     transition: transform 0.1s linear;
 }
-.video-box .info .quote-icon {
-    font-size: 30px;
-    color: #50E29D;
+.employee-box .info .quote-icon {
+    background: url("../img/home/quotation-icon-green.svg") no-repeat;
+    background-size: cover;
     position: absolute;
-    top: -10px;
-    left: -30px;
+    top: 6px;
+    left: -65px;
 }
-.video:hover .info {
+.employee-box .info p,
+.employee-box .info .name {
+    color: #FFFFFF;
+}
+.employee-box .info .name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.employee-box .info p {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.employee:hover .info {
     transform: translateY(0);
     transition: transform 0.2s linear;
 }
-.video-appsco {
-    background: #242F4E url("../img/home/client-appsco.png") no-repeat;
+.employee-first {
+    background: #242F4E url("../img/home/employee-first.png") no-repeat;
     background-size: cover;
 }
-.video-dossier {
-    background: #242F4E url("../img/home/client-dossier.png") no-repeat;
+.employee-second {
+    background: #242F4E url("../img/home/employee-second.png") no-repeat;
     background-size: cover;
+}
+.section-what-employees-say .section-link-row {
+    margin-top: 50px;
 }
 
 .section-schedule-consultation, .section-contact {
@@ -175,20 +293,25 @@
 .schedule-consultation h1 {
     margin-bottom: 30px;
 }
-.schedule-consultation-a {
-    margin-top: 50px;
-    color: #243647;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 30px;
-    border-bottom: 8px #19E69B solid;
+.section-schedule-consultation form {
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.contact-form form {
-    padding: 80px 100px;
-    margin-top: 45px;
+@media (min-width: 992px) {
+    body {
+        background: url("../img/screen/large/home/software-development-experts.png") no-repeat;
+        background-size: 100% 720px;
+    }
+    .header {
+        background-color: transparent;
+        transition: all 0.2s 0.1s linear;
+    }
+    .header.submenu-hover {
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: all 0.2s linear;
+    }
 }
-
 @media (max-width: 1440px) {
     .portfolio-box {
         padding: 50px 40px 40px;
@@ -202,43 +325,42 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    .video-box .info {
-        padding: 20px 60px;
-        font-size: 26px;
-        line-height: 36px;
+    .work-life-balance-info {
+        margin-left: 120px;
+    }
+    .employee-box .info {
+        padding: 40px 40px 40px 80px;
         transform: translateY(0);
     }
-    .video-box .info .quote-icon {
-        font-size: 26px;
-        left: -20px;
+    .employee-box .info .quote-icon {
+        width: 35px;
+        height: 28px;
+        left: -50px;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .section-lead {
-        height: 350px;
+        height: 440px;
+        background: url("../img/screen/large/home/software-development-experts.png") no-repeat;
+        background-size: cover;
     }
-    .section-lead-info-box,
     .section-lead-hero,
-    .services-info,
     .section-portfolio,
     .section-schedule-consultation {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .section-lead-info-box, .section-lead-hero {
+    .section-lead-hero {
         padding-top: 40px;
         padding-bottom: 40px;
-    }
-    .section-lead-info-box .info {
-        width: auto;
-        margin-bottom: 80px;
     }
     .section-lead-hero .info {
         width: auto;
     }
 
     .portfolio-boxes,
-    .video-boxes {
+    .client-boxes,
+    .employee-boxes {
         padding: 0;
     }
     .portfolio-box {
@@ -248,17 +370,40 @@
     .portfolio-box .pos-abs-bottom {
         bottom: 55px;
     }
-
-    .video-box {
+    .client-box,
+    .employee-box {
         margin-bottom: 50px;
     }
-
-    .section-what-clients-say,
-    .section-contact {
+    .section-what-clients-say {
         margin-top: 50px;
     }
-    .section-schedule-consultation {
+    .client-box .client-quote {
+        background-color: #F2F4F8;
+    }
+    .client-box .client-quote .quote-icon {
+        background: url("../img/home/quotation-icon-green.svg") no-repeat;
+        background-size: cover;
+    }
+    .client-box .client-quote p {
+        color: #243647;
+    }
+    .employee-box .info {
+         padding: 60px 55px 60px 110px;
+     }
+    .section-what-employees-say .section-link-row {
         margin-top: 0;
+    }
+    .section-work-life-balance {
+        padding: 40px 20px;
+        margin-top: 80px;
+        height: auto;
+    }
+    .section-work-life-balance .section-link {
+        margin-top: 40px;
+        margin-left: 120px;
+    }
+    .section-schedule-consultation {
+        margin-top: 80px;
     }
     .schedule-consultation {
         text-align: center;
@@ -266,41 +411,23 @@
 }
 @media (max-width: 767px) {
     .section-lead-hero {
-        height: 250px;
-    }
-    .section-lead-info-box, .section-lead-hero {
-        padding: 25px 30px;
-    }
-    .section-lead-info-box {
         height: auto;
-        padding-bottom: 50px;
-        position: relative;
-    }
-    .section-lead-info-box .info {
-        margin-bottom: 0;
-        text-align: center;
-    }
-    .section-lead-info-box .btn {
-        position: absolute;
-        right: 0;
-        bottom: -22px;
-        left: 0;
-        width: 140px;
-        margin: auto;
-    }
-    .section-lead-hero {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 30px 20px;
     }
     .section-lead-hero .info {
-        width: 250px;
-        text-align: center;
+        margin-top: 0;
     }
     .section-lead-hero .title {
         font-size: 32px;
-        line-height: 46px;
-        margin-bottom: 0;
+        line-height: 40px;
+    }
+    .section-lead .btn {
+        font-size: inherit;
+        line-height: inherit;
+    }
+    .section-lead p {
+        font-size: 18px;
+        line-height: 28px;
     }
 
     .section-services,
@@ -313,25 +440,17 @@
         text-align: center;
     }
     .service-box {
+        height: 200px;
         padding: 35px 20px;
     }
     .service-box .icon {
         margin-bottom: 20px;
     }
-    .service-box .icon-dedicated-teams {
-        width: 30px;
-    }
     .service-box .icon-product-development {
-        width: 38px;
-        margin-top: 4px;
+        margin-top: 8px;
     }
     .service-box .icon-design {
-        width: 40px;
-        margin-top: 4px;
-        margin-bottom: 24px;
-    }
-    .service-box .icon-technical-and-customer-support {
-        width: 38px;
+        margin-bottom: 32px;
     }
     .service-box .subtitle {
         font-size: 14px;
@@ -340,10 +459,6 @@
         margin-bottom: 0;
     }
 
-    .portfolio-boxes,
-    .video-boxes {
-        margin-top: 0;
-    }
     .portfolio-box {
         min-height: 250px;
         height: auto;
@@ -366,47 +481,22 @@
         padding-top: 0;
         border-top: none;
     }
-    .video-box .info {
-        padding: 0 20px;
-        margin-top: 20px;
-        position: relative;
-        background-color: transparent;
-        font-size: 14px;
-        color: #243647;
-        line-height: 20px;
+    .client-box p {
+        font-size: 16px;
+        line-height: 24px;
     }
-    .video {
-         margin-bottom: 15px;
-     }
-    .video-box .subtitle {
-        padding: 0 20px;
+    .employee-box .info {
+        padding: 40px 40px 40px 80px;
+    }
+    .employee-box .info p {
         font-size: 18px;
         line-height: 26px;
     }
-    .video-box .info .quote-icon {
-        position: relative;
-        top: 0;
-        left: 0;
-        font-size: 30px;
-        margin-bottom: 10px;
-        display: block;
+    .employee {
+        height: 280px;
     }
 
     .schedule-consultation h1 {
         margin-bottom: inherit;
-        text-align: center;
-    }
-    .schedule-consultation-a {
-        font-size: 16px;
-        line-height: 22px;
-        border-bottom-width: 5px;
-    }
-    .brainstorming img {
-        margin-bottom: 50px;
-    }
-}
-@media (max-width: 575px) {
-    .video-ceo {
-        background-position-x: center;
     }
 }

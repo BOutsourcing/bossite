@@ -18,21 +18,22 @@ h1, h2, h3, h4 {
     letter-spacing: normal;
 }
 h1 {
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 32px;
+    line-height: 44px;
     margin-bottom: 15px;
 }
 h2 {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 26px;
+    line-height: 32px;
 }
 h3 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 26px;
 }
 h4 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
     margin-bottom: 20px;
 }
 a, a:hover {
@@ -46,8 +47,11 @@ body img {
 }
 body p {
     margin: 0 0 10px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 26px;
+}
+body strong {
+    font-weight: bold;
 }
 .flex-none {
     -ms-flex: none;
@@ -74,12 +78,13 @@ body p {
 .bg-gray {
     background-color: #F3F6FD;
 }
-.btn-primary {
-    padding: 18px 54px;
+.btn {
+    padding: 16px 54px;
     border-radius: 4px;
     font-size: 18px;
     font-weight: bold;
     line-height: 24px;
+    text-transform: uppercase;
 }
 .btn-primary,
 .btn-primary:hover,
@@ -92,17 +97,17 @@ body p {
     border: none;
     outline: none;
     box-shadow: none;
-    background-color: #19E69B;
+    background-color: #50E29D;
     color: #243647;
 }
 form {
     padding: 40px;
 }
 .form-group {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 form .form-group.last {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .form-control, .form-control:focus {
     font-size: 18px;
@@ -187,6 +192,14 @@ Common END
     h1 {
         font-size: 24px;
         line-height: 32px;
+    }
+    h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 24px;
     }
     .btn-primary {
         padding: 12px 28px;

@@ -14,6 +14,13 @@ window.onload = function(e){
         headerDom.classList.toggle('sm-active');
     });
 
+    submenuContainerDom.addEventListener('mouseenter', function(){
+        headerDom.classList.toggle('submenu-hover');
+    });
+    submenuContainerDom.addEventListener('mouseleave', function(){
+        headerDom.classList.toggle('submenu-hover');
+    });
+
     var subMenuDom = document.querySelectorAll('[data-submenu]');
 
     for(var i=0; i< subMenuDom.length; i++) {

@@ -42,7 +42,7 @@
     </head>
     <body>
         <header class="container-fluid header">
-            <div id="header" class="row display-flex align-items-center header-container">
+            <div id="header" class="row no-gutters display-flex align-items-center header-container">
                 <div class="col-6 col-lg-4 flex-none">
                     <a href="/" data-target="header" class="logo-container">
                         <img class="logo flex-none" src="/img/logo.png" alt="Business Outsourcing Services">
@@ -72,25 +72,25 @@
                                     </li>
                                     <li>
                                         <a href="/services/dedicated-teams.html" class="h-100" data-target="dedicated-teams">
-                                            <img src="/img/menu/dedicated-teams.svg">
+                                            <img src="/img/menu/dedicated-teams.svg" class="dedicated-teams">
                                             Dedicated Teams
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/services/design.html" class="h-100" data-target="design">
-                                            <img src="/img/menu/design.svg">
+                                            <img src="/img/menu/design.svg" class="design">
                                             Design
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/services/product-development.html" class="h-100" data-target="development">
-                                            <img src="/img/menu/development.svg">
+                                            <img src="/img/menu/product-development.svg" class="product-development">
                                             Product Development
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/services/technical_&_customer_support.html" class="h-100" data-target="technical_&_customer_support">
-                                            <img src="/img/menu/technical.svg">
+                                            <img src="/img/menu/technical-&-customer-support.svg" class="technical-customer-support">
                                             Technical & Customer Support
                                         </a>
                                     </li>
@@ -102,9 +102,11 @@
                             <li>
                                 <a href="/about-us.html" data-target="about-us">About Us</a>
                             </li>
-                            <li >
-                                <a href="/careers.html" data-target="careers" class="d-block">Careers</a>
-                                <a href="/contact-us.html" data-target="contactUs" class="d-block">Contact Us</a>
+                            <li>
+                                <a href="/careers.html" data-target="careers">Careers</a>
+                            </li>
+                            <li>
+                                <a href="/contact-us.html" data-target="contactUs">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -113,79 +115,69 @@
         </header>
 
         <div class="container-fluid px-0 overflow-v">
-            <div class="row no-gutters flex-md-row-reverse">
-                <div class="col-12 col-md-7 col-lg-8">
-                    <div class="section-lead section-lead-hero">
-                        <div class="info">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="section-lead section-lead-hero align-items-center justify-content-center d-flex">
+                        <div class="info text-center">
                             <h1 class="title">Software development experts</h1>
+                            <p>We make unique tools for all the things you find essential for your business</p>
+                            <button type="button" class="btn btn-primary">Join our team</button>
                         </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-5 col-lg-4">
-                    <div class="bg-gray section-lead section-lead-info-box">
-                        <div class="info">
-                            <h4>Is Your Company Cloud-Ready?</h4>
-                            <p>Take our Cloud Maturity Assessment to find out.</p>
-                        </div>
-                        <button type="button" class="btn btn-primary">QUIZ ME</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid px-0 section-services">
-            <div class="row no-gutters display-flex flex-md-row-reverse">
-                <div class="col-12 col-lg-4">
-                    <div class="services-info">
-                        <h1>Our services</h1>
-                        <p class="d-none d-md-block">
-                            Business Outsourcing Services is a full stack software development company
-                            consisting of 35+ experienced IT professionals driven by passion for innovation and pioneering technologies.
-                            We provide high quality technical solutions addressing the specific challenges that our clients have.
-                        </p>
-                    </div>
+        <div class="container-fluid section section-services">
+            <div class="row">
+                <div class="col-12 col-lg-8 offset-lg-2 text-center">
+                    <h1 class="title">Our Services</h1>
+                    <p class="d-none d-md-block">
+                        Business Outsourcing Services is a full stack software service company
+                        consisting of experienced IT professionals driven by a passion for innovation and pioneering technologies.
+                        We provide high-quality technical solutions and on-demand dedicated teams addressing the specific
+                        challenges our clients have.
+                    </p>
                 </div>
-                <div class="col-12 col-lg-8">
+            </div>
+        </div>
+        <div class="container-fluid px-0">
+            <div class="row no-gutters display-flex service-boxes">
+                <div class="col-12 col-lg-6">
                     <div class="row no-gutters display-flex">
                         <div class="col-6">
-                            <a href="#" class="d-block">
+                            <a href="/services/dedicated-teams.html" class="d-block">
                                 <div class="service-box">
-                                    <img src="img/home/dedicated-teams.png"
-                                         alt="Dedicated Teams"
-                                         class="icon icon-dedicated-teams">
+                                    <div class="icon icon-dedicated-teams"></div>
                                     <h4 class="subtitle">Dedicated Teams</h4>
                                 </div>
                             </a>
                         </div>
                         <div class="col-6">
-                            <a href="#" class="d-block">
+                            <a href="/services/product-development.html" class="d-block">
                                 <div class="service-box">
-                                    <img src="img/home/product-development.png"
-                                         alt="Product development"
-                                         class="icon icon-product-development">
+                                    <div class="icon icon-product-development"></div>
                                     <h4 class="subtitle">Product development</h4>
                                 </div>
                             </a>
                         </div>
                     </div>
+                </div>
+                <div class="col-12 col-lg-6">
                     <div class="row no-gutters display-flex">
                         <div class="col-6">
-                            <a href="#" class="d-block">
+                            <a href="/services/design.html" class="d-block">
                                 <div class="service-box">
-                                    <img src="img/home/design.png"
-                                         alt="Design"
-                                         class="icon icon-design">
+                                    <div class="icon icon-design"></div>
                                     <h4 class="subtitle">Design</h4>
                                 </div>
                             </a>
                         </div>
                         <div class="col-6">
-                            <a href="#" class="d-block">
+                            <a href="/services/technical_&_customer_support.html" class="d-block">
                                 <div class="service-box">
-                                    <img src="img/home/technical-and-customer-support.png"
-                                         alt="Technical & customer support"
-                                         class="icon icon-technical-and-customer-support">
-                                    <h4 class="subtitle">Technical & customer support</h4>
+                                    <div class="icon icon-technical-and-customer-support"></div>
+                                    <h4 class="subtitle">Technical & <br> customer support</h4>
                                 </div>
                             </a>
                         </div>
@@ -197,7 +189,7 @@
         <div class="container-fluid section section-portfolio">
             <div class="row">
                 <div class="col-12 col-lg-8 offset-lg-2 text-center">
-                    <h1>Our recent use cases and some industries we have experience with</h1>
+                    <h1>Our recent use cases and some of the industries we have experience with</h1>
                     <p class="d-none d-md-block">
                         Business Outsourcing Services is present in the area of software development business since 2010.
                         We have been working on a variety of projects as a long-term partner
@@ -245,55 +237,117 @@
         <div class="container-fluid section section-what-clients-say">
             <div class="row">
                 <div class="col-10 offset-1 col-lg-8 offset-lg-2 text-center">
-                    <h1>What clients say?</h1>
+                    <h1>What our clients say?</h1>
                 </div>
             </div>
-            <div class="row display-flex video-boxes">
+            <div class="row display-flex client-boxes">
                 <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0">
-                    <div class="video-box">
-                        <div class="video video-appsco">
-                            <div class="row align-items-center info d-none d-md-flex">
-                                <div class="col">
-                                    <i class="fas fa-quote-left quote-icon"></i>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam
+                    <div class="client-box">
+                        <div class="client-quote">
+                            <div class="row no-gutters align-items-center info">
+                                <div class="col-12">
+                                    <div class="icon quote-icon"></div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <h3 class="subtitle">Geir Christian Karlsen, AppsCo</h3>
-                        <div class="row info d-flex d-md-none">
-                            <div class="col">
-                                <i class="fas fa-quote-left quote-icon"></i>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam
+                        <div class="client-info">
+                            <img src="/img/home/appsco-client.png" alt="Geir Christian Karlsen, AppsCo">
+                            <p class="name">
+                                Geir Christian Karlsen, <strong>AppsCo</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0">
+                    <div class="client-box">
+                        <div class="client-quote">
+                            <div class="row no-gutters align-items-center info">
+                                <div class="col-12">
+                                    <div class="icon quote-icon"></div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-info">
+                            <img src="/img/home/dossier-client.png" alt="Jarle B Liknes, Dossier">
+                            <p class="name">
+                                Jarle B Liknes, <strong>Dossier</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid section section-work-life-balance overflow-v">
+            <div class="row no-gutters align-items-center">
+                <div class="col-12 col-lg-9">
+                    <img src="/img/home/work-life-balance.svg"
+                         alt="Work/life balance is important to us"
+                         class="work-life-balance-img">
+                    <div class="work-life-balance-info">
+                        <h1 class=" mb-0">We take care of your team</h1>
+                        <h3 class="font-weight-normal">Work/life balance is important to us!</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 d-flex justify-content-lg-end">
+                    <a href="#" class="section-link">Open Positions</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid section section-what-employees-say">
+            <div class="row">
+                <div class="col-10 offset-1 col-lg-8 offset-lg-2 text-center">
+                    <h1>What our employees say</h1>
+                </div>
+            </div>
+            <div class="row display-flex employee-boxes">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0">
+                    <div class="employee-box">
+                        <div class="employee employee-first">
+                            <div class="row no-gutters info">
+                                <div class="col">
+                                    <div class="icon quote-icon"></div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam
+                                    </p>
+                                    <h2 class="name font-weight-normal">Sonja Lastro</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0">
-                    <div class="video-box">
-                        <div class="video video-dossier">
-                            <div class="row align-items-center info d-none d-md-flex">
+                    <div class="employee-box">
+                        <div class="employee employee-second">
+                            <div class="row no-gutters info">
                                 <div class="col">
-                                    <i class="fas fa-quote-left quote-icon"></i>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam
+                                    <div class="icon quote-icon"></div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam
+                                    </p>
+                                    <h2 class="name font-weight-normal">Snezana Nikolic</h2>
                                 </div>
                             </div>
                         </div>
-                        <h3 class="subtitle">Jarle B Liknes, Dossier</h3>
-                        <div class="row info d-flex d-md-none">
-                            <div class="col">
-                                <i class="fas fa-quote-left quote-icon"></i>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam
-                            </div>
-                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="row section-link-row">
+                <div class="col-10 offset-1 col-lg-8 offset-lg-2 text-center">
+                    <a href="/careers.html" data-target="careers" class="section-link">View careers page</a>
                 </div>
             </div>
         </div>
@@ -304,46 +358,26 @@
                     <div class="schedule-consultation">
                         <div class="info">
                             <h1>Let's create something great together</h1>
-                            <p class="d-none d-md-block">
-                                Technology is an ever evolving tool used to achieve business goals,
-                                and the hardware and software of today stand as the pinnacles of humanity
-                                and are essential for the development of modern businesses.
-                            </p>
+                            <form class="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Full name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group last">
+                                    <textarea class="form-control" rows="7" placeholder="Your message"></textarea>
+                                </div>
+                                <div class="text-left">
+                                    <a href="#" class="section-link">Schedule a free consultation</a>
+                                </div>
+                            </form>
                         </div>
-                        <a href="#" class="d-none d-md-inline-block schedule-consultation-a">Schedule a free consultation</a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 d-none d-lg-block">
                     <div class="brainstorming text-center">
                         <img src="img/home/brainstorming.png" alt="Brainstorming">
-                        <a href="#" class="d-inline d-md-none schedule-consultation-a">Schedule a free consultation</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid section section-contact d-none d-md-block">
-            <div class="row">
-                <div class="col-12 col-lg-8 offset-lg-2">
-                    <div class="contact-form text-center">
-                        <h1>Contact Us</h1>
-                        <form class="bg-gray">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Full name">
-                           </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Phone number">
-                            </div>
-                            <div class="form-group last">
-                                <textarea class="form-control" rows="8" placeholder="Message"></textarea>
-                            </div>
-                            <div class="text-right">
-                                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>

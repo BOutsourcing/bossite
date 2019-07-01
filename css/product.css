@@ -154,11 +154,11 @@
     transition: transform 0.2s linear;
 }
 .video-ceo {
-    background: #242F4E url("../img/home/client-appsco.png") no-repeat;
+    background: #242F4E url("../img/home/appsco-client.png") no-repeat;
     background-size: cover;
 }
 .video-cto {
-    background: #242F4E url("../img/home/client-dossier.png") no-repeat;
+    background: #242F4E url("../img/home/dossier-client.png.png") no-repeat;
     background-size: cover;
 }
 
