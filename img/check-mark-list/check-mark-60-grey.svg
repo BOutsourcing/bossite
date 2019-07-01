@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="60px" height="61px" viewBox="0 0 60 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 4</title>
+    <title>Group 6</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <polygon id="path-1" points="0 -3.55271368e-15 30.8495652 -3.55271368e-15 30.8495652 22.6556522 0 22.6556522"></polygon>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Teams" transform="translate(-112.000000, -1218.000000)">
-            <g id="Group-4" transform="translate(112.000000, 1218.000000)">
-                <g id="Group-4-Copy-2" fill="#DCE2EF" fill-rule="nonzero">
+        <g id="Teams" transform="translate(-110.000000, -2497.000000)">
+            <g id="Group-6" transform="translate(110.000000, 2497.666667)">
+                <g id="Group-4-Copy" fill="#DCE2EF" fill-rule="nonzero">
                     <circle id="Oval-3" cx="30" cy="30" r="30"></circle>
                 </g>
-                <g id="Group-3" transform="translate(14.782609, 19.130435)">
+                <g id="Group-3-Copy" transform="translate(14.782609, 18.260870)">
                     <mask id="mask-2" fill="white">
                         <use xlink:href="#path-1"></use>
                     </mask>

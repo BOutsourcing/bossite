@@ -1,20 +1,32 @@
 .section-lead-hero {
-    background: #242F4E url("../img/services/dedicated-teams/dedicated-development-teams.png") no-repeat;
+    background: #242F4E url("../img/screen/large/services/development-teams/dedicated-development-teams.png") no-repeat;
     background-size: cover;
 }
-.section h2 {
-    font-size: 42px;
-    line-height: 48px;
+.flexible-team-section {
+    padding-right: 150px;
+}
+.expertise-flexibility-section .title {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.all-in-one-service-headline,
-.how-to-engage-boutsourcing-section .title {
-    margin-bottom: 80px;
+.all-in-one-service-section,
+.key-benefits-section,
+.describe-your-business-section {
+    margin-top: 150px;
 }
-.all-in-one-service-headline h2 {
+.all-in-one-service-section,
+.key-benefits-section {
+    padding-right: 200px;
+}
+.all-in-one-service-headline {
+    margin-bottom: 100px;
+}
+.all-in-one-service-headline h1 {
     border-bottom: 3px solid #50E29D;
     display: inline;
+}
+.how-to-engage-boutsourcing-section .title {
+    margin-bottom: 40px;
 }
 
 @media (min-width: 992px) {
@@ -25,7 +37,20 @@
         padding-left: 40px;
     }
 }
+@media (max-width: 1400px) {
+    .section {
+        padding-right: 100px;
+    }
+}
+@media (max-width: 991px) {
+    .section {
+        padding-right: 30px;
+    }
+}
 @media (max-width: 767px) {
+    .section {
+        padding-right: 20px;
+    }
     .section h2 {
         font-size: 22px;
         line-height: 28px;
@@ -35,9 +60,18 @@
     .expertise-flexibility-section > .row > [class*='col-'] {
         margin-bottom: 30px;
     }
+    .expertise-flexibility-section .title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     .check-mark-icon {
         width: 44px;
         height: 44px;
+    }
+    .all-in-one-service-section,
+    .key-benefits-section,
+    .describe-your-business-section {
+        margin-top: 50px;
     }
     .all-in-one-service-section .media {
         display: block;
