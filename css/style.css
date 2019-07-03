@@ -152,9 +152,6 @@ a.box-link .box, a.box-link .box:before {
 a.box-link:hover .box, a.box-link:hover .box:before {
     transition: all 0.2s linear;
 }
-a.box-link:hover .box {
-    transform: scale(1.05);
-}
 a.box-link .box:before {
     content: "";
     opacity: 0;

@@ -8,28 +8,20 @@
     margin-top: 130px;
     margin-bottom: 50px;
     color: #FFFFFF;
-    font-size: 50px;
-    line-height: 66px;
 }
 .section-lead .info p {
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 38px;
-}
-.section-lead-hero {
-    background: #242F4E url("../img/screen/large/references/references-hero.png") no-repeat;
-    background-size: cover;
 }
 
 .section {
-    padding-left: 130px;
-    padding-right: 130px;
-}
-.section-clients {
-    margin-top: 80px;
+    margin-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .section-clients .title {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 .row-clients > [class*='col-'] {
     margin-bottom: 80px;
@@ -71,9 +63,9 @@
     height: 68px;
     padding: 5px 15px;
     color: #243647;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
-    line-height: 62px;
+    line-height: 58px;
     opacity: 0.9;
     background-color: #50E29D;
     position: absolute;
@@ -94,26 +86,52 @@
  }
 .client-box .name {
     margin-bottom: 40px;
-    font-size: 46px;
+    font-size: 40px;
     line-height: 58px;
 }
 .client-box .description {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 38px;
 }
 .client-box .website {
     margin-bottom: 0;
-    color: #748494;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
 }
 
+@media (min-width: 992px) {
+    body {
+        background: url("../img/screen/large/references/references-hero.png") no-repeat;
+        background-size: 1440px 590px;
+    }
+}
+@media (min-width: 1440px) {
+    body {
+        background-size: 100% 590px;
+    }
+}
 @media (max-width: 1440px) {
     .section {
         padding-left: 50px;
         padding-right: 50px;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+    .section-lead {
+        height: 330px;
+    }
+    .section-lead-hero {
+        background: #242F4E url("../img/screen/large/references/references-hero.png") no-repeat;
+        background-size: cover;
+    }
+    .section-lead .info h1 {
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    .section-lead .info p {
+        line-height: 32px;
+    }
     .client-box .info,
     .pos-abs-bottom {
         padding-left: 20px;
@@ -136,8 +154,8 @@
         line-height: 28px;
     }
     .lead-info {
-        padding-left: 30px!important;
-        padding-right: 30px!important;
+        padding-left: 20px!important;
+        padding-right: 20px!important;
     }
     .lead-info p {
         color: #243647;
@@ -147,15 +165,11 @@
     }
 
     .section {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .section-clients {
         margin-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .section-clients .title {
-        padding-left: 15px;
-        padding-right: 15px;
         margin-bottom: 20px;
         text-align: left;
     }
@@ -173,7 +187,7 @@
     }
     .preview .sticky-label {
         height: 26px;
-        padding: 5px 10px;
+        padding: 5px 6px;
         font-size: 12px;
         line-height: 16px;
         bottom: -13px;
