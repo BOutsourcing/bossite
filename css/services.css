@@ -5,7 +5,7 @@
     background-color: #19E69B;
 }
 .section-lead {
-    height: 620px;
+    height: 530px;
 }
 .section-lead .title {
     font-size: 50px;
@@ -24,6 +24,9 @@
 .section .title {
     margin-bottom: 30px;
 }
+.section p + p {
+    margin-top: 30px;
+}
 .section p.emphasized {
     margin-bottom: 0;
     font-size: 22px;
@@ -34,6 +37,10 @@
     margin-right: 45px;
 }
 .describe-your-business-section {
+    margin-bottom: 100px;
+}
+.schedule-consultation-section {
+    margin-top: 150px;
     margin-bottom: 100px;
 }
 
@@ -55,7 +62,7 @@
     }
     .section {
         padding-left: 30px;
-        padding-right: 30px;
+        padding-right: 30px !important;
     }
     .mb-max-lg-50 {
         margin-bottom: 50px;
@@ -77,11 +84,9 @@
     .section {
         margin-top: 50px;
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 20px !important;
     }
     .section .title {
-        font-size: 22px;
-        line-height: 28px;
         margin-bottom: 30px;
     }
     .section p,
@@ -90,7 +95,8 @@
         line-height: 24px;
     }
 
-    .describe-your-business-section {
+    .describe-your-business-section,
+    .schedule-consultation-section {
         margin-bottom: 50px;
     }
 }

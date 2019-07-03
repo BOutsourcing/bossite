@@ -1,9 +1,8 @@
-
 .overflow-v {
     overflow: visible !important;
 }
 .section-lead {
-    height: 610px;
+    height: 630px;
     padding: 50px;
     color: #243647;
 }
@@ -221,7 +220,6 @@
     top: -95px;
 }
 
-
 .employee-boxes {
     padding-left: 55px;
     padding-right: 55px;
@@ -308,7 +306,7 @@
         transition: all 0.2s 0.1s linear;
     }
     .header.submenu-hover {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.9);
         transition: all 0.2s linear;
     }
 }
