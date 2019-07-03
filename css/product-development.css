@@ -1,8 +1,3 @@
-.process-flow-section,
-.section-industries,
-.section-development {
-    margin-top: 150px;
-}
 .process-flow-section .title {
     margin-bottom: 80px;
 }
@@ -42,11 +37,6 @@
     }
 }
 @media (max-width: 767px) {
-    .process-flow-section,
-    .section-industries,
-    .section-development {
-        margin-top: 50px;
-    }
     .process-flow-section .title,
     .section-industries .title {
         margin-bottom: 30px;

@@ -6,11 +6,6 @@
     margin-bottom: 30px;
 }
 .all-in-one-service-section,
-.key-benefits-section,
-.describe-your-business-section {
-    margin-top: 150px;
-}
-.all-in-one-service-section,
 .key-benefits-section {
     padding-right: 200px;
 }
@@ -70,11 +65,6 @@
     .check-mark-icon {
         width: 44px;
         height: 44px;
-    }
-    .all-in-one-service-section,
-    .key-benefits-section,
-    .describe-your-business-section {
-        margin-top: 50px;
     }
     .all-in-one-service-section .media {
         display: block;

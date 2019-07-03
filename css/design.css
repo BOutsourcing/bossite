@@ -101,9 +101,6 @@
     padding-top: 35px;
 }
 
-.our-recent-work-section {
-    margin-top: 150px;
-}
 .our-recent-work-section .title {
     margin-bottom: 60px;
 }
@@ -142,7 +139,7 @@
         font-size: 18px;
         line-height: 24px;
     }
-    .our-recent-work-section {
+    .section-special-m-t {
         margin-top: 50px;
     }
     .our-recent-work-section .title {

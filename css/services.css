@@ -21,13 +21,16 @@
     padding-right: 100px;
     margin-top: 100px;
 }
+.section-special-m-t {
+    margin-top: 150px;
+}
 .section .title {
     margin-bottom: 30px;
 }
 .section p + p {
     margin-top: 30px;
 }
-.section p.emphasized {
+.section .emphasized {
     margin-bottom: 0;
     font-size: 22px;
     line-height: 34px;
@@ -36,11 +39,7 @@
 .media > img {
     margin-right: 45px;
 }
-.describe-your-business-section {
-    margin-bottom: 100px;
-}
 .schedule-consultation-section {
-    margin-top: 150px;
     margin-bottom: 100px;
 }
 
@@ -90,12 +89,11 @@
         margin-bottom: 30px;
     }
     .section p,
-    .section p.emphasized {
+    .section .emphasized {
         font-size: 14px;
         line-height: 24px;
     }
 
-    .describe-your-business-section,
     .schedule-consultation-section {
         margin-bottom: 50px;
     }

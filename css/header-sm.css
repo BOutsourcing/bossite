@@ -59,11 +59,11 @@
         display: block;
     }
     .header.sm-active .fa {
-        color: #19E69B;
+        color: #50E29D;
     }
     .menu-burger {
         font-size: 44px;
-        background-color: #19E69B;
+        background-color: #50E29D;
         color: #232747;
         padding: 26px;
         display: inline-block;
