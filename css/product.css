@@ -3,19 +3,16 @@
     padding: 50px;
     position: relative;
 }
-.section-lead .info h1 {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    color: #FFFFFF;
-    font-size: 50px;
-    line-height: 66px;
-}
+.section-lead .info h1,
 .section-lead .info p {
     color: #FFFFFF;
-    font-size: 28px;
-    line-height: 38px;
+}
+.section-lead .info p {
+    font-size: 22px;
+    line-height: 28px;
+}
+.lead-info p {
+    margin-top: 50px;
 }
 .section-lead .sticky-label {
     width: 366px;
@@ -33,43 +30,25 @@
     right: 0;
     margin: auto;
 }
-.section-lead-hero.appsco {
-    background: #242F4E url("../img/screen/large/appsco/appsco-hero.png") no-repeat;
-    background-size: cover;
-}
-.section-lead-hero.evolution {
-    background: #242F4E url("../img/screen/large/evolution/evolution-hero.png") no-repeat;
-    background-size: cover;
-}
 
 .section {
+    margin-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
 }
-.section p,
-.lead-info p {
-    margin-top: 50px;
-    color: #243647;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 36px;
-}
-.section-product-info {
-    margin-top: 120px;
-}
-.product-preview {
-    margin-top: 60px;
+.product-info-section p {
+    margin-top: 30px;
 }
 
-.section-projects {
-    margin-top: 80px;
+.projects-section {
+    padding-bottom: 5px;
 }
-.section-projects .title {
-    margin-bottom: 50px;
+.projects-section .title {
+    margin-bottom: 40px;
 }
 .project-box {
     height: 100%;
-    padding: 65px 120px;
+    padding: 50px 120px;
     border-style: solid;
     border-color: #E7EAF2;
     border-top-width: 1px;
@@ -93,124 +72,90 @@
 }
 .project-box h2 {
     margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 24px;
 }
 .project-box p {
     font-size: 16px;
     line-height: 24px;
 }
 .filled-circle {
-    height: 8px;
-    width: 8px;
-    border-radius: 4px;
+    height: 9px;
+    width: 9px;
+    border-radius: 5px;
     background-color: #E7EAF2;
 }
 .project-box .filled-circle {
     position: absolute;
-    right: -4px;
+    right: -5px;
 }
 .project-box .filled-circle.top {
-    top: -4px;
+    top: -5px;
 }
 .project-box .filled-circle.bottom {
-    bottom: -4px;
+    bottom: -5px;
 }
 
-.section-what-clients-say {
-    margin-top: 100px;
-}
-.video-boxes {
-    margin-top: 50px;
-}
-.video {
-    height: 380px;
+.about-the-client-section p {
     margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+    color: #243647;
 }
-.video-box .info {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 50px 80px;
-    background-color: rgba(36, 54, 71, 0.5);
-    color: #FFFFFF;
-    font-size: 30px;
+.about-the-client-section a {
+    font-size: 22px;
+    line-height: 28px;
     font-weight: bold;
-    line-height: 40px;
-    transform: translateY(100%);
-    transition: transform 0.1s linear;
-}
-.video-box .info .quote-icon {
-    font-size: 30px;
     color: #50E29D;
-    position: absolute;
-    top: -10px;
-    left: -30px;
 }
-.video:hover .info {
-    transform: translateY(0);
-    transition: transform 0.2s linear;
-}
-.video-ceo {
-    background: #242F4E url("../img/home/appsco-client.png") no-repeat;
-    background-size: cover;
-}
-.video-cto {
-    background: #242F4E url("../img/home/dossier-client.png.png") no-repeat;
-    background-size: cover;
+.schedule-consultation-section {
+    margin-bottom: 100px;
 }
 
-@media (max-width: 1440px) {
-    .section {
-        padding-left: 50px;
-        padding-right: 50px;
+@media (min-width: 992px) {
+    .overflow-v {
+        overflow: visible !important;
+    }
+    body.appsco-page {
+        background: url("../img/screen/large/products/appsco/appsco-hero.png") no-repeat;
+        background-size: 1440px 590px;
+    }
+    body.evolution-page {
+        background: url("../img/screen/large/products/appsco/evolution-hero.png") no-repeat;
+        background-size: 1440px 590px;
     }
 }
-@media (max-width: 1200px) {
-    .video-box .info {
-        padding: 20px 60px;
-        font-size: 26px;
-        line-height: 36px;
-        transform: translateY(0);
-    }
-    .video-box .info .quote-icon {
-        font-size: 26px;
-        left: -20px;
+@media (min-width: 1440px) {
+    body.appsco-page,
+    body.evolution-page {
+        background-size: 100% 590px;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .section-lead {
+        height: 330px;
         margin-bottom: 80px;
-    }
-    .section-lead-hero {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .section-lead-hero.appsco {
+        background: #242F4E url("../img/screen/large/products/appsco/appsco-hero.png") no-repeat;
+        background-size: cover;
+    }
+    .section-lead-hero.evolution {
+        background: #242F4E url("../img/screen/large/evolution/evolution-hero.png") no-repeat;
+        background-size: cover;
     }
     .section-lead .info h1 {
         width: auto;
         margin: 0;
     }
     .lead-info {
-        padding-left: 45px;
-        padding-right: 45px;
+        padding-left: 115px;
+        padding-right: 115px;
     }
 
     .project-box {
         padding: 40px 20px;
-    }
-
-    .section-what-clients-say {
-        margin-top: 50px;
-    }
-    .video-boxes {
-        padding: 0;
-        margin-top: 30px;
-    }
-    .video-box {
-        margin-bottom: 50px;
     }
 }
 @media (max-width: 767px) {
@@ -235,32 +180,14 @@
         padding-left: 30px!important;
         padding-right: 30px!important;
     }
-    .lead-info p {
-        font-size: 14px;
-        line-height: 24px;
-    }
 
     .section {
+        margin-top: 50px;
         padding-left: 20px;
         padding-right: 20px;
     }
-    .section p {
-        font-size: 12px;
-        font-weight: normal;
-        line-height: 22px;
-    }
-    .section p,
-    .lead-info p {
+    .product-info-section p {
         margin-top: 25px;
-    }
-    .product-preview,
-    .section-projects {
-        margin-top: 50px;
-    }
-    .section-product-info {
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-top: 20px;
     }
     .product-logo {
         width: 162px;
@@ -270,7 +197,7 @@
         padding-right: 0;
     }
 
-    .section-projects .title {
+    .projects-section .title {
         margin-bottom: 15px;
     }
     .project-box {
@@ -303,42 +230,11 @@
         line-height: 16px;
         color: #243647;
     }
-
-    .section-what-clients-say p {
-        margin-bottom: 20px;
-        text-align: left;
+    .about-the-client-section a {
+        font-size: 16px;
+        line-height: 24px;
     }
-    .video-boxes {
-        margin-top: 0;
-    }
-    .video-box .info {
-        padding: 0 20px;
-        margin-top: 20px;
-        position: relative;
-        background-color: transparent;
-        font-size: 14px;
-        color: #243647;
-        line-height: 20px;
-    }
-    .video {
-        margin-bottom: 15px;
-    }
-    .video-box .subtitle {
-        padding: 0 20px;
-        font-size: 18px;
-        line-height: 26px;
-    }
-    .video-box .info .quote-icon {
-        position: relative;
-        top: 0;
-        left: 0;
-        font-size: 30px;
-        margin-bottom: 10px;
-        display: block;
-    }
-}
-@media (max-width: 575px) {
-    .video-ceo {
-        background-position-x: center;
+    .schedule-consultation-section {
+        margin-bottom: 50px;
     }
 }

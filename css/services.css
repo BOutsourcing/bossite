@@ -30,12 +30,6 @@
 .section p + p {
     margin-top: 30px;
 }
-.section .emphasized {
-    margin-bottom: 0;
-    font-size: 22px;
-    line-height: 34px;
-    color: #243647;
-}
 .media > img {
     margin-right: 45px;
 }
@@ -88,8 +82,7 @@
     .section .title {
         margin-bottom: 30px;
     }
-    .section p,
-    .section .emphasized {
+    .section p {
         font-size: 14px;
         line-height: 24px;
     }

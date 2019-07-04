@@ -139,6 +139,12 @@ textarea.form-control, textarea.form-control:focus {
 .section-link:hover {
     color: #243647;
 }
+*.emphasized {
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 34px;
+    color: #243647;
+}
 
 /**
 Hover effect on div with background.
@@ -196,6 +202,11 @@ Common END
     }
     h3 {
         font-size: 18px;
+        line-height: 24px;
+    }
+    body p,
+    *.emphasized {
+        font-size: 14px;
         line-height: 24px;
     }
     .btn-primary {
