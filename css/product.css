@@ -123,14 +123,19 @@
         background-size: 1440px 590px;
     }
     body.dossier-page {
-        background: url("../img/screen/large/products/evolution/evolution-hero.png") no-repeat;
+        background: url("../img/screen/large/products/appsco/appsco-hero.png") no-repeat;
+        background-size: 1440px 590px;
+    }
+    body.brocon-page {
+        background: url("../img/screen/large/products/appsco/appsco-hero.png") no-repeat;
         background-size: 1440px 590px;
     }
 }
 @media (min-width: 1440px) {
     body.appsco-page,
     body.evolution-page,
-    body.dossier-page {
+    body.dossier-page,
+    body.brocon-page {
         background-size: 100% 590px;
     }
 }
@@ -151,7 +156,11 @@
         background-size: cover;
     }
     .section-lead-hero.dossier {
-        background: #242F4E url("../img/screen/large/products/evolution/evolution-hero.png") no-repeat;
+        background: #242F4E url("../img/screen/large/products/appsco/appsco-hero.png") no-repeat;
+        background-size: cover;
+    }
+    .section-lead-hero.brocon {
+        background: #242F4E url("../img/screen/large/products/appsco/appsco-hero.png") no-repeat;
         background-size: cover;
     }
     .section-lead .info h1 {
