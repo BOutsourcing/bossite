@@ -37,10 +37,11 @@
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="stylesheet" type="text/css" href="/css/header.css">
         <link rel="stylesheet" type="text/css" href="/css/header-sm.css">
-        <link rel="stylesheet" type="text/css" href="/css/references.css">
+        <link rel="stylesheet" type="text/css" href="/css/product.css">
+        <link rel="stylesheet" type="text/css" href="/css/carousel.css">
         <link rel="stylesheet" type="text/css" href="/css/footer.css">
     </head>
-    <body>
+    <body class="mysiteshop-page">
     <header class="container-fluid header">
         <div id="header" class="row no-gutters display-flex align-items-center header-container">
             <div class="col-6 col-lg-4 flex-none">
@@ -114,139 +115,182 @@
         </div>
     </header>
 
-        <div class="container-fluid px-0">
-            <div class="row no-gutters">
-                <div class="col">
-                    <div class="row section-lead section-lead-hero">
-                        <div class="col-12 col-lg-10 offset-lg-1 info text-center">
-                            <h1>References</h1>
-                            <p class="d-none d-md-block">
-                                We are proud to say that we have contributed to a variety of projects as a long-term partner
-                                and helped our customers transform their business and increase their revenue.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row no-gutters d-block d-md-none">
-                        <div class="col-12 col-lg-10 offset-lg-1 lead-info">
-                            <p>
-                                We are proud to say that we have contributed to a variety of projects as a long-term partner
-                                and helped our customers transform their business and increase their revenue.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <div class="container-fluid px-0 overflow-v">
+        <div class="row no-gutters align-items-center section-lead section-lead-hero mysiteshop">
+            <div class="col-12 col-xl-10 offset-xl-1 info text-center">
+                <h1>MySiteShop - <br> Website Creation Tool</h1>
+                <p class="d-none d-lg-block">
+                    For this MySiteShop website builder project,
+                    we created a dedicated team which mapped and analysed the requirements,
+                    designed the solution, planned and implemented the entire software and infrastructure.
+                </p>
+            </div>
+            <div class="sticky-label">CMS system</div>
+        </div>
+        <div class="row d-block d-lg-none">
+            <div class="col-12 lead-info">
+                <p class="emphasized font-weight-bold">
+                    For this MySiteShop website builder project,
+                    we created a dedicated team which mapped and analysed the requirements,
+                    designed the solution, planned and implemented the entire software and infrastructure.
+                </p>
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid section section-clients">
-            <div class="row">
-                <div class="text-center col">
-                    <h1 class="title">Our client's success is our success!</h1>
+    <div class="container-fluid section product-info-section">
+        <div class="row">
+            <div class="col-12 col-lg-10">
+                <img class="product-logo" src="/img/products/appsco/appsco-logo.svg" alt="AppsCo">
+                <p class="emphasized font-weight-bold">
+                    Our team provided continuous delivery and developed new features
+                    and an integration with the external member management system.
+                    Throughout the entire project life-cycle we provided technical and customer support.
+                </p>
+                <p class="emphasized font-weight-bold">
+                    For the legacy website builder system - WebComputing,
+                    our team provided maintenance, technical support and migration services.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0 section product-preview-section">
+        <div class="row no-gutters">
+            <div class="col">
+                <div id="carouselComponent" class="carousel slide"
+                     data-ride="carousel">
+                    <div class="carousel-inner row" role="listbox">
+                        <div class="carousel-item col-12 col-md-4 active">
+                            <img src="/img/products/mysiteshop/mysiteshop-preview-1.png" class="img-fluid mx-auto d-block" alt="MySiteShop">
+                        </div>
+                        <div class="carousel-item col-12 col-md-4">
+                            <img src="/img/products/mysiteshop/mysiteshop-preview-2.png" class="img-fluid mx-auto d-block" alt="MySiteShop">
+                        </div>
+                        <div class="carousel-item col-12 col-md-4">
+                            <img src="/img/products/mysiteshop/mysiteshop-preview-3.png" class="img-fluid mx-auto d-block" alt="MySiteShop">
+                        </div>
+                        <div class="carousel-item col-12 col-md-4">
+                            <img src="/img/products/mysiteshop/mysiteshop-preview-4.png" class="img-fluid mx-auto d-block" alt="MySiteShop">
+                        </div>
+                        <div class="carousel-item col-12 col-md-4">
+                            <img src="/img/products/mysiteshop/mysiteshop-preview-5.png" class="img-fluid mx-auto d-block" alt="MySiteShop">
+                        </div>
+                        <div class="carousel-item col-12 col-md-4">
+                            <img src="/img/products/mysiteshop/mysiteshop-preview-6.png" class="img-fluid mx-auto d-block" alt="MySiteShop">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselComponent" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselComponent" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-            <div class="row display-flex">
-                <div class="col">
-                    <div class="row display-flex row-clients">
-                        <div class="col-6 col-xl-4">
-                            <a href="/portfolio/evolution.html" class="d-block box-link">
-                                <div class="client-box">
-                                    <div class="box preview evolution">
-                                        <div class="sticky-label">Human Resources</div>
-                                    </div>
-                                    <div class="info">
-                                        <h1 class="name">4Human <br> Evolution</h1>
-                                        <div class="pos-abs-bottom">
-                                            <h3 class="description">Employee <br> Monitoring Tool</h3>
-                                            <p class="website d-none d-md-block">www.4human.no</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0 section projects-section">
+        <div class="row no-gutters">
+            <div class="text-center col">
+                <h1 class="title">Project details</h1>
+            </div>
+        </div>
+        <div class="row no-gutters display-flex">
+            <div class="col">
+                <div class="row no-gutters display-flex">
+                    <div class="col-12 col-md-6">
+                        <div class="text-center project-box">
+                            <img src="/img/products/solutions.svg" alt="Solutions" class="icon icon-solutions">
+                            <h2>Solutions</h2>
+                            <p>
+                                MySiteShop is an intuitive and easy to use website builder.
+                                This project consists of a template catalog and an editing tool - Mosaic.
+                                This solution was created as a simple and efficient tool consisting of functionalities such as text,
+                                news and link editor, file manager, gallery, calendar, catalog, rss feed, social media etc.
+                            </p>
+                            <div class="filled-circle top d-none d-md-block"></div>
+                            <div class="filled-circle bottom d-none d-md-block"></div>
                         </div>
-                        <div class="col-6 col-xl-4">
-                            <a href="/portfolio/dossier.html" class="d-block box-link">
-                                <div class="client-box">
-                                    <div class="box preview dossier">
-                                        <div class="sticky-label">Human Resources</div>
-                                    </div>
-                                    <div class="info">
-                                        <h1 class="name">Dossier</h1>
-                                        <div class="pos-abs-bottom">
-                                            <h3 class="description">Competency <br> Management <br> System</h3>
-                                            <p class="website d-none d-md-block">www.dossiersolutions.com</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="text-center project-box">
+                            <img src="/img/products/technologies.svg" alt="Technologies" class="icon icon-technologies">
+                            <h2>Technologies</h2>
+                            <p>
+                                PHP, HTML/Bootstrap
+                            </p>
                         </div>
-                        <div class="col-6 col-xl-4">
-                            <a href="/portfolio/appsco.html" class="d-block box-link">
-                                <div class="client-box">
-                                    <div class="box preview appsco">
-                                        <div class="sticky-label">Cyber Security</div>
-                                    </div>
-                                    <div class="info">
-                                        <h1 class="name">AppsCo</h1>
-                                        <div class="pos-abs-bottom">
-                                            <h3 class="description">Cloud Identity & <br> Access Management <br> Solution</h3>
-                                            <p class="website d-none d-md-block">www.appsco.com</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                    </div>
+                </div>
+                <div class="row no-gutters display-flex last-row">
+                    <div class="col-12 col-md-6">
+                        <div class="text-center project-box">
+                            <img src="/img/products/tools.svg" alt="Tools" class="icon icon-tools">
+                            <h2>Tools</h2>
+                            <p>
+                                Jira, Confluence, GitHub
+                            </p>
+                            <div class="filled-circle bottom d-none d-md-block"></div>
                         </div>
-                        <div class="col-6 col-xl-4">
-                            <a href="/portfolio/brocon.html" class="d-block box-link">
-                                <div class="client-box">
-                                    <div class="box preview brocon">
-                                        <div class="sticky-label">Financial Services</div>
-                                    </div>
-                                    <div class="info">
-                                        <h1 class="name">Brocon <br> Solvent</h1>
-                                        <div class="pos-abs-bottom">
-                                            <h3 class="description">Debt Collection <br> Software</h3>
-                                            <p class="website d-none d-md-block">www.brocon.no</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-xl-4">
-                            <a href="/portfolio/club-collaborator.html" class="d-block box-link">
-                                <div class="client-box">
-                                    <div class="box preview club-collaborator">
-                                        <div class="sticky-label">—————</div>
-                                    </div>
-                                    <div class="info">
-                                        <h1 class="name">Club <br> Collaborator</h1>
-                                        <div class="pos-abs-bottom">
-                                            <h3 class="description">Membership <br> Management <br> Software</h3>
-                                            <p class="website d-none d-md-block">www.clubcollaborator.com</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-xl-4">
-                            <a href="/portfolio/mysiteshop.html" class="d-block box-link">
-                                <div class="client-box">
-                                    <div class="box preview mysiteshop">
-                                        <div class="sticky-label">CMS system</div>
-                                    </div>
-                                    <div class="info">
-                                        <h1 class="name">MySiteShop</h1>
-                                        <div class="pos-abs-bottom">
-                                            <h3 class="description">Website <br> Creation Tool</h3>
-                                            <p class="website d-none d-md-block">www.mysiteshop.com</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="text-center project-box">
+                            <img src="/img/products/team.svg" alt="Team" class="icon icon-team">
+                            <h2>Team</h2>
+                            <p>
+                                One of the key accomplishments that we are proud of
+                                is that each team member is capable of working on every part of the system. <br>
+                                We achieved this through the use of documentation, standards in UI and in development,
+                                agile processes and lots of hard work.
+                            </p>
+                            <p>
+                                4 back end developers, 1 front end developer, 1 QA specialist,
+                                1 Business Analyist/Scrum Master, 1 customer support agent
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid text-center section about-the-client-section">
+        <div class="row">
+            <div class="col-12">
+                <h1>About the customer</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-10 offset-lg-1">
+                <p>
+                    MySiteShop is a website market with premade website templates.
+                    MySiteShop is an easy-to-use website builder, with clean and responsive design, suitable for any business.
+                    Regardless of their skill level, users can build a fully-functional website.
+                    Project is based on a simplified editor and variety of features
+                    where users can easily add content and publish their website in just a few steps.
+                </p>
+                <p>
+                    <strong>More information can be found on</strong>
+                    <br>
+                    <a href="http://www.mysiteshop.com" target="_blank">www.mysiteshop.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid section schedule-consultation-section">
+        <div class="row">
+            <div class="col-12 text-center">
+                <a href="" class="section-link">
+                    Describe your business/Tell us about your project
+                </a>
+            </div>
+        </div>
+    </div>
 
     <footer class="container-fluid">
         <div class="row">
@@ -332,25 +376,26 @@
     </footer>
 
     <!-- Scripts -->
-        <script src="/vendor/components/jquery/jquery.min.js"></script>
-        <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="/js/header.js"></script>
-        <script type="text/javascript">
-            // Google Analytics
+    <script src="/vendor/components/jquery/jquery.min.js"></script>
+    <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script type="text/javascript">
+        // Google Analytics
 
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-21164624-1', 'auto');
-            ga('send', 'pageview');
+        ga('create', 'UA-21164624-1', 'auto');
+        ga('send', 'pageview');
 
-        </script>
-        <script type="text/javascript">
-            (function(a,l,b,c,r,s){_nQc=c,r=a.createElement(l),s=a.getElementsByTagName(l)[0];r.async=1;
-                r.src=l.src=("https:"==a.location.protocol?"https://":"http://")+b;s.parentNode.insertBefore(r,s);
-            })(document,"script","serve.albacross.com/track.js","89041062");
-        </script>
+    </script>
+    <script type="text/javascript">
+        (function(a,l,b,c,r,s){_nQc=c,r=a.createElement(l),s=a.getElementsByTagName(l)[0];r.async=1;
+            r.src=l.src=("https:"==a.location.protocol?"https://":"http://")+b;s.parentNode.insertBefore(r,s);
+        })(document,"script","serve.albacross.com/track.js","89041062");
+    </script>
     </body>
 </html>
