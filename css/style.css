@@ -145,6 +145,12 @@ textarea.form-control, textarea.form-control:focus {
     line-height: 34px;
     color: #243647;
 }
+.separator-green {
+    margin: 16px 0;
+    height: 8px;
+    width: 100px;
+    background-color: #19E69B;
+}
 
 /**
 Hover effect on div with background.

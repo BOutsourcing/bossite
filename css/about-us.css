@@ -6,12 +6,6 @@
     background: #242F4E url("../img/screen/large/about-us/about-us-hero.png") no-repeat;
     background-size: cover;
 }
-.separator-green {
-     margin: 16px 0;
-     height: 8px;
-     width: 100px;
-     background-color: #19E69B;
- }
 
 .section {
     margin-top: 100px;
