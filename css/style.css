@@ -149,16 +149,16 @@ textarea.form-control, textarea.form-control:focus {
 /**
 Hover effect on div with background.
  */
-a.box-link {
+.box-link {
     overflow: hidden;
 }
-a.box-link .box, a.box-link .box:before {
+.box-link .box, .box-link .box:before {
     transition: all 0.1s linear;
 }
-a.box-link:hover .box, a.box-link:hover .box:before {
+.box-link:hover .box, .box-link:hover .box:before {
     transition: all 0.2s linear;
 }
-a.box-link .box:before {
+.box-link .box:before {
     content: "";
     opacity: 0;
     visibility: hidden;
@@ -169,7 +169,7 @@ a.box-link .box:before {
     left: 0;
     background-color: rgba(255, 255, 255, 0.2);
 }
-a.box-link:hover .box:before {
+.box-link:hover .box:before {
     opacity: 1;
     visibility: visible;
 }

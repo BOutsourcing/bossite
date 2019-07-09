@@ -1,3 +1,7 @@
+.section-lead-hero {
+    background: #242F4E url("../img/screen/large/services/product-development/software-product-development.png") no-repeat;
+    background-size: cover;
+}
 .process-flow-section .title {
     margin-bottom: 80px;
 }
@@ -19,23 +23,6 @@
     color: #243647;
 }
 
-@media (min-width: 992px) {
-    body {
-        background: url("../img/screen/large/services/product-development/software-product-development.png") no-repeat;
-        background-size: 1440px 620px;
-    }
-}
-@media (min-width: 1440px) {
-    body {
-        background-size: 100% 620px;
-    }
-}
-@media (max-width: 991px) {
-    .section-lead-hero {
-        background: #242F4E url("../img/screen/large/services/product-development/software-product-development.png") no-repeat;
-        background-size: cover;
-    }
-}
 @media (max-width: 767px) {
     .process-flow-section .title,
     .section-industries .title {

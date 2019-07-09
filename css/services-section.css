@@ -1,0 +1,91 @@
+.service-boxes {
+    margin-top: 40px;
+}
+.service-box {
+    height: 300px;
+    padding: 100px 20px 40px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
+.service-box:hover {
+    background-color: #F5F7FC;
+    border-bottom: 4px solid #50E29D;
+}
+.service-box .icon {
+    margin: 0 auto 30px;
+    transition: all 0.2s linear;
+}
+.service-box .icon-dedicated-teams {
+    width: 62px;
+    height: 76px;
+    background: url("../img/services/dedicated-teams.svg") no-repeat;
+    background-size: cover;
+}
+.service-box:hover .icon-dedicated-teams {
+    background: url("../img/services/dedicated-teams-hover.svg") no-repeat;
+    background-size: cover;
+}
+.service-box .icon-product-development {
+    width: 76px;
+    height: 67px;
+    background: url("../img/services/product-development.svg") no-repeat;
+    background-size: cover;
+    margin-top: 6px;
+    margin-bottom: 33px;
+}
+.service-box:hover .icon-product-development {
+    background: url("../img/services/product-development-hover.svg") no-repeat;
+    background-size: cover;
+}
+.service-box .icon-design {
+    width: 86px;
+    height: 65px;
+    background: url("../img/services/design.svg") no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+.service-box:hover .icon-design {
+    background: url("../img/services/design-hover.svg") no-repeat;
+    background-size: cover;
+}
+.service-box .icon-technical-and-customer-support {
+    width: 78px;
+    height: 75px;
+    background: url("../img/services/technical-and-customer-support.svg") no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+.service-box:hover .icon-technical-and-customer-support {
+    background: url("../img/services/technical-and-customer-support-hover.svg") no-repeat;
+    background-size: cover;
+}
+.service-box .subtitle {
+    text-transform: uppercase;
+}
+.section-services a.d-block {
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .service-box {
+        height: 200px;
+        padding: 35px 20px;
+    }
+    .service-box .icon {
+        margin-bottom: 20px;
+    }
+    .service-box .icon-product-development {
+        margin-top: 8px;
+    }
+    .service-box .icon-design {
+        margin-bottom: 32px;
+    }
+    .service-box .subtitle {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 18px;
+        margin-bottom: 0;
+    }
+}

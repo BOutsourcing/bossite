@@ -9,6 +9,7 @@
         background-color: rgba(255, 255, 255, 0.9);
         z-index: 10;
         height: 90px;
+        position: absolute;
     }
     .header .logo {
         width: 168px;

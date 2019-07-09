@@ -5,7 +5,8 @@
     background-color: #19E69B;
 }
 .section-lead {
-    height: 530px;
+    height: 620px;
+    padding-top: 90px;
 }
 .section-lead .title {
     font-size: 50px;
@@ -45,6 +46,7 @@
 @media (max-width: 991px) {
     .section-lead {
         height: 330px;
+        padding-top: 0;
     }
     .section-lead .title {
         font-size: 32px;
