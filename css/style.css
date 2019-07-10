@@ -79,7 +79,7 @@ body strong {
     background-color: #F3F6FD;
 }
 .btn {
-    padding: 16px 54px;
+    padding: 20px 54px;
     border-radius: 4px;
     font-size: 18px;
     font-weight: bold;
@@ -97,7 +97,7 @@ body strong {
     border: none;
     outline: none;
     box-shadow: none;
-    background-color: #50E29D;
+    background-color: #19E69B;
     color: #243647;
 }
 form {
