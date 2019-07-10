@@ -133,6 +133,9 @@
 .schedule-consultation-section {
     margin-bottom: 100px;
 }
+.carousel-item {
+     max-height: 600px;
+}
 
 @media (min-width: 992px) {
     .overflow-v {
