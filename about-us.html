@@ -37,222 +37,323 @@
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="stylesheet" type="text/css" href="/css/header.css">
         <link rel="stylesheet" type="text/css" href="/css/header-sm.css">
+        <link rel="stylesheet" type="text/css" href="/css/services-section.css">
         <link rel="stylesheet" type="text/css" href="/css/about-us.css">
-        <link rel="stylesheet" type="text/css" href="/css/check-mark-list.css">
-        <link rel="stylesheet" type="text/css" href="/css/carousel.css">
         <link rel="stylesheet" type="text/css" href="/css/footer.css">
     </head>
     <body>
-    <header class="container-fluid header">
-        <div id="header" class="row display-flex align-items-center header-container">
-            <div class="col-6 col-lg-4 flex-none">
-                <a href="/" data-target="header" class="logo-container">
-                    <img class="logo flex-none" src="/img/logo.png" alt="Business Outsourcing Services">
-                    <img class="logo-sm flex-none" src="/img/logo-negativ.svg" alt="Business Outsourcing Services">
-                </a>
-            </div>
-            <div class="col-6 col-lg-8 d-lg-none text-right h-100 d-block">
-                <div class="menu-burger cursor-pointer" data-activate-menu>
-                    <i class="fa fa-bars"></i>
+        <header class="container-fluid header">
+            <div id="header" class="row no-gutters display-flex align-items-center header-container">
+                <div class="col-6 col-lg-4 flex-none">
+                    <a href="/" data-target="header" class="logo-container">
+                        <img class="logo flex-none" src="/img/logo.png" alt="Business Outsourcing Services">
+                        <img class="logo-sm flex-none" src="/img/logo-negativ.svg" alt="Business Outsourcing Services">
+                    </a>
                 </div>
-            </div>
-            <div class="col-lg-8 text-right h-100">
-                <div id="menu" class="menu-container">
-                    <ul class="row text-center menu h-100">
-                        <li>
-                            <a href="/" data-target="header">Home</a>
-                        </li>
-                        <li data-submenu="container">
-                            <a href="#" data-target="services">
-                                Services
-                                <i class="fa fa-chevron-right d-inline-block d-lg-none float-right"></i>
-                            </a>
-                            <ul class="sub-menu text-left">
-                                <li class="d-block d-lg-none cursor-pointer lead-li" data-submenu>
-                                    <i class="fa fa-chevron-left d-inline-block"></i>
+                <div class="col-6 col-lg-8 d-lg-none text-right h-100 d-block">
+                    <div class="menu-burger cursor-pointer" data-activate-menu>
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+                <div class="col-lg-8 text-right h-100">
+                    <div id="menu" class="menu-container">
+                        <ul class="row text-center menu h-100">
+                            <li>
+                                <a href="/" data-target="header">Home</a>
+                            </li>
+                            <li data-submenu="container">
+                                <a href="#" data-target="services">
                                     Services
-                                </li>
-                                <li>
-                                    <a href="/services/dedicated-teams.html" class="h-100" data-target="dedicated-teams">
-                                        <img src="/img/menu/dedicated-teams.svg">
-                                        Dedicated Teams
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/services/design.html" class="h-100" data-target="design">
-                                        <img src="/img/menu/design.svg">
-                                        Design
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/services/product-development.html" class="h-100" data-target="development">
-                                        <img src="/img/menu/development.svg">
-                                        Product Development
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/services/technical_&_customer_support.html" class="h-100" data-target="technical_&_customer_support">
-                                        <img src="/img/menu/technical.svg">
-                                        Technical & Customer Support
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="/references.html" data-target="references">References</a>
-                        </li>
-                        <li>
-                            <a href="/about-us.html" data-target="about-us">About Us</a>
-                        </li>
-                        <li >
-                            <a href="/careers.html" data-target="careers" class="d-block">Careers</a>
-                            <a href="/contact-us.html" data-target="contactUs" class="d-block">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-
-        <div class="container-fluid px-0">
-            <div class="row no-gutters">
-                <div class="col">
-                    <div class="row section-lead section-lead-hero">
-                        <div class="col col-lg-10 offset-lg-1 info text-center d-none d-md-block">
-                            <h2 class="title">
-                                You're an expert in your industry - we are experts in creating on-demand dedicated teams,
-                                bespoke software solutions, and consultancy services.
-                            </h2>
-                            <p>
-                                Our mission is to help you transform your business,
-                                increase your revenue and save time and operating costs.
-                                Through transparent communication, efficient processes
-                                and consultancy we take care of your technology challenges and deliver end-to-end solutions.
-                                We enable you to focus on your business model, expand
-                                and add value by creating an innovative product in your market segment.
-                            </p>
-                        </div>
-                        <div class="col col-lg-10 offset-lg-1 info text-center d-block d-md-none">
-                            <h1 class="title d-inline">About us</h1>
-                        </div>
-                    </div>
-                    <div class="row no-gutters d-block d-md-none">
-                        <div class="col-12 col-lg-10 offset-lg-1 lead-info">
-                            <h2 class="title">
-                                You're an expert in your industry - we are experts in creating on-demand dedicated teams,
-                                bespoke software solutions, and consultancy services.
-                            </h2>
-                            <p>
-                                Our mission is to help you transform your business,
-                                increase your revenue and save time and operating costs.
-                                Through transparent communication, efficient processes
-                                and consultancy we take care of your technology challenges and deliver end-to-end solutions.
-                                We enable you to focus on your business model, expand
-                                and add value by creating an innovative product in your market segment.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid section section-what-we-do">
-            <div class="row display-flex">
-                <div class="col-12 col-lg-5">
-                    <div class="brainstorming">
-                        <img src="/img/about-us/brainstorming.svg" alt="Brainstorming">
-                    </div>
-                </div>
-                <div class="col-12 col-lg-7">
-                    <div class="info">
-                        <h1 class="title">What we do</h1>
-                        <p>
-                            Help you hire top tech talent, create a dedicated team of experts with the necessary niche skills,
-                            expertise and quickly scale your delivery capacity.
-                            <br>
-                            Based on your business goals and your budget opt for one of our key services or end-to-end product delivery.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid section section-core-values">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="title">Core Values</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div>
-                        <ul class="check-mark-list pr-5" data-check-mark-list>
-                            <li class="media completed">
-                                <div class="check-mark align-self-center mr-3"></div>
-                                <div class="media-body align-self-center ml-5">
-                                    <p class="heading-text">Customer Satisfaction</p>
-                                </div>
+                                    <i class="fa fa-chevron-right d-inline-block d-lg-none float-right"></i>
+                                </a>
+                                <ul class="sub-menu text-left">
+                                    <li class="d-block d-lg-none cursor-pointer lead-li" data-submenu>
+                                        <i class="fa fa-chevron-left d-inline-block"></i>
+                                        Services
+                                    </li>
+                                    <li>
+                                        <a href="/services/dedicated-teams.html" class="h-100" data-target="dedicated-teams">
+                                            <img src="/img/menu/dedicated-teams.svg" class="dedicated-teams">
+                                            Dedicated Teams
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/design.html" class="h-100" data-target="design">
+                                            <img src="/img/menu/design.svg" class="design">
+                                            Design
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/product-development.html" class="h-100" data-target="development">
+                                            <img src="/img/menu/product-development.svg" class="product-development">
+                                            Product Development
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/technical_&_customer_support.html" class="h-100" data-target="technical_&_customer_support">
+                                            <img src="/img/menu/technical-&-customer-support.svg" class="technical-customer-support">
+                                            Technical & Customer Support
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="media">
-                                <div class="check-mark align-self-center mr-3"></div>
-                                <div class="media-body align-self-center ml-5">
-                                    <p class="heading-text">Creativity and Innovation</p>
-                                </div>
+                            <li>
+                                <a href="/references.html" data-target="references">References</a>
                             </li>
-                            <li class="media">
-                                <div class="check-mark align-self-center mr-3"></div>
-                                <div class="media-body align-self-center ml-5">
-                                    <p class="heading-text">Commitment and Passion</p>
-                                </div>
+                            <li>
+                                <a href="/about-us.html" data-target="about-us">About Us</a>
                             </li>
-                            <li class="media">
-                                <div class="check-mark align-self-center mr-3"></div>
-                                <div class="media-body align-self-center ml-5">
-                                    <p class="heading-text">Trust and Honesty</p>
-                                </div>
+                            <li>
+                                <a href="/careers.html" data-target="careers">Careers</a>
                             </li>
-                            <li class="media">
-                                <div class="check-mark align-self-center mr-3"></div>
-                                <div class="media-body align-self-center ml-5">
-                                    <p class="heading-text">Long-term thinking</p>
-                                </div>
+                            <li>
+                                <a href="/contact-us.html" data-target="contactUs">Contact Us</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 align-self-center d-none d-lg-block">
-                    <div>
-                        <img src="/img/about-us/core-values.svg" alt="Core Values">
+            </div>
+        </header>
+
+        <div class="container-fluid px-0">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="section-lead section-lead-hero"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center section info-section">
+            <div class="row">
+                <div class="col-12 col-lg-10 offset-lg-1">
+                    <h1 class="title">
+                        You're an expert in your industry
+                    </h1>
+                    <div class="separator-green"></div>
+                    <h1 class="title font-weight-normal">
+                        We are experts in creating
+                        <strong>on-demand dedicated teams, bespoke software solutions,</strong>
+                        and
+                        <strong>consultancy services.</strong>
+                    </h1>
+                    <p>
+                        Our mission is to help you transform your business,
+                        increase your revenue and save time and operating costs.
+                        Through transparent communication, efficient processes
+                        and consultancy we take care of your technology challenges and deliver end-to-end solutions.
+                        We enable you to focus on your business model, expand
+                        and add value by creating an innovative product in your market segment.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid section management-section">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="title text-center">Management</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-10 offset-xl-1">
+                    <div class="row display-flex">
+                        <div class="col-12 col-sm-6">
+                            <div class="row display-flex">
+                                <div class="col-12 col-md-6 align-items-center box-link">
+                                    <div class="profile text-center cursor-pointer box" data-toggle="modal" data-target="#modalFounder">
+                                        <img src="/img/about-us/founder.png" alt="Marko Jevtović">
+                                        <h4 class="name">Marko Jevtović</h4>
+                                        <h4 class="position">Founder and CEO</h4>
+                                    </div>
+                                    <div class="modal fade" id="modalFounder" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body position-relative">
+                                                    <img src="/img/about-us/close-icon-24.svg" alt="Close"
+                                                         class="cursor-pointer close-icon" data-dismiss="modal">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 col-lg-4 col-xl-3 text-center">
+                                                                <img src="/img/about-us/founder.png" alt="Marko Jevtović">
+                                                            </div>
+                                                            <div class="col-12 col-lg-8">
+                                                                <div class="profile">
+                                                                    <h4 class="name text-center text-lg-left">Marko Jevtović</h4>
+                                                                    <h4 class="position text-center text-lg-left">Founder and CEO</h4>
+                                                                    <p>
+                                                                        Marko is the head of Boutsourcing and a serial entrepreneur.
+                                                                        His experience includes project management, agile software development,
+                                                                        building and organizing development teams.
+                                                                        Former Founder of Puzzle Group (leading youth organization in Serbia)
+                                                                        and lead project manager at EXIT (award-winning music festival).
+                                                                        Holds Master in IT and Scrum Master Certification.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 align-items-center box-link">
+                                    <div class="profile text-center cursor-pointer box" data-toggle="modal" data-target="#modalCFO">
+                                        <img src="/img/about-us/cfo.png" alt="Filip Gačević">
+                                        <h4 class="name">Filip Gačević</h4>
+                                        <h4 class="position">CFO</h4>
+                                    </div>
+                                    <div class="modal fade" id="modalCFO" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body position-relative">
+                                                    <img src="/img/about-us/close-icon-24.svg" alt="Close"
+                                                         class="cursor-pointer close-icon" data-dismiss="modal">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 col-lg-4 col-xl-3 text-center">
+                                                                <img src="/img/about-us/cfo.png" alt="Filip Gačević">
+                                                            </div>
+                                                            <div class="col-12 col-lg-8">
+                                                                <div class="profile">
+                                                                    <h4 class="name text-center text-lg-left">Filip Gačević</h4>
+                                                                    <h4 class="position text-center text-lg-left">CFO</h4>
+                                                                    <p>
+                                                                        Filip is co-founder of Boutsourcing and manages company finances
+                                                                        as Chief Financial Officer. He provides executives with timely
+                                                                        and accurate financial statements, ongoing cash flow projections,
+                                                                        oversight over accounting and finance operations,
+                                                                        as well as design and maintenance of the financial reporting structures.
+                                                                        <br>
+                                                                        Within finance, he guides accounting, shareholder relations, tax
+                                                                        and internal audit functions to pursue the company’s
+                                                                        aggressive growth strategy and meet its clients’ and shareholders expectations.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="row display-flex">
+                                <div class="col-12 col-md-6 align-items-center box-link">
+                                    <div class="profile text-center cursor-pointer box" data-toggle="modal" data-target="#modalTechnicalLead">
+                                        <img src="/img/about-us/technical-lead.png" alt="Boris Vujičić">
+                                        <h4 class="name">Boris Vujičić</h4>
+                                        <h4 class="position">Technical Lead</h4>
+                                    </div>
+                                    <div class="modal fade" id="modalTechnicalLead" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body position-relative">
+                                                    <img src="/img/about-us/close-icon-24.svg" alt="Close"
+                                                         class="cursor-pointer close-icon" data-dismiss="modal">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 col-lg-4 col-xl-3 text-center">
+                                                                <img src="/img/about-us/technical-lead.png" alt="Boris Vujičić">
+                                                            </div>
+                                                            <div class="col-12 col-lg-8">
+                                                                <div class="profile">
+                                                                    <h4 class="name text-center text-lg-left">Boris Vujičić</h4>
+                                                                    <h4 class="position text-center text-lg-left">Technical Lead</h4>
+                                                                    <p>
+                                                                        Boris is an experienced, resourceful, committed, loyal
+                                                                        and effective developer with more than 10 years of experience
+                                                                        in the IT industry. He has worked on high traffic sites,
+                                                                        business applications, custom CMS solutions etc.
+                                                                        Contributor to Symfony, passionate open source supporter,
+                                                                        business-minded, a believer in IoT, people oriented, specification
+                                                                        and documentation follower and a problem solver.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 align-items-center box-link">
+                                    <div class="profile text-center cursor-pointer box" data-toggle="modal" data-target="#modalCTO">
+                                        <img src="/img/about-us/cto.png" alt="Miloš Ignjatović">
+                                        <h4 class="name">Miloš Ignjatović</h4>
+                                        <h4 class="position">CTO</h4>
+                                    </div>
+                                    <div class="modal fade" id="modalCTO" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body position-relative">
+                                                    <img src="/img/about-us/close-icon-24.svg" alt="Close"
+                                                         class="cursor-pointer close-icon" data-dismiss="modal">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 col-lg-4 col-xl-3 text-center">
+                                                                <img src="/img/about-us/cto.png" alt="Miloš Ignjatović">
+                                                            </div>
+                                                            <div class="col-12 col-lg-8">
+                                                                <div class="profile">
+                                                                    <h4 class="name text-center text-lg-left">Miloš Ignjatović</h4>
+                                                                    <h4 class="position text-center text-lg-left">CTO</h4>
+                                                                    <p>
+                                                                        Miloš has been working as head architect at Boutsourcing
+                                                                        on various B2B/B2C projects for more than 8 years.
+                                                                        Highly experienced in UML, PHP, MySQL and JS.
+                                                                        His expertise ensures high quality, innovative
+                                                                        and functional design in line with client's needs.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid px-0 section-services">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="title text-center">Services</h1>
+        <div class="container-fluid section what-we-do-section">
+            <div class="row display-flex">
+                <div class="col-12 col-lg-8 offset-lg-2 text-center">
+                    <h1 class="title">What we do</h1>
+                    <p>
+                        Help you hire top tech talent, create a dedicated team of experts with the necessary niche skills,
+                        expertise and quickly scale your delivery capacity.
+                        <br>
+                        Based on your business goals and your budget, opt for one of our key services or end-to-end product delivery.
+                    </p>
                 </div>
             </div>
-            <div class="row no-gutters display-flex">
+        </div>
+        <div class="container-fluid px-0">
+            <div class="row no-gutters display-flex service-boxes">
                 <div class="col-12 col-lg-6">
                     <div class="row no-gutters display-flex">
                         <div class="col-6">
                             <a href="/services/dedicated-teams.html" class="d-block">
-                                <div class="service-box h-100 border-left-n">
-                                    <img src="img/services/dedicated-teams.svg"
-                                         alt="Dedicated Teams"
-                                         class="icon icon-dedicated-teams">
+                                <div class="service-box">
+                                    <div class="icon icon-dedicated-teams"></div>
                                     <h4 class="subtitle">Dedicated Teams</h4>
                                 </div>
                             </a>
                         </div>
                         <div class="col-6">
                             <a href="/services/product-development.html" class="d-block">
-                                <div class="service-box h-100">
-                                    <img src="img/services/product-development.svg"
-                                         alt="Product development"
-                                         class="icon icon-product-development">
+                                <div class="service-box">
+                                    <div class="icon icon-product-development"></div>
                                     <h4 class="subtitle">Product development</h4>
                                 </div>
                             </a>
@@ -263,21 +364,17 @@
                     <div class="row no-gutters display-flex">
                         <div class="col-6">
                             <a href="/services/design.html" class="d-block">
-                                <div class="service-box h-100 border-top-n border-left-n">
-                                    <img src="img/services/design.svg"
-                                         alt="Design"
-                                         class="icon icon-design">
+                                <div class="service-box">
+                                    <div class="icon icon-design"></div>
                                     <h4 class="subtitle">Design</h4>
                                 </div>
                             </a>
                         </div>
                         <div class="col-6">
                             <a href="/services/technical_&_customer_support.html" class="d-block">
-                                <div class="service-box h-100 border-top-n">
-                                    <img src="img/services/technical-and-customer-support.svg"
-                                         alt="Technical & customer support"
-                                         class="icon icon-technical-and-customer-support">
-                                    <h4 class="subtitle">Technical & customer support</h4>
+                                <div class="service-box">
+                                    <div class="icon icon-technical-and-customer-support"></div>
+                                    <h4 class="subtitle">Technical & <br> customer support</h4>
                                 </div>
                             </a>
                         </div>
@@ -286,45 +383,35 @@
             </div>
         </div>
 
-        <div class="container-fluid section section-management">
+        <div class="container-fluid section who-we-are-section">
             <div class="row">
-                <div class="col-12">
-                    <h1 class="title text-center">Management</h1>
-                </div>
-            </div>
-            <div class="row display-flex">
-                <div class="col-12 col-sm-6">
-                    <div class="row display-flex">
-                        <div class="col-12 col-md-6">
-                            <div class="profile text-center border-top-xs-none">
-                                <img src="/img/about-us/founder.png" alt="Marko Jevtovic">
-                                <h4 class="name">Marko Jevtovic</h4>
-                                <h4 class="position">Founder and CEO</h4>
+                <div class="col-12 col-xl-10 offset-xl-1">
+                    <div class="row display-flex align-items-center">
+                        <div class="col-12 col-lg-5">
+                            <div class="brainstorming">
+                                <img src="/img/about-us/brainstorming.svg" alt="Brainstorming">
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="profile text-center">
-                                <img src="/img/about-us/ceo.png" alt="Filip Gacevic">
-                                <h4 class="name">Filip Gacevic</h4>
-                                <h4 class="position">CEO</h4>
+                        <div class="col-12 col-lg-7">
+                            <div class="info">
+                                <h1 class="title">Company structure and profiles</h1>
+                                <p>
+                                    Initiated by Norwegian and Serbian founders in 2010 with an engineering team counting 4 members,
+                                    followed by a growth to ~40 team members.
+                                </p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <div class="row display-flex">
-                        <div class="col-12 col-md-6">
-                            <div class="profile text-center">
-                                <img src="/img/about-us/technical-lead.png" alt="Boris Vujicic">
-                                <h4 class="name">Boris Vujicic</h4>
-                                <h4 class="position">Technical Lead</h4>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="profile text-center">
-                                <img src="/img/about-us/cto.png" alt="Milos Ignjatovic">
-                                <h4 class="name">Milos Ignjatovic</h4>
-                                <h4 class="position">CTO</h4>
+                            <div class="info">
+                                <h1 class="title">Who we are</h1>
+                                <p>
+                                    Software Engineer <br>
+                                    Infrastructure Engineer <br>
+                                    Application Tester - QA <br>
+                                    Support Representative <span class="default-color">(Norwegian)</span> <br>
+                                    Business Analyst/Scrum Master <span class="default-color">(Norwegian, English)</span> <br>
+                                    UI/UX and Graphic Designer <br>
+                                    Data Protection Officer <br>
+                                    Key Account Manager <span class="default-color">(Spanish, English)</span> <br>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -332,65 +419,248 @@
             </div>
         </div>
 
-        <div class="container-fluid px-0 section-offices">
+        <div class="container-fluid boutsourcing-life-section gallery">
             <div class="row">
-                <div class="col-12">
-                    <h1 class="title text-center">Offices</h1>
+                <div class="col-12 text-center">
+                    <h3 class="subtitle">Follow us to find out more about life</h3>
+                    <h1 class="title">@Boutsourcing</h1>
                 </div>
             </div>
             <div class="row no-gutters">
-                <div class="col-12">
-                    <div id="carouselComponent" class="carousel slide"
-                         data-ride="carousel">
-                        <div class="carousel-inner row" role="listbox">
-                            <div class="carousel-item col-12 col-md-4 active">
-                                <img src="/img/about-us/carousel/offices-1.png" class="img-fluid mx-auto d-block" alt="Offices">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/about-us/carousel/offices-2.png" class="img-fluid mx-auto d-block" alt="Offices">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/about-us/carousel/offices-3.png" class="img-fluid mx-auto d-block" alt="Offices">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/about-us/carousel/offices-4.png" class="img-fluid mx-auto d-block" alt="Offices">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/about-us/carousel/offices-5.png" class="img-fluid mx-auto d-block" alt="Offices">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/about-us/carousel/offices-6.png" class="img-fluid mx-auto d-block" alt="Offices">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/about-us/carousel/offices-7.png" class="img-fluid mx-auto d-block" alt="Offices">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/about-us/carousel/offices-8.png" class="img-fluid mx-auto d-block" alt="Offices">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/about-us/carousel/offices-9.png" class="img-fluid mx-auto d-block" alt="Offices">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/about-us/carousel/offices-10.png" class="img-fluid mx-auto d-block" alt="Offices">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/about-us/carousel/offices-11.png" class="img-fluid mx-auto d-block" alt="Offices">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/about-us/carousel/offices-12.png" class="img-fluid mx-auto d-block" alt="Offices">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/about-us/carousel/offices-13.png" class="img-fluid mx-auto d-block" alt="Offices">
+                <div class="col-12 col-lg-6">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-4">
+                            <div class="row no-gutters">
+                                <div class="col-12">
+                                    <a href="#" class="insta-link d-block">
+                                        <div class="insta-photo"
+                                             style="background-image: url('/img/about-us/gallery/insta-1.jpg')">
+                                            <div class="row align-items-center text-center photo-data">
+                                                <div class="col-6 text-right">
+                                                    <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
+                                                    <span class="number number-of-likes">33</span>
+                                                </div>
+                                                <div class="col-6 text-left">
+                                                    <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
+                                                    <span class="number number-of-comments">9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#" class="insta-link d-block">
+                                        <div class="insta-photo"
+                                             style="background-image: url('/img/about-us/gallery/insta-2.jpg')">
+                                            <div class="row align-items-center text-center photo-data">
+                                                <div class="col-6 text-right">
+                                                    <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
+                                                    <span class="number number-of-likes">33</span>
+                                                </div>
+                                                <div class="col-6 text-left">
+                                                    <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
+                                                    <span class="number number-of-comments">9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#" class="insta-link d-block">
+                                        <div class="insta-photo"
+                                             style="background-image: url('/img/about-us/gallery/insta-3.jpg')">
+                                            <div class="row align-items-center text-center photo-data">
+                                                <div class="col-6 text-right">
+                                                    <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
+                                                    <span class="number number-of-likes">33</span>
+                                                </div>
+                                                <div class="col-6 text-left">
+                                                    <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
+                                                    <span class="number number-of-comments">9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselComponent" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselComponent" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                        <div class="col-12 col-sm-8">
+                            <div class="row no-gutters">
+                                <div class="col-12">
+                                    <a href="#" class="insta-link d-block">
+                                        <div class="insta-photo"
+                                             style="background-image: url('/img/about-us/gallery/insta-4.jpg')">
+                                            <div class="row align-items-center text-center photo-data">
+                                                <div class="col-6 text-right">
+                                                    <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
+                                                    <span class="number number-of-likes">33</span>
+                                                </div>
+                                                <div class="col-6 text-left">
+                                                    <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
+                                                    <span class="number number-of-comments">9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row no-gutters">
+                                        <div class="col-12 col-sm-6">
+                                            <a href="#" class="insta-link d-block">
+                                                <div class="insta-photo"
+                                                     style="background-image: url('/img/about-us/gallery/insta-5.jpg')">
+                                                    <div class="row align-items-center text-center photo-data">
+                                                        <div class="col-6 text-right">
+                                                            <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
+                                                            <span class="number number-of-likes">33</span>
+                                                        </div>
+                                                        <div class="col-6 text-left">
+                                                            <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
+                                                            <span class="number number-of-comments">9</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <a href="#" class="insta-link d-block">
+                                                <div class="insta-photo"
+                                                     style="background-image: url('/img/about-us/gallery/insta-6.jpg')">
+                                                    <div class="row align-items-center text-center photo-data">
+                                                        <div class="col-6 text-right">
+                                                            <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
+                                                            <span class="number number-of-likes">33</span>
+                                                        </div>
+                                                        <div class="col-6 text-left">
+                                                            <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
+                                                            <span class="number number-of-comments">9</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row no-gutters display-flex">
+                        <div class="col-12 col-sm-4">
+                            <div class="row no-gutters">
+                                <div class="col-12">
+                                    <a href="#" class="insta-link d-block">
+                                        <div class="insta-photo"
+                                             style="background-image: url('/img/about-us/gallery/insta-7.jpg')">
+                                            <div class="row align-items-center text-center photo-data">
+                                                <div class="col-6 text-right">
+                                                    <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
+                                                    <span class="number number-of-likes">33</span>
+                                                </div>
+                                                <div class="col-6 text-left">
+                                                    <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
+                                                    <span class="number number-of-comments">9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#" class="insta-link d-block">
+                                        <div class="insta-photo"
+                                             style="background-image: url('/img/about-us/gallery/insta-8.jpg')">
+                                            <div class="row align-items-center text-center photo-data">
+                                                <div class="col-6 text-right">
+                                                    <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
+                                                    <span class="number number-of-likes">33</span>
+                                                </div>
+                                                <div class="col-6 text-left">
+                                                    <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
+                                                    <span class="number number-of-comments">9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#" class="insta-link d-block">
+                                        <div class="insta-photo"
+                                             style="background-image: url('/img/about-us/gallery/insta-9.jpg')">
+                                            <div class="row align-items-center text-center photo-data">
+                                                <div class="col-6 text-right">
+                                                    <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
+                                                    <span class="number number-of-likes">33</span>
+                                                </div>
+                                                <div class="col-6 text-left">
+                                                    <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
+                                                    <span class="number number-of-comments">9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <div class="row no-gutters">
+                                <div class="col-12">
+                                    <div class="row no-gutters">
+                                        <div class="col-12 col-sm-6">
+                                            <a href="#" class="insta-link d-block">
+                                                <div class="insta-photo"
+                                                     style="background-image: url('/img/about-us/gallery/insta-10.jpg')">
+                                                    <div class="row align-items-center text-center photo-data">
+                                                        <div class="col-6 text-right">
+                                                            <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
+                                                            <span class="number number-of-likes">33</span>
+                                                        </div>
+                                                        <div class="col-6 text-left">
+                                                            <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
+                                                            <span class="number number-of-comments">9</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <a href="#" class="insta-link d-block">
+                                                <div class="insta-photo"
+                                                     style="background-image: url('/img/about-us/gallery/insta-11.jpg')">
+                                                    <div class="row align-items-center text-center photo-data">
+                                                        <div class="col-6 text-right">
+                                                            <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
+                                                            <span class="number number-of-likes">33</span>
+                                                        </div>
+                                                        <div class="col-6 text-left">
+                                                            <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
+                                                            <span class="number number-of-comments">9</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#" class="insta-link d-block">
+                                        <div class="insta-photo"
+                                             style="background-image: url('/img/about-us/gallery/insta-12.jpg')">
+                                            <div class="row align-items-center text-center photo-data">
+                                                <div class="col-6 text-right">
+                                                    <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
+                                                    <span class="number number-of-likes">33</span>
+                                                </div>
+                                                <div class="col-6 text-left">
+                                                    <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
+                                                    <span class="number number-of-comments">9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -483,8 +753,6 @@
         <script src="/vendor/components/jquery/jquery.min.js"></script>
         <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="/js/header.js"></script>
-        <script src="/js/check-mark-list.js"></script>
-        <script src="/js/carousel.js"></script>
         <script type="text/javascript">
             // Google Analytics
 

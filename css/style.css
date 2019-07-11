@@ -18,21 +18,22 @@ h1, h2, h3, h4 {
     letter-spacing: normal;
 }
 h1 {
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 32px;
+    line-height: 44px;
     margin-bottom: 15px;
 }
 h2 {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 26px;
+    line-height: 32px;
 }
 h3 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 26px;
 }
 h4 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
     margin-bottom: 20px;
 }
 a, a:hover {
@@ -46,8 +47,11 @@ body img {
 }
 body p {
     margin: 0 0 10px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 26px;
+}
+body strong {
+    font-weight: bold;
 }
 .flex-none {
     -ms-flex: none;
@@ -74,12 +78,13 @@ body p {
 .bg-gray {
     background-color: #F3F6FD;
 }
-.btn-primary {
-    padding: 18px 54px;
+.btn {
+    padding: 20px 54px;
     border-radius: 4px;
     font-size: 18px;
     font-weight: bold;
     line-height: 24px;
+    text-transform: uppercase;
 }
 .btn-primary,
 .btn-primary:hover,
@@ -99,10 +104,10 @@ form {
     padding: 40px;
 }
 .form-group {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 form .form-group.last {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .form-control, .form-control:focus {
     font-size: 18px;
@@ -134,23 +139,32 @@ textarea.form-control, textarea.form-control:focus {
 .section-link:hover {
     color: #243647;
 }
+*.emphasized {
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 34px;
+    color: #243647;
+}
+.separator-green {
+    margin: 16px 0;
+    height: 8px;
+    width: 100px;
+    background-color: #19E69B;
+}
 
 /**
 Hover effect on div with background.
  */
-a.box-link {
+.box-link {
     overflow: hidden;
 }
-a.box-link .box, a.box-link .box:before {
+.box-link .box, .box-link .box:before {
     transition: all 0.1s linear;
 }
-a.box-link:hover .box, a.box-link:hover .box:before {
+.box-link:hover .box, .box-link:hover .box:before {
     transition: all 0.2s linear;
 }
-a.box-link:hover .box {
-    transform: scale(1.05);
-}
-a.box-link .box:before {
+.box-link .box:before {
     content: "";
     opacity: 0;
     visibility: hidden;
@@ -161,7 +175,7 @@ a.box-link .box:before {
     left: 0;
     background-color: rgba(255, 255, 255, 0.2);
 }
-a.box-link:hover .box:before {
+.box-link:hover .box:before {
     opacity: 1;
     visibility: visible;
 }
@@ -187,6 +201,19 @@ Common END
     h1 {
         font-size: 24px;
         line-height: 32px;
+    }
+    h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    body p,
+    *.emphasized {
+        font-size: 14px;
+        line-height: 24px;
     }
     .btn-primary {
         padding: 12px 28px;

@@ -1,43 +1,38 @@
 .section-lead-hero {
-    background: #242F4E url("../img/services/technical-&-customer-support/hero.png") no-repeat;
+    background: #242F4E url("../img/screen/large/services/technical-customer-support/technical-and-customer-support.png") no-repeat;
     background-size: cover;
 }
 ul.green-list {
     list-style: none;
-    font-size: 24px;
-    font-weight: 700;
-    color: #243647;
 }
 ul.green-list li {
     margin: 60px 0;
+    padding-left: 47px;
+    position: relative;
 }
 ul.green-list li:before {
-    display: block;
-    float:left;
     content: "";
-    width: 24px;
-    height: 24px;
-    background-color: #68e79b;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: #19E69B;
     border-radius: 50%;
-    margin-right: 40px;
-    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
 
 @media (max-width: 767px) {
     ul.green-list li {
-        margin: 0;
-        padding: 20px 0 20px 36px;
+        margin: 20px 0;
+        padding-left: 38px;
         font-size: 16px;
         line-height: 22px;
-        position: relative;
     }
     ul.green-list li:before {
         width: 18px;
         height: 18px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
     }
 }

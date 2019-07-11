@@ -43,7 +43,7 @@
     </head>
     <body>
     <header class="container-fluid header">
-        <div id="header" class="row display-flex align-items-center header-container">
+        <div id="header" class="row no-gutters display-flex align-items-center header-container">
             <div class="col-6 col-lg-4 flex-none">
                 <a href="/" data-target="header" class="logo-container">
                     <img class="logo flex-none" src="/img/logo.png" alt="Business Outsourcing Services">
@@ -73,25 +73,25 @@
                                 </li>
                                 <li>
                                     <a href="/services/dedicated-teams.html" class="h-100" data-target="dedicated-teams">
-                                        <img src="/img/menu/dedicated-teams.svg">
+                                        <img src="/img/menu/dedicated-teams.svg" class="dedicated-teams">
                                         Dedicated Teams
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/services/design.html" class="h-100" data-target="design">
-                                        <img src="/img/menu/design.svg">
+                                        <img src="/img/menu/design.svg" class="design">
                                         Design
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/services/product-development.html" class="h-100" data-target="development">
-                                        <img src="/img/menu/development.svg">
+                                        <img src="/img/menu/product-development.svg" class="product-development">
                                         Product Development
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/services/technical_&_customer_support.html" class="h-100" data-target="technical_&_customer_support">
-                                        <img src="/img/menu/technical.svg">
+                                        <img src="/img/menu/technical-&-customer-support.svg" class="technical-customer-support">
                                         Technical & Customer Support
                                     </a>
                                 </li>
@@ -103,9 +103,11 @@
                         <li>
                             <a href="/about-us.html" data-target="about-us">About Us</a>
                         </li>
-                        <li >
-                            <a href="/careers.html" data-target="careers" class="d-block">Careers</a>
-                            <a href="/contact-us.html" data-target="contactUs" class="d-block">Contact Us</a>
+                        <li>
+                            <a href="/careers.html" data-target="careers">Careers</a>
+                        </li>
+                        <li>
+                            <a href="/contact-us.html" data-target="contactUs">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -113,219 +115,180 @@
         </div>
     </header>
 
-        <div class="container-fluid px-0">
-            <div class="row no-gutters">
-                <div class="col">
-                    <div class="row align-items-center section-lead section-lead-hero evolution">
-                        <div class="col-12 col-xl-10 offset-xl-1 align-self-center info text-center">
-                            <h1>4Human - Evolution -<br> Employee Monitoring Tool</h1>
-                            <p class="d-none d-lg-block">
-                                Long-term cooperation on enterprise project during which we were responsible for software development,
-                                project management, analysis, maintenance and b2b support.
-                                Our team has worked on various technical aspects of this project
-                                and supported the company's growth on Norwegian market (over 1000 clients)
-                            </p>
-                        </div>
-                        <div class="sticky-label">Human Resources</div>
-                    </div>
-                    <div class="row no-gutters d-block d-lg-none">
-                        <div class="col-12 lead-info">
-                            <p>
-                                Long-term cooperation on enterprise project during which we were responsible for software development,
-                                project management, analysis, maintenance and b2b support.
-                                Our team has worked on various technical aspects of this project
-                                and supported the company's growth on Norwegian market (over 1000 clients)
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <div class="container-fluid px-0 overflow-lg-v">
+        <div class="row no-gutters align-items-center section-lead section-lead-hero evolution">
+            <div class="col-12 col-xl-10 offset-xl-1 info text-center">
+                <h1>4Human - Evolution -<br> Employee Monitoring Tool</h1>
+                <p class="d-none d-lg-block">
+                    Long-term cooperation on enterprise project during which we have been responsible for software development,
+                    project management, analysis, maintenance and b2b support.
+                    Our team has worked on various technical aspects of this project
+                    and supported the company's growth on Norwegian market (over 1000 clients).
+                </p>
+            </div>
+            <div class="sticky-label">Human Resources</div>
+        </div>
+        <div class="row d-block d-lg-none">
+            <div class="col-12 lead-info">
+                <p class="emphasized font-weight-bold">
+                    Long-term cooperation on enterprise project during which we have been responsible for software development,
+                    project management, analysis, maintenance and b2b support.
+                    Our team has worked on various technical aspects of this project
+                    and supported the company's growth on Norwegian market (over 1000 clients).
+                </p>
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid section section-product-info">
-            <div class="row">
-                <div class="col-12 col-lg-10">
-                    <img class="product-logo" src="/img/pages/evolution/4human-logo.svg" alt="Evolution">
-                    <p>
-                        Evolution is developed using Agile methodology and Kanban method.
-                        Project is managed using Atlassian's Jira.
-                        It employs technologies such as: Java, PHP, MySQL, git, SAML.
-                        It offers integration with external systems using RESTful API as well as with Norwegian e-Government system.
-                    </p>
-                    <p>
-                        Application is built so scale horizontally with failover in mind.
-                        Code base contains more than 3M lines of code.
-                        Every new feature goes through code review, automated and manual testing process with Continuous Integration.
-                    </p>
-                </div>
+    <div class="container-fluid section product-info-section">
+        <div class="row">
+            <div class="col-12 col-lg-10">
+                <img class="product-logo" src="/img/products/evolution/4human-logo.svg" alt="4Human - Evolution">
+                <p class="emphasized font-weight-bold">
+                    Evolution is developed using Agile methodology and Kanban method.
+                    Project is managed using Atlassian's Jira.
+                    It employs technologies such as:  PHP, MySQL, git, SAML.
+                    It offers integration with external systems using RESTful API as well as with Norwegian e-Government system.
+                </p>
+                <p class="emphasized font-weight-bold">
+                    Application is built to scale horizontally with failover in mind.
+                    Code base contains more than 3M lines of code.
+                    Every new feature goes through code review, automated and manual testing process with Continuous Integration.
+                </p>
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid px-0 product-preview">
-            <div class="row no-gutters">
-                <div class="col">
-                    <div id="carouselComponent" class="carousel slide"
-                         data-ride="carousel">
-                        <div class="carousel-inner row" role="listbox">
-                            <div class="carousel-item col-12 col-md-4 active">
-                                <img src="/img/pages/evolution/evolution-preview.png" class="img-fluid mx-auto d-block" alt="Evolution">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/pages/evolution/evolution-preview.png" class="img-fluid mx-auto d-block" alt="Evolution">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/pages/evolution/evolution-preview.png" class="img-fluid mx-auto d-block" alt="Evolution">
-                            </div>
-                            <div class="carousel-item col-12 col-md-4">
-                                <img src="/img/pages/evolution/evolution-preview.png" class="img-fluid mx-auto d-block" alt="Evolution">
-                            </div>
+    <div class="container-fluid px-0 section product-preview-section">
+        <div class="row no-gutters">
+            <div class="col">
+                <div id="carouselComponent" class="carousel slide"
+                     data-ride="carousel">
+                    <div class="carousel-inner row" role="listbox">
+                        <div class="carousel-item col-12 col-md-4 active">
+                            <img src="/img/products/evolution/evolution-preview.png" class="img-fluid mx-auto d-block" alt="Evolution">
                         </div>
-                        <a class="carousel-control-prev" href="#carouselComponent" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselComponent" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid px-0 section-projects">
-            <div class="row no-gutters">
-                <div class="text-center col">
-                    <h1 class="title">Project details</h1>
-                </div>
-            </div>
-            <div class="row no-gutters display-flex">
-                <div class="col">
-                    <div class="row no-gutters display-flex">
-                        <div class="col-12 col-md-6">
-                            <div class="text-center project-box">
-                                <img src="/img/pages/appsco/solutions.svg" alt="Solutions" class="icon icon-solutions">
-                                <h2>Solutions</h2>
-                                <p>
-                                    This unique HR solution covers employee on-boarding, shift planning and replacements,
-                                    clock-in/out, absence registration and follow-up, injury registration, performance management,
-                                    work agreements, Altinn integration, contracts and handbooks.
-                                </p>
-                                <div class="filled-circle top d-none d-md-block"></div>
-                                <div class="filled-circle bottom d-none d-md-block"></div>
-                            </div>
+                        <div class="carousel-item col-12 col-md-4">
+                            <img src="/img/products/evolution/evolution-preview.png" class="img-fluid mx-auto d-block" alt="Evolution">
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="text-center project-box">
-                                <img src="/img/pages/appsco/technologies.svg" alt="Technologies" class="icon icon-technologies">
-                                <h2>Technologies</h2>
-                                <p>
-                                    Apache, PHP, MySql, Java, RESTful, Kubernetes, Jenkins, Cucumber,
-                                    RestAssured, Geb, Selenium Webdriver, Gatling, Terraform, Consul,
-                                    Chef Fiddler, Mitmproxy, Maven,IntelliJ, Jackson, Guava, Gulp, Grunt, RAML, Swagger, Nexus
-                                </p>
-                            </div>
+                        <div class="carousel-item col-12 col-md-4">
+                            <img src="/img/products/evolution/evolution-preview.png" class="img-fluid mx-auto d-block" alt="Evolution">
+                        </div>
+                        <div class="carousel-item col-12 col-md-4">
+                            <img src="/img/products/evolution/evolution-preview.png" class="img-fluid mx-auto d-block" alt="Evolution">
                         </div>
                     </div>
-                    <div class="row no-gutters display-flex last-row">
-                        <div class="col-12 col-md-6">
-                            <div class="text-center project-box">
-                                <img src="/img/pages/appsco/tools.svg" alt="Tools" class="icon icon-tools">
-                                <h2>Tools</h2>
-                                <p>
-                                    JIRA, GitLab, Docker, Slack
-                                </p>
-                                <div class="filled-circle bottom d-none d-md-block"></div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="text-center project-box">
-                                <img src="/img/pages/appsco/team.svg" alt="Team" class="icon icon-team">
-                                <h2>Team</h2>
-                                <p>
-                                    8 PHP developers, 2 Application Tester - QA, 1 Infrastructure Engineer,
-                                    1 Business Analyst, 2 Support Representatives
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid section section-what-clients-say">
-            <div class="row">
-                <div class="col-12 col-md-10 offset-md-1 text-center">
-                    <h1>About the Client</h1>
-                    <p>
-                        Evolution is one of the most used HRMS in Norway
-                        which provides a unique web-based management tool for a comprehensive employee monitoring.
-                        The solution ensures that all the employees in the organization are taken care of
-                        and that all employees information are available at any time or place.
-                        Evolution is a modern and user-friendly management tool with many convenient features
-                        for efficient and better follow-up of staff. More information can be found on
-                    </p>
-                </div>
-            </div>
-            <div class="row display-flex video-boxes">
-                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0">
-                    <div class="video-box">
-                        <div class="video video-ceo">
-                            <div class="row align-items-center info d-none d-md-flex">
-                                <div class="col">
-                                    <i class="fas fa-quote-left quote-icon"></i>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam
-                                </div>
-                            </div>
-                        </div>
-                        <h3 class="subtitle">Geir Christian Karlsen, CEO</h3>
-                        <div class="row info d-flex d-md-none">
-                            <div class="col">
-                                <i class="fas fa-quote-left quote-icon"></i>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0">
-                    <div class="video-box">
-                        <div class="video video-cto">
-                            <div class="row align-items-center info d-none d-md-flex">
-                                <div class="col">
-                                    <i class="fas fa-quote-left quote-icon"></i>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam
-                                </div>
-                            </div>
-                        </div>
-                        <h3 class="subtitle">Boris Vujicic, CTO</h3>
-                        <div class="row info d-flex d-md-none">
-                            <div class="col">
-                                <i class="fas fa-quote-left quote-icon"></i>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid section section-what-clients-say">
-            <div class="row">
-                <div class="col-10 offset-1 col-lg-8 offset-lg-2 text-center">
-                    <a href="" class="section-link d-inline">
-                        Describe your business/Tell us about your project
+                    <a class="carousel-control-prev" href="#carouselComponent" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselComponent" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
                     </a>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid px-0 section projects-section">
+        <div class="row no-gutters">
+            <div class="text-center col">
+                <h1 class="title">Project details</h1>
+            </div>
+        </div>
+        <div class="row no-gutters display-flex">
+            <div class="col">
+                <div class="row no-gutters display-flex">
+                    <div class="col-12 col-md-6">
+                        <div class="text-center project-box">
+                            <img src="/img/products/solutions.svg" alt="Solutions" class="icon icon-solutions">
+                            <h2>Solutions</h2>
+                            <p>
+                                This unique HR solution covers employee on-boarding, shift planning and replacements,
+                                clock-in/clock-out, absence registration and follow-up, injury registration,
+                                performance management, work agreements, company restructuring,
+                                Altinn integration, contracts and handbooks.
+                                All this data are available in web and mobile version along with 90+ reports.
+                            </p>
+                            <div class="filled-circle top d-none d-md-block"></div>
+                            <div class="filled-circle bottom d-none d-md-block"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="text-center project-box">
+                            <img src="/img/products/technologies.svg" alt="Technologies" class="icon icon-technologies">
+                            <h2>Technologies</h2>
+                            <p>
+                                Apache, PHP, MySql, Java, RESTful, Kubernetes, Jenkins, Cucumber, RestAssured,
+                                Geb, Selenium Webdriver, Gatling, Terraform, Consul, Chef Fiddler, Mitmproxy,
+                                Maven, IntelliJ, Jackson, Guava, Gulp, Grunt, RAML, Swagger, Nexus
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters display-flex last-row">
+                    <div class="col-12 col-md-6">
+                        <div class="text-center project-box">
+                            <img src="/img/products/tools.svg" alt="Tools" class="icon icon-tools">
+                            <h2>Tools</h2>
+                            <p>
+                                JIRA, GitLab, Docker, Slack
+                            </p>
+                            <div class="filled-circle bottom d-none d-md-block"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="text-center project-box">
+                            <img src="/img/products/team.svg" alt="Team" class="icon icon-team">
+                            <h2>Team</h2>
+                            <p>
+                                Over the years the team grew according to our client’s needs in order to support the expanding customer base.
+                            </p>
+                            <p>
+                                8 PHP developers, 2 Application Tester - QA, 1 Infrastructure Engineer, 1 Business Analyst, 2 Support Representatives
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center section about-the-client-section">
+        <div class="row">
+            <div class="col-12">
+                <h1>About the client</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-10 offset-lg-1">
+                <p>
+                    Evolution is one of the most used HRMS in Norway which provides a unique web-based management tool
+                    for a comprehensive employee monitoring.
+                    The solution ensures that all the employees in the organization are taken care of
+                    and that all employees information are available at any time or place.
+                    Evolution is a modern and user-friendly management tool with many convenient features
+                    for efficient and better follow-up of staff.
+                </p>
+                <p>
+                    <strong>More information can be found on</strong>
+                    <br>
+                    <a href="http://www.4human.no" target="_blank">www.4human.no</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid section schedule-consultation-section">
+        <div class="row">
+            <div class="col-12 text-center">
+                <a href="" class="section-link">
+                    Describe your business/Tell us about your project
+                </a>
+            </div>
+        </div>
+    </div>
 
     <footer class="container-fluid">
         <div class="row">

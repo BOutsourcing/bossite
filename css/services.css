@@ -1,60 +1,57 @@
-.separator-green {
-    margin: 16px 0;
-    height: 8px;
-    width: 100px;
-    background-color: #19E69B;
-}
 .section-lead {
-    height: 500px;
+    height: 620px;
+    padding-top: 90px;
 }
 .section-lead .title {
     font-size: 50px;
     line-height: 66px;
+    color: #FFFFFF;
 }
 .lead-title {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 100px;
+    padding-right: 20px;
 }
 .section {
     padding-left: 100px;
     padding-right: 100px;
     margin-top: 100px;
 }
+.section-special-m-t {
+    margin-top: 150px;
+}
 .section .title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
-.section p {
-    margin-bottom: 0;
-    font-size: 20px;
-    line-height: 32px;
-    font-weight: normal;
-    color: #748494;
+.section p + p {
+    margin-top: 30px;
 }
-.section p.emphasized {
-    color: #243647;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 36px;
+.media > img {
+    margin-right: 45px;
 }
-.media-body {
-    margin-left: 30px;
-}
-.describe-your-business-section {
+.schedule-consultation-section {
     margin-bottom: 100px;
 }
 
+@media (max-width: 1400px) {
+    .section-lead {
+        height: 520px;
+    }
+}
 @media (max-width: 991px) {
+    .section-lead {
+        height: 330px;
+        padding-top: 0;
+    }
     .section-lead .title {
-        font-size: 48px;
-        line-height: 58px;
+        font-size: 32px;
+        line-height: 44px;
     }
     .lead-title {
         padding-left: 20px;
-        padding-right: 20px;
     }
     .section {
         padding-left: 30px;
-        padding-right: 30px;
+        padding-right: 30px !important;
     }
     .mb-max-lg-50 {
         margin-bottom: 50px;
@@ -72,31 +69,21 @@
         margin: 0;
         font-size: 22px;
         line-height: 28px;
-        color: #ffffff;
-    }
-    .lead-title {
-        width: 230px;
-        padding-top: 20px;
     }
     .section {
         margin-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px !important;
     }
     .section .title {
-        font-size: 22px;
-        line-height: 28px;
         margin-bottom: 30px;
     }
     .section p {
-        font-size: 12px;
-        line-height: 20px;
-    }
-    .section p.emphasized {
-        color: #243647;
         font-size: 14px;
-        font-weight: bold;
         line-height: 24px;
     }
-    .describe-your-business-section {
+
+    .schedule-consultation-section {
         margin-bottom: 50px;
     }
 }

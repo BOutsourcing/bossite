@@ -1,214 +1,194 @@
-.strong {
-    font-weight: 700;
-}
-.font-24 {
-    font-size: 24px;
-}
 .font-default {
     color: #243647;
 }
-.separator {
-    margin: 30px 0;
-    height: 3px;
-    width: 135px;
-    background-color: #243647;
-    display: inline-block;
+
+.open-positions-section {
+    padding-bottom: 40px;
 }
-.background-gray {
-    background-color: #F3F6FD;
-}
-.section-open-positions .title {
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-top: 60px;
+.open-positions-section .title {
+    margin-top: 90px;
     margin-bottom: 0;
 }
-ul.open-positions {
-    margin: 50px 100px;
+.separator-green {
+    margin: 30px 0;
 }
-ul.open-positions li {
-    display: inline-block;
-    width: calc(50% - 100px);
-    background-color: #19E69B;
-    font-size: 20px;
-    line-height: 24px;
-    padding: 40px 10px 40px 30px;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+.open-positions-section .subtitle {
+    font-size: 24px;
 }
-.mb-30 {
+.open-positions {
+    margin-top: 50px;
+}
+.open-position {
+    padding: 25px;
     margin-bottom: 30px;
+    background-color: #242F4E;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    transition: all 0.2s linear;
 }
-.fot-1, .fot-2, .fot-3 {
-    height: calc(100vw * 0.27);
-    background-repeat: no-repeat;
+.open-position .position {
+    color: #ffffff;
+    transition: all 0.2s linear;
+}
+.open-position:hover .position {
+    color: #50E29D;
+}
+
+.office-section {
+    height: 393px;
+    background: url("/img/careers/office-preview.png") no-repeat;
     background-size: cover;
 }
-.fot-1 {
-    background-image: url("/img/careers/fot_1.png");
-}
-.fot-2 {
-    background-image: url("/img/careers/fot_2.png");
-}
-.fot-3 {
-    background-image: url("/img/careers/fot_3.png");
-}
+
 .section {
-    padding-left: 100px;
-    padding-right: 100px;
     margin-top: 100px;
 }
 .section .title {
-    margin-bottom: 50px;
-}
-.section-careers p {
-    font-size: 16px;
-    line-height: 24px;
-}
-.section-work-life p {
-    font-size: 18px;
-    line-height: 32px;
-    color: #243647;
-}
-.section-atmosphere p {
-    font-size: 20px;
-    line-height: 32px;
+    margin-bottom: 30px;
 }
 .section p {
     margin-bottom: 20px;
 }
+
 div.dotted-background {
     position: relative;
     overflow: visible;
 }
 img.dotted-background {
     position: absolute;
-    top: 250px;
+    top: 170px;
     right: 0;
     z-index: -1;
 }
-.section-work-life .box {
-    padding: 50px 35px;
+
+.work-life-section .box {
+    padding: 90px 45px 70px;
 }
-.work-life_header {
-    height: 200px;
+.work-life-header {
     margin-bottom: 20px;
 }
-.work-life_header * {
-    display: inline-block;
+.work-life-header img {
+    position: absolute;
+    right: 0;
+}
+.work-life-header .work-img {
+    bottom: 45px;
+}
+.work-life-header .life-img {
+    bottom: 25px;
+}
+.work-life-section .title {
+    font-size: 42px;
+    line-height: 56px;
+}
+.work-life-section p {
+    font-size: 16px;
+    line-height: 32px;
 }
 
-.section-gains .box {
+.gains-section .box {
     margin-bottom: 100px;
 }
-.section-gains span {
+.gains-section .name {
     display: block;
-    font-size: 22px;
-    line-height: 30px;
-    color: #243647;
-    font-weight: bold;
-}
-.section-gains span + img,
-.section-gains img + span {
     margin-top: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #243647;
+    text-transform: uppercase;
+}
+.gains-section .name.private-health-insurance,
+.gains-section .name.sport-team-activities,
+.gains-section .name.fruit-refreshments {
+    margin-top: 25px;
 }
 
+@media (min-width: 992px) {
+    .header {
+        position: relative;
+    }
+}
 @media (max-width: 991px) {
-    .section,
-    .section-open-positions .title {
+    .section:not(.work-life-section),
+    .open-positions-section .title,
+    .open-positions-row {
         padding-left: 30px;
         padding-right: 30px;
     }
-    ul.open-positions {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    ul.open-positions li {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    ul.open-positions li:last-child {
-        margin-bottom: 0;
+    .work-life-section .box,
+    .atmosphere-section {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
     .section p, .section .title {
         text-align: left;
     }
-    .section p {
-        color: #243647;
-    }
 }
 @media (max-width: 767px) {
-    .separator {
-        height: 2px;
+    .section:not(.work-life-section),
+    .open-positions-section .title,
+    .open-positions-row {
+        padding-left: 20px;
+        padding-right: 20px;
     }
+    .open-positions-section {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .open-positions-section .title {
+        margin-top: 0;
+    }
+    .separator-green {
+        height: 3px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .open-positions-section .subtitle {
+        font-size: 20px;
+    }
+    .open-positions {
+        margin-top: 30px;
+    }
+
     .section {
         margin-top: 50px;
     }
-    .section .title {
-        font-size: 22px;
-        line-height: 28px;
-        margin-bottom: 30px;
-    }
-    .section p {
-        font-size: 12px;
-        font-weight: normal;
-        line-height: 22px;
-    }
-    .section-open-positions {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        background-color: #F3F6FD;
-    }
-    .section-open-positions .title {
-        margin-top: 0;
-    }
-    .section-open-positions p {
-        font-size: 22px;
-        line-height: 28px;
-        font-weight: bold;
-    }
-    ul.open-positions {
-        margin-bottom: 0;
-    }
-    ul.open-positions li {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-size: 16px;
-        line-height: 18px;
-    }
 
-    .fot-1, .fot-2, .fot-3 {
-        height: 250px;
+    .work-life-section .box, .atmosphere-section {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
     }
-
-    .section-work-life {
-        padding: 0;
+    .work-life-section .work-box {
+        margin-bottom: 120px;
     }
-    .section-work-life .box {
-        padding: 35px 30px;
+    .work-life-section .title {
+        font-size: 24px;
+        line-height: 32px;
     }
-    .section-work-life p {
+    .work-life-section p {
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 0;
     }
-    .work-life_header {
-        height: auto;
-    }
-    .work-life_header .work-img {
+    .work-life-header .work-img {
         width: 72px;
-        margin-top: -60px;
+        bottom: -10px;
     }
-    .work-life_header .life-img {
+    .work-life-header .life-img {
         width: 75px;
+        bottom: -10px;
     }
 
-    .section-gains span {
+    .atmosphere-section {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .gains-section span {
         font-size: 14px;
         line-height: 18px;
     }
-    .section-gains img {
+    .gains-section img {
         width: 68px;
         height: 68px;
         margin-top: 0 !important;

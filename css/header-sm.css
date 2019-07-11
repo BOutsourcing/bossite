@@ -1,6 +1,6 @@
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     body {
-        padding-top: 110px;
+        padding-top: 90px;
     }
     .header {
         padding: 0 0 0 20px;
@@ -11,7 +11,7 @@
         box-sizing: border-box;
         background-color: #ffffff;
         z-index: 10;
-        height: 110px;
+        height: 90px;
         transition: background-color 0.1s 0.1s, height 0.1s linear;
     }
     .header .logo {
@@ -53,18 +53,19 @@
         background-color: #232747;
         height: 100vh;
         transition: background-color 0.1s, height 0.1s 0.1s linear;
+        overflow: auto;
     }
     .header.sm-active .menu {
         display: block;
     }
     .header.sm-active .fa {
-        color: #19E69B;
+        color: #50E29D;
     }
     .menu-burger {
         font-size: 44px;
-        background-color: #19E69B;
+        background-color: #50E29D;
         color: #232747;
-        padding: 32px;
+        padding: 26px;
         display: inline-block;
         position: relative;
         z-index: 9999;
@@ -110,7 +111,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        padding-top: 110px;
+        padding-top: 90px;
         padding-left: 20px;
         padding-right: 20px;
         background-color: #f3f5fd;

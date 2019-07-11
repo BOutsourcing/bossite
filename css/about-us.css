@@ -1,15 +1,6 @@
 .section-lead {
-    height: 500px;
-}
-.section-lead .info .title {
-    margin-top: 120px;
-    margin-bottom: 30px;
-    color: #FFFFFF;
-    font-size: 36px;
-}
-.section-lead .info p {
-    color: #FFFFFF;
-    line-height: 30px;
+    height: 497px;
+    padding: 140px 50px 50px;
 }
 .section-lead-hero {
     background: #242F4E url("../img/screen/large/about-us/about-us-hero.png") no-repeat;
@@ -17,199 +8,218 @@
 }
 
 .section {
+    margin-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
 }
+.section .title {
+    margin-bottom: 30px;
+}
 .section p {
     color: #243647;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 36px;
-}
-.section-what-we-do {
-    margin-top: 100px;
-}
-.section-what-we-do .title {
-    margin-bottom: 50px;
 }
 
-.section-core-values,
-.section-services,
-.section-management,
-.section-offices {
-    margin-top: 150px;
+.info-section {
+    margin-top: 80px;
 }
-.section-services .title,
-.section-management .title,
-.section-offices .title {
-    margin-bottom: 60px;
-}
-.service-box {
-    padding: 60px 20px 50px;
-    border-style: solid;
-    border-color: #E7EAF2;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    text-align: center;
-}
-.service-box .icon {
-    margin-bottom: 50px;
-}
-.service-box .icon-product-development {
-    margin-top: 8px;
-}
-.service-box .icon-design {
-    margin-top: 8px;
-    margin-bottom: 55px;
-}
-.service-box .icon-technical-and-customer-support {
-    margin-bottom: 48px;
+.info-section .separator-green {
+    margin: 30px auto;
 }
 
+.management-section .title {
+    margin-bottom: 80px;
+}
 .profile img {
-    width: 100%;
-    margin-bottom: 20px;
+    max-width: 180px;
+    margin-bottom: 30px;
 }
 .profile .name, .profile .position {
     margin-bottom: 0;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
 }
 .profile .name {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.modal-body .profile {
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.modal-body .profile .position {
+    margin-bottom: 60px;
+}
+
+.who-we-are-section .title {
+    margin-bottom: 10px;
+}
+.who-we-are-section .info + .info {
+    margin-top: 30px;
+}
+.who-we-are-section .default-color {
+    color: #748494;
+}
+
+.boutsourcing-life-section {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.boutsourcing-life-section .subtitle {
+    font-size: 18px;
+    line-height: 24px;
     font-weight: normal;
 }
-@media (max-width: 992px) {
-    .section-lead .info .title {
-        margin-top: 80px;
+.boutsourcing-life-section .title {
+    margin-bottom: 30px;
+}
+.gallery .insta-photo {
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.gallery .insta-link {
+    padding: 4px;
+}
+.gallery .insta-link .photo-data {
+    background-color: rgba(36, 54, 71, 0.8);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.1s linear;
+}
+.photo-data * {
+     vertical-align: middle;
+}
+.photo-data .icon {
+    margin-right: 5px;
+}
+.photo-data .number {
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+}
+.gallery .insta-link:hover .photo-data {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s linear;
+}
+
+.gallery .no-gutters>[class*=col-] {
+    transition: all 0.2s linear;
+}
+
+.modal-backdrop {
+    background-color: rgba(64, 64, 65, 0.7);
+}
+.modal-backdrop.show {
+    opacity: 1;
+}
+.modal-content {
+    border: none;
+    border-radius: 0;
+}
+.modal-body {
+    padding: 30px 15px;
+}
+.modal-body .close-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.modal-body p {
+     color: inherit;
+ }
+@media (min-width: 992px) {
+    .modal-xl {
+        max-width: 800px;
+    }
+    .modal-body {
+        padding: 60px 45px;
+    }
+    .modal-body .close-icon {
+        top: 60px;
+        right: 45px;
+    }
+}
+@media (min-width: 1200px) {
+    .modal-xl {
+        max-width: 1000px;
+    }
+}
+@media (min-width: 1400px) {
+    .modal-xl {
+        max-width: 1200px;
+    }
+}
+@media (max-width: 991px) {
+    .section-lead {
+        height: 330px;
+        padding-top: 50px;
     }
     .section {
         padding-left: 30px;
         padding-right: 30px;
     }
-    .brainstorming {
-        margin-bottom: 40px;
-    }
-    .section-what-we-do .title {
-        margin-bottom: 25px;
-    }
-    .section-core-values,
-    .section-services,
-    .section-management {
-        margin-top: 100px;
-    }
     .profile {
         margin-bottom: 60px;
     }
+    .modal-body .profile {
+        padding-top: 20px;
+    }
+    .modal-body .profile .position {
+        margin-bottom: 20px;
+    }
 
-    .section-offices {
-        margin-top: 40px;
+    .brainstorming {
+        margin-bottom: 40px;
+        text-align: center;
     }
-    .border-top-n {
-        border-top: none;
-    }
-    .border-left-n {
-        border-left: none;
+
+    .gallery .insta-link .photo-data {
+        background-color: rgba(36, 54, 71, 0.4);
+        opacity: 1;
+        visibility: visible;
     }
 }
 @media (max-width: 767px) {
     .section-lead {
         height: 200px;
-        margin-bottom: 40px;
-    }
-    .section-lead-hero {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .section-lead .info .title, .lead-info .title {
-        margin: 0;
-        font-size: 22px;
-        line-height: 28px;
-    }
-    .section-lead .info .title {
-        padding-bottom: 12px;
-        border-bottom: 3px solid #19E69B;
-    }
-    .lead-info {
-        padding-left: 30px!important;
-        padding-right: 30px!important;
-    }
-    .lead-info .title {
-        margin-bottom: 25px;
-    }
-    .lead-info p,
-    .section p {
-        color: #243647;
-        font-size: 14px;
-        font-weight: bold;
-        line-height: 24px;
     }
 
-    .section-what-we-do,
-    .section-core-values,
-    .section-services,
-    .section-management {
-        margin-top: 60px;
+    .section {
+        margin-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-    .section-services .title,
-    .section-management .title,
-    .section-offices .title {
+    .management-section .title {
         margin-bottom: 30px;
     }
-
-
-    .service-box {
-        padding: 35px 20px;
-    }
-    .service-box .icon {
-        margin-bottom: 20px;
-    }
-    .service-box .icon-dedicated-teams {
-        width: 30px;
-    }
-    .service-box .icon-product-development {
-        width: 38px;
-        margin-top: 4px;
-    }
-    .service-box .icon-design {
-        width: 40px;
-        margin-top: 4px;
-        margin-bottom: 24px;
-    }
-    .service-box .icon-technical-and-customer-support {
-        width: 38px;
-    }
-    .service-box .subtitle {
-        font-size: 14px;
-        font-weight: normal;
-        line-height: 16px;
-        margin-bottom: 0;
-    }
-
     .profile .name, .profile .position {
         font-size: 16px;
         line-height: 24px;
     }
-
-    .carousel-item {
-        padding-left: 0;
-        padding-right: 0;
+    .boutsourcing-life-section {
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
 @media (max-width: 575px) {
-    .section-management {
-        padding-left: 0;
-        padding-right: 0;
-    }
     .profile {
         padding-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
         border-top: 1px solid #E7EAF2;
-    }
-    .border-top-xs-none {
-        border-top: none;
     }
 }
 

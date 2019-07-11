@@ -1,9 +1,6 @@
-p.heading-text {
-    color: #243647;
-}
 ul.check-mark-list li {
     position: relative;
-    height: 10rem;
+    height: 12rem;
 }
 ul.check-mark-list li:before {
     content:"";
@@ -22,7 +19,8 @@ ul.check-mark-list li:first-child:before {
 ul.check-mark-list .media .check-mark {
     width: 70px;
     height: 70px;
-    background-image: url("/img/check-mark-list/check-mark-60-gs.svg");
+    margin-right: 35px;
+    background-image: url("/img/check-mark-list/check-mark-60-grey.svg");
     background-size: cover;
 }
 ul.check-mark-list li.completed p {
@@ -40,7 +38,7 @@ ul.check-mark-list li.completed:before {
         padding-right: 0 !important;
     }
     ul.check-mark-list li {
-        height: 6rem;
+        height: 8rem;
     }
     ul.check-mark-list li:before {
         left: 18px;
