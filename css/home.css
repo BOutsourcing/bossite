@@ -173,7 +173,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 60px 55px 60px 110px;
+    padding: 50px 40px 40px 100px;
     background-color: rgba(36, 54, 71, 0.3);
     transform: translateY(100%);
     transition: transform 0.1s linear;
@@ -195,9 +195,9 @@
     bottom: 0;
 }
 .employee-box .info p {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 28px;
 }
 .employee:hover .info {
     transform: translateY(0);
@@ -260,7 +260,7 @@
         margin-left: 120px;
     }
     .employee-box .info {
-        padding: 40px 40px 40px 80px;
+        padding: 40px 30px 20px 80px;
         transform: translateY(0);
     }
     .employee-box .info .quote-icon {
@@ -315,7 +315,7 @@
         color: #243647;
     }
     .employee-box .info {
-         padding: 60px 55px 60px 110px;
+         padding: 50px 40px 40px 100px;
      }
     .section-what-employees-say .section-link-row {
         margin-top: 0;
@@ -401,10 +401,19 @@
         line-height: 26px;
     }
     .employee {
-        height: 280px;
+        height: 340px;
     }
 
     .schedule-consultation h1 {
         margin-bottom: inherit;
+    }
+}
+@media (max-width: 500px) {
+    .employee-box .info {
+        padding: 40px 20px 20px 60px;
+    }
+    .employee-box .info p {
+        font-size: 14px;
+        line-height: 22px;
     }
 }
