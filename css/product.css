@@ -12,19 +12,19 @@
     background-size: cover;
 }
 .section-lead-hero.dossier {
-    background: #242F4E url("../img/screen/large/products/appsco/appsco-hero.png") no-repeat;
+    background: #242F4E url("../img/screen/large/products/dossier/dossier-hero.png") no-repeat;
     background-size: cover;
 }
 .section-lead-hero.brocon {
-    background: #242F4E url("../img/screen/large/products/appsco/appsco-hero.png") no-repeat;
+    background: #242F4E url("../img/screen/large/products/brocon/brocon-hero.png") no-repeat;
     background-size: cover;
 }
 .section-lead-hero.club-collaborator {
-    background: #242F4E url("../img/screen/large/products/appsco/appsco-hero.png") no-repeat;
+    background: #242F4E url("../img/screen/large/products/club-collaborator/club-collaborator-hero.png") no-repeat;
     background-size: cover;
 }
 .section-lead-hero.mysiteshop {
-    background: #242F4E url("../img/screen/large/products/appsco/appsco-hero.png") no-repeat;
+    background: #242F4E url("../img/screen/large/products/mysiteshop/mysiteshop-hero.png") no-repeat;
     background-size: cover;
 }
 .section-lead .info h1,
@@ -138,7 +138,7 @@
 }
 
 @media (min-width: 992px) {
-    .overflow-v {
+    .overflow-lg-v {
         overflow: visible !important;
     }
 }

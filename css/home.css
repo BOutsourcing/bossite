@@ -1,3 +1,6 @@
+.overflow-v {
+    overflow: visible !important;
+}
 .section-lead {
     height: 720px;
     padding: 140px 50px 50px;

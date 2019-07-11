@@ -74,7 +74,55 @@
 .boutsourcing-life-section .title {
     margin-bottom: 30px;
 }
+.gallery .insta-photo {
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.gallery .insta-link {
+    padding: 4px;
+}
+.gallery .insta-link .photo-data {
+    background-color: rgba(36, 54, 71, 0.8);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.1s linear;
+}
+.photo-data * {
+     vertical-align: middle;
+}
+.photo-data .icon {
+    margin-right: 5px;
+}
+.photo-data .number {
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+}
+.gallery .insta-link:hover .photo-data {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s linear;
+}
 
+.gallery .no-gutters>[class*=col-] {
+    transition: all 0.2s linear;
+}
+
+.modal-backdrop {
+    background-color: rgba(64, 64, 65, 0.7);
+}
+.modal-backdrop.show {
+    opacity: 1;
+}
 .modal-content {
     border: none;
     border-radius: 0;
@@ -83,11 +131,11 @@
     padding: 30px 15px;
 }
 .modal-body .close-icon {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 15px;
+    right: 15px;
 }
 .modal-body p {
      color: inherit;
@@ -126,10 +174,22 @@
     .profile {
         margin-bottom: 60px;
     }
+    .modal-body .profile {
+        padding-top: 20px;
+    }
+    .modal-body .profile .position {
+        margin-bottom: 20px;
+    }
 
     .brainstorming {
         margin-bottom: 40px;
         text-align: center;
+    }
+
+    .gallery .insta-link .photo-data {
+        background-color: rgba(36, 54, 71, 0.4);
+        opacity: 1;
+        visibility: visible;
     }
 }
 @media (max-width: 767px) {
