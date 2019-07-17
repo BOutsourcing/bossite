@@ -10,7 +10,7 @@
         right: 0;
         box-sizing: border-box;
         background-color: #ffffff;
-        z-index: 10;
+        z-index: 20;
         height: 90px;
         transition: background-color 0.1s 0.1s, height 0.1s linear;
     }
