@@ -26,17 +26,16 @@
     line-height: 32px;
 }
 
-.section-services {
-    margin-top: 80px;
+.section {
+    margin-top: 120px;
+}
+.section .title {
+    margin-bottom: 30px;
 }
 
 .portfolio-box,
 .portfolio-boxes a.d-block {
     height: 100%;
-}
-
-.section-portfolio {
-    margin-top: 80px;
 }
 .portfolio-boxes {
     padding-left: 55px;
@@ -87,14 +86,10 @@
     font-weight: bold;
 }
 
-.section-what-clients-say,
-.section-what-employees-say {
-    margin-top: 100px;
-}
 .client-boxes {
     padding-left: 80px;
     padding-right: 80px;
-    margin-top: 45px;
+    margin-top: 30px;
 }
 .client-quote,
 .client-quote .quote-icon,
@@ -215,18 +210,12 @@
     margin-top: 50px;
 }
 
-.section-schedule-consultation, .section-contact {
-    margin-top: 100px;
-}
 .section-schedule-consultation {
     padding-left: 70px;
     padding-right: 70px;
 }
 .schedule-consultation {
     margin-bottom: 50px;
-}
-.schedule-consultation h1 {
-    margin-bottom: 30px;
 }
 .section-schedule-consultation form {
     padding-left: 0;
@@ -301,9 +290,6 @@
     .employee-box {
         margin-bottom: 50px;
     }
-    .section-what-clients-say {
-        margin-top: 50px;
-    }
     .client-box .client-quote {
         background-color: #F2F4F8;
     }
@@ -328,9 +314,6 @@
     .section-work-life-balance .section-link {
         margin-top: 40px;
         margin-left: 120px;
-    }
-    .section-schedule-consultation {
-        margin-top: 80px;
     }
     .schedule-consultation {
         text-align: center;
@@ -357,10 +340,10 @@
         line-height: 28px;
     }
 
-    .section-services,
-    .section-portfolio {
+    .section {
         margin-top: 50px;
     }
+
     .services-info {
         padding-top: 0;
         padding-bottom: 0;
@@ -402,10 +385,6 @@
     }
     .employee {
         height: 340px;
-    }
-
-    .schedule-consultation h1 {
-        margin-bottom: inherit;
     }
 }
 @media (max-width: 500px) {

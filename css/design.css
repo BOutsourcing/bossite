@@ -104,6 +104,9 @@
 .how-do-we-do-it-section .tab-content {
     padding-top: 35px;
 }
+.design-steps .control {
+    display: none;
+}
 
 .our-recent-work-section .title {
     margin-bottom: 60px;
@@ -121,11 +124,14 @@
     .lead-title .title + .title {
         margin-top: 15px;
     }
+    .separator-green {
+         margin: 10px 0;
+     }
     .design-step {
         padding-top: 0;
     }
     .design-step .subtitle {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 24px;
     }
     .section-special-m-t {
@@ -134,34 +140,53 @@
     .our-recent-work-section .title {
         margin-bottom: 30px;
     }
-    .carousel-item {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .carousel-item img {
-        width: 100%;
-    }
 }
-@media (max-width: 400px) {
-    .design-step .icon-discovery {
-        width: 41px;
-        height: 45px;
+@media (max-width: 575px) {
+    .how-do-we-do-it-section .tab-content {
+        padding-top: 20px;
     }
-    .design-step .icon-research {
-        width: 64px;
-        height: 34px;
-        margin-bottom: 25px;
+    .design-steps {
+        height: 130px;
+        position: relative;
     }
-    .design-step .icon-create {
-        width: 44px;
-        height: 44px;
+    .design-steps .control {
+        width: 32px;
+        top: auto;
+        bottom: 22px;
+        z-index: 5;
+        display: block;
     }
-    .design-step .icon-implement {
-        width: 45px;
-        height: 45px;
+    .design-steps .carousel-control-next-icon,
+    .design-steps .carousel-control-prev-icon {
+        width: 16px;
+        height: 28px;
+        margin-bottom: 0;
     }
-    .design-step .subtitle {
-        font-size: 12px;
-        line-height: 18px;
+    .design-step {
+        width: 80%;
+        padding-bottom: 15px;
+        border-bottom: 7px solid #50E29D;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateX(120%);
+        transition: transform 0.2s linear;
+        z-index: 2;
+    }
+    .design-step.active {
+        transform: translateX(0);
+        transition: transform 0.4s linear;
+    }
+    .nav-border-b {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+        bottom: 3px;
+        z-index: 1;
+    }
+    .nav-border-b hr {
+        display: none;
     }
 }
