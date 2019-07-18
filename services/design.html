@@ -262,6 +262,8 @@
                         <li data-target="#carouselComponentSmall" data-slide-to="3"></li>
                         <li data-target="#carouselComponentSmall" data-slide-to="4"></li>
                         <li data-target="#carouselComponentSmall" data-slide-to="5"></li>
+                        <li data-target="#carouselComponentSmall" data-slide-to="6"></li>
+                        <li data-target="#carouselComponentSmall" data-slide-to="7"></li>
                     </ol>
                 </div>
                 <div id="carouselComponentMedium" class="carousel slide d-none d-sm-block d-lg-none" data-ride="carousel">
@@ -298,6 +300,8 @@
                         <li data-target="#carouselComponentMedium" data-slide-to="3"></li>
                         <li data-target="#carouselComponentMedium" data-slide-to="4"></li>
                         <li data-target="#carouselComponentMedium" data-slide-to="5"></li>
+                        <li data-target="#carouselComponentMedium" data-slide-to="6"></li>
+                        <li data-target="#carouselComponentMedium" data-slide-to="7"></li>
                     </ol>
                     <a class="carousel-control-prev" href="#carouselComponentMedium" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -436,14 +440,34 @@
                 controlNext = stepsContainer.find('#controlNext'),
                 controlPrev = stepsContainer.find('#controlPrev');
 
+            controlPrev.hide();
+
             controlNext.on('click', function() {
                 var currentStep = $('.design-step.active');
+
                 currentStep.next('.design-step').tab('show');
+
+                if (0 === currentStep.next('.design-step').next('.design-step').length) {
+                    controlNext.hide();
+                }
+
+                if (controlPrev.is(':hidden')) {
+                    controlPrev.show();
+                }
             });
 
             controlPrev.on('click', function() {
                 var currentStep = $('.design-step.active');
+
                 currentStep.prev('.design-step').tab('show');
+
+                if (0 === currentStep.prev('.design-step').prev('.design-step').length) {
+                    controlPrev.hide();
+                }
+
+                if (controlNext.is(':hidden')) {
+                    controlNext.show();
+                }
             });
         });
     </script>

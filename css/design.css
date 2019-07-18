@@ -172,7 +172,7 @@
         margin-left: auto;
         margin-right: auto;
         transform: translateX(120%);
-        transition: transform 0.4s linear;
+        transition: transform 0.2s linear;
         z-index: 2;
     }
     .design-step.active {
