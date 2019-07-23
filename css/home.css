@@ -91,6 +91,9 @@
     padding-right: 80px;
     margin-top: 30px;
 }
+.client-info-boxes {
+    margin-top: 0;
+}
 .client-quote,
 .client-quote .quote-icon,
 .client-quote p {
@@ -230,6 +233,9 @@
     .header.submenu-hover {
         background-color: rgba(255, 255, 255, 0.9);
         transition: all 0.2s linear;
+    }
+    .client-quote {
+        height: 100%;
     }
 }
 @media (max-width: 1440px) {
