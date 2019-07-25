@@ -440,37 +440,39 @@
         $(function() {
             var stepsContainer = $('#designSteps'),
                 controlNext = stepsContainer.find('#controlNext'),
-                controlPrev = stepsContainer.find('#controlPrev');
+                controlPrev = stepsContainer.find('#controlPrev'),
+                showNextTab = function() {
+                    var currentStep = $('.design-step.active');
+
+                    currentStep.css('transform','translateX(-120%)');
+                    currentStep.next('.design-step').tab('show');
+
+                    if (0 === currentStep.next('.design-step').next('.design-step').length) {
+                        controlNext.hide();
+                    }
+
+                    if (controlPrev.is(':hidden')) {
+                        controlPrev.show();
+                    }
+                },
+                showPreviousTab = function() {
+                    var currentStep = $('.design-step.active');
+
+                    currentStep.css('transform','translateX(120%)');
+                    currentStep.prev('.design-step').tab('show');
+
+                    if (0 === currentStep.prev('.design-step').prev('.design-step').length) {
+                        controlPrev.hide();
+                    }
+
+                    if (controlNext.is(':hidden')) {
+                        controlNext.show();
+                    }
+                };
 
             controlPrev.hide();
-
-            controlNext.on('click', function() {
-                var currentStep = $('.design-step.active');
-
-                currentStep.next('.design-step').tab('show');
-
-                if (0 === currentStep.next('.design-step').next('.design-step').length) {
-                    controlNext.hide();
-                }
-
-                if (controlPrev.is(':hidden')) {
-                    controlPrev.show();
-                }
-            });
-
-            controlPrev.on('click', function() {
-                var currentStep = $('.design-step.active');
-
-                currentStep.prev('.design-step').tab('show');
-
-                if (0 === currentStep.prev('.design-step').prev('.design-step').length) {
-                    controlPrev.hide();
-                }
-
-                if (controlNext.is(':hidden')) {
-                    controlNext.show();
-                }
-            });
+            controlNext.on('click', showNextTab);
+            controlPrev.on('click', showPreviousTab);
         });
     </script>
     <script type="text/javascript">

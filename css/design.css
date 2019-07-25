@@ -142,6 +142,9 @@
     }
 }
 @media (max-width: 575px) {
+    .how-do-we-do-it-section {
+        touch-action: none;
+    }
     .how-do-we-do-it-section .tab-content {
         padding-top: 20px;
     }
@@ -176,7 +179,7 @@
         z-index: 2;
     }
     .design-step.active {
-        transform: translateX(0);
+        transform: translateX(0) !important;
         transition: transform 0.4s linear;
     }
     .nav-border-b {
