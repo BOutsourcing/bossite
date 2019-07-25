@@ -97,7 +97,8 @@
     transition: all 0.1s linear;
 }
 .photo-data * {
-     vertical-align: middle;
+    vertical-align: middle;
+    display: none;
 }
 .photo-data .icon {
     margin-right: 5px;
@@ -186,11 +187,11 @@
         text-align: center;
     }
 
-    .gallery .insta-link .photo-data {
-        background-color: rgba(36, 54, 71, 0.4);
-        opacity: 1;
-        visibility: visible;
-    }
+    /*.gallery .insta-link .photo-data {*/
+        /*background-color: rgba(36, 54, 71, 0.4);*/
+        /*opacity: 1;*/
+        /*visibility: visible;*/
+    /*}*/
 }
 @media (max-width: 767px) {
     .section-lead {
