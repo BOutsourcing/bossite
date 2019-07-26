@@ -8,121 +8,494 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="Business Outsourcing Services, Belgrade Serbia">
         <meta property="og:description" content="We are software development experts. We make unique tools for all the things you find essential for your business">
-        <meta property="og:image" content="img/home-bg.jpg">
-        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png">
-        <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="favicon/android-chrome-192x192.png" sizes="192x192">
-        <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="favicon/manifest.json">
-        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#0f3458">
+        <meta property="og:image" content="/img/home-bg.jpg">
+        <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/favicon/manifest.json">
+        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#0f3458">
         <meta name="msapplication-TileColor" content="#0f3458">
         <meta name="msapplication-TileImage" content="/mstile-144x144.png">
         <meta name="theme-color" content="#0f3458">
         <meta name="msapplication-navbutton-color" content="#0f3458">
         <meta name="apple-mobile-web-app-status-bar-style" content="#0f3458">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,600,700">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+        <link rel="stylesheet" href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/vendor/components/font-awesome/css/fontawesome-all.css">
+        <link rel="stylesheet" type="text/css" href="/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/css/header.css">
+        <link rel="stylesheet" type="text/css" href="/css/header-sm.css">
+        <link rel="stylesheet" type="text/css" href="/css/services-section.css">
+        <link rel="stylesheet" type="text/css" href="/css/home.css">
+        <link rel="stylesheet" type="text/css" href="/css/footer.css">
     </head>
-    <body class="home">
-        <div class="preloader"></div>
-        <!-- Logo -->
-        <div class="logo">
-            <a href="/"><img src="img/logo-white.png"></a>
-        </div>
-        <!-- Who we are -->
-        <div class="absolute-center">
-            <div class="absolute-center-container">
-                <h1>Software development experts</h1>
-                <h2>We make unique tools for all the things you find essential for your business</h2>
-                <p><a href="careers.html" class="btn btn-big btn-primary">Join our team</a></p>
+    <body>
+        <header class="container-fluid header">
+            <div id="header" class="row no-gutters display-flex align-items-center header-container">
+                <div class="col-6 col-lg-4 flex-none">
+                    <a href="/" data-target="header" class="logo-container">
+                        <img class="logo flex-none" src="/img/logo.svg" alt="Business Outsourcing Services">
+                        <img class="logo-sm flex-none" src="/img/logo-negativ.svg" alt="Business Outsourcing Services">
+                    </a>
+                </div>
+                <div class="col-6 col-lg-8 d-lg-none text-right h-100 d-block">
+                    <div class="menu-burger cursor-pointer" data-activate-menu>
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+                <div class="col-lg-8 text-right h-100">
+                    <div id="menu" class="menu-container">
+                        <ul class="row text-center menu h-100">
+                            <li>
+                                <a href="/" data-target="header">Home</a>
+                            </li>
+                            <li data-submenu="container">
+                                <a href="#" data-target="services">
+                                    Services
+                                    <i class="fa fa-chevron-right d-inline-block d-lg-none float-right"></i>
+                                </a>
+                                <ul class="sub-menu text-left">
+                                    <li class="d-block d-lg-none cursor-pointer lead-li" data-submenu>
+                                        <i class="fa fa-chevron-left d-inline-block"></i>
+                                        Services
+                                    </li>
+                                    <li>
+                                        <a href="/services/dedicated-teams.html" class="h-100" data-target="dedicated-teams">
+                                            <img src="/img/menu/dedicated-teams.svg" class="dedicated-teams">
+                                            Dedicated Teams
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/design.html" class="h-100" data-target="design">
+                                            <img src="/img/menu/design.svg" class="design">
+                                            Design
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/product-development.html" class="h-100" data-target="development">
+                                            <img src="/img/menu/product-development.svg" class="product-development">
+                                            Product Development
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/technical_&_customer_support.html" class="h-100" data-target="technical_&_customer_support">
+                                            <img src="/img/menu/technical-&-customer-support.svg" class="technical-customer-support">
+                                            Technical & Customer Support
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/references.html" data-target="references">References</a>
+                            </li>
+                            <li>
+                                <a href="/about-us.html" data-target="about-us">About Us</a>
+                            </li>
+                            <li>
+                                <a href="/careers.html" data-target="careers">Careers</a>
+                            </li>
+                            <li>
+                                <a href="/contact-us.html" data-target="contactUs">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-fluid px-0">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="section-lead section-lead-hero align-items-center justify-content-center d-flex">
+                        <div class="info text-center">
+                            <h1 class="title">Dedicated to delivering: Value. Trust. Innovation.</h1>
+                            <p>We make unique tools for all the things you find essential for your business</p>
+                            <a href="/references.html" role="button" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Navigation -->
-        <nav class="nav">
-            <ul>
-                <li><span>Home</span></li>
-                <li><a href="what-we-do.html">What we do</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <!--<li><a href="news.html">News</a></li>-->
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="nav-button">
-            <span>Menu</span>
-        </div>
-        <div class="nav-curtain"></div>
-        <!-- Social -->
-        <footer>
-            <div class="social">
-                <p>
-                    <strong>Business Outsourcing Services</strong><br>
-                    Omladinskih brigada 21<br>
-                    Bruno invest Office Building | Floor II<br>
-                    11070 Novi Beograd, Sebia<br>
-                    <a href="mailto:office@boutsourcing.com">office@boutsourcing.com</a>
-                </p>
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/company/business-outsourcing-services-doo" target="_blank"><img src="img/linkedin.png"></a>
-                    </li>
-                    <li>
-                        <a href="http://instagram.com/boutsourcing" target="_blank"><img src="img/instagram.png"></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/boutsourcing" target="_blank"><img src="img/twitter.png"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/pages/Business-Outsourcing-Services-doo/164089493616696" target="_blank"><img src="img/facebook.png"></a>
-                    </li>
-                </ul>
+
+        <div class="container-fluid section section-services">
+            <div class="row">
+                <div class="col-12 col-lg-8 offset-lg-2 text-center">
+                    <h1 class="title">Our Services</h1>
+                    <p class="d-none d-md-block">
+                        Business Outsourcing Services is a boutique software service company that provides cutting edge
+                        solutions and dedicated teams in order to help businesses with digital transformation. Since 2010 we have
+                        been helping global companies and brands establish and reimagine their businesses by building prime software solutions.
+                    </p>
+                </div>
             </div>
-            <div class="social-shadow"></div>
+        </div>
+        <div class="container-fluid px-0">
+            <div class="row no-gutters display-flex service-boxes">
+                <div class="col-12 col-lg-6">
+                    <div class="row no-gutters display-flex">
+                        <div class="col-6">
+                            <a href="/services/dedicated-teams.html" class="d-block">
+                                <div class="service-box">
+                                    <div class="icon icon-dedicated-teams"></div>
+                                    <h4 class="subtitle">Dedicated Teams</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="/services/product-development.html" class="d-block">
+                                <div class="service-box">
+                                    <div class="icon icon-product-development"></div>
+                                    <h4 class="subtitle">Product development</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row no-gutters display-flex">
+                        <div class="col-6">
+                            <a href="/services/design.html" class="d-block">
+                                <div class="service-box">
+                                    <div class="icon icon-design"></div>
+                                    <h4 class="subtitle">Design</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="/services/technical_&_customer_support.html" class="d-block">
+                                <div class="service-box">
+                                    <div class="icon icon-technical-and-customer-support"></div>
+                                    <h4 class="subtitle">Technical & <br> customer support</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid section section-portfolio">
+            <div class="row">
+                <div class="col-12 col-lg-8 offset-lg-2 text-center">
+                    <h1 class="title">Our recent use cases and some of the industries we have experience with</h1>
+                    <p class="d-none d-md-block">
+                        Business Outsourcing Services is present in the area of software development since 2010.
+                        We have been working on a variety of projects as a long-term partner
+                        and our portfolio counts many different projects.
+                    </p>
+                </div>
+            </div>
+            <div class="row display-flex portfolio-boxes">
+                <div class="col-12 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
+                    <a href="/portfolio/dossier.html" class="d-block box-link">
+                        <div class="text-center box portfolio-box portfolio-monitoring-tool">
+                            <h2 class="subtitle">COMPETENCY MANAGEMENT SYSTEM</h2>
+                            <div class="pos-abs-bottom">
+                                <hr>
+                                <p>Dossier</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
+                    <a href="/portfolio/club-collaborator.html" class="d-block box-link">
+                        <div class="text-center box portfolio-box portfolio-management-system">
+                            <h2 class="subtitle">MEMBERSHIP MANAGEMENT SOFTWARE</h2>
+                            <div class="pos-abs-bottom">
+                                <hr>
+                                <p>Club Collaborator</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
+                    <a href="/portfolio/appsco.html" class="d-block box-link">
+                        <div class="text-center box portfolio-box portfolio-management-solution">
+                            <h2 class="subtitle">CLOUD IDENTITY AND ACCESS MANAGEMENT SOLUTION</h2>
+                            <div class="pos-abs-bottom">
+                                <hr>
+                                <p>AppsCo</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid section section-what-clients-say">
+            <div class="row">
+                <div class="col-10 offset-1 col-lg-8 offset-lg-2 text-center">
+                    <h1 class="title">What our clients say</h1>
+                </div>
+            </div>
+            <div class="row display-flex client-boxes">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0">
+                    <div class="client-box">
+                        <div class="client-quote">
+                            <div class="row no-gutters align-items-center info">
+                                <div class="col-12">
+                                    <div class="icon quote-icon"></div>
+                                    <p>
+                                        Boutsourcing has been a reliable partner through the years,
+                                        delivering continuously and providing high-quality software development service,
+                                        enabling our market success. I can highly recommend them as a partner for your business software!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-info d-block d-lg-none">
+                            <img src="/img/home/appsco-client.png" alt="Geir Christian Karlsen, AppsCo">
+                            <p class="name">
+                                Geir Christian Karlsen, <strong>AppsCo</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0">
+                    <div class="client-box">
+                        <div class="client-quote">
+                            <div class="row no-gutters align-items-center info">
+                                <div class="col-12">
+                                    <div class="icon quote-icon"></div>
+                                    <p>
+                                        Our experience with Boutsourcing has been very good so far.
+                                        Both the management and technical personnel are very professional and meet all our expectations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-info d-block d-lg-none">
+                            <img src="/img/home/dossier-client.png" alt="Jarle B Liknes, Dossier">
+                            <p class="name">
+                                Jarle B Liknes, <strong>Dossier</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row display-flex client-boxes client-info-boxes d-none d-lg-flex">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0">
+                    <div class="client-box">
+                        <div class="client-info">
+                            <img src="/img/home/appsco-client.png" alt="Geir Christian Karlsen, AppsCo">
+                            <p class="name">
+                                Geir Christian Karlsen, <strong>AppsCo</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0">
+                    <div class="client-box">
+                        <div class="client-info">
+                            <img src="/img/home/dossier-client.png" alt="Jarle B Liknes, Dossier">
+                            <p class="name">
+                                Jarle B Liknes, <strong>Dossier</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid section section-work-life-balance overflow-v">
+            <div class="row no-gutters align-items-center">
+                <div class="col-12 col-lg-9">
+                    <img src="/img/home/work-life-balance.svg"
+                         alt="Work/life balance is important to us"
+                         class="work-life-balance-img">
+                    <div class="work-life-balance-info">
+                        <h1 class=" mb-0">We take care of your team</h1>
+                        <h3 class="font-weight-normal">Work/life balance is important to us!</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 d-flex justify-content-lg-end">
+                    <a href="/careers.html" class="section-link">Open Positions</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid section section-what-employees-say">
+            <div class="row">
+                <div class="col-10 offset-1 col-lg-8 offset-lg-2 text-center">
+                    <h1 class="title">What our employees say</h1>
+                </div>
+            </div>
+            <div class="row display-flex employee-boxes">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0">
+                    <div class="employee-box">
+                        <div class="employee employee-first">
+                            <div class="row no-gutters info">
+                                <div class="col">
+                                    <div class="icon quote-icon"></div>
+                                    <p>
+                                        Boutsourcing has given me the opportunity to expand my skillset
+                                        and contribute to the company while working in a pleasant and friendly environment.
+                                        I am happy to be part of a talented and motivated team in which we constantly learn,
+                                        grow and work on excellent projects.
+                                    </p>
+                                    <h2 class="name font-weight-normal">Sonja Laštro</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0">
+                    <div class="employee-box">
+                        <div class="employee employee-second">
+                            <div class="row no-gutters info">
+                                <div class="col">
+                                    <div class="icon quote-icon"></div>
+                                    <p>
+                                        Boutsourcing was a perfect place for me to start my professional career.
+                                        It gave me an opportunity to learn and grow my professional skills really fast.
+                                        And all of that in a stress-free and friendly environment.
+                                    </p>
+                                    <h2 class="name font-weight-normal">Snežana Nikolić</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row section-link-row">
+                <div class="col-10 offset-1 col-lg-8 offset-lg-2 text-center">
+                    <a href="/careers.html" data-target="careers" class="section-link">View careers page</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid section section-schedule-consultation">
+            <div class="row display-flex">
+                <div class="col-12 col-lg-6 align-self-center">
+                    <div class="schedule-consultation">
+                        <div class="info">
+                            <h1 class="title">Let's create something great together</h1>
+                            <form class="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter your full name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group last">
+                                    <textarea class="form-control" rows="7" placeholder="Tell us a bit about your project and how we can help you."></textarea>
+                                </div>
+                                <div class="text-left">
+                                    <a href="#" class="section-link">Send & schedule a free consultation</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-none d-lg-block">
+                    <div class="brainstorming text-center">
+                        <img src="img/home/brainstorming.png" alt="Brainstorming">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <div class="row p-5">
+                        <div class="col-lg-4 d-none d-lg-block">
+                            <img class="align-self-start mr-3 pr-5" src="/img/logo-negativ.svg" alt="Boutsourcing">
+                        </div>
+                        <div class="col-12 d-lg-none pb-5 text-left">
+                            <img src="/img/logo-negativ.svg" alt="Boutsourcing">
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <h3>Business outsourcing services</h3>
+                            <address>Omladinskih brigada 21<br>
+                                Bruno invest Office Building | Floor II<br>
+                                11070 Novi Beograd, Serbia<br>
+                                <a href="#" data-to="office" data-domain="boutsourcing.com" data-show-email>office@boutsourcing.com</a>
+                            </address>
+                            <div class="row my-3">
+                                <div class="col-auto pr-4">
+                                    <a href="https://www.linkedin.com/company/business-outsourcing-services-doo/">
+                                        <img src="/img/footer/linkedin.svg">
+                                    </a>
+                                </div>
+                                <div class="col-auto pr-4">
+                                    <a href="https://twitter.com/boutsourcing">
+                                        <img src="/img/footer/twitter.svg">
+                                    </a>
+                                </div>
+                                <div class="col-auto pr-4">
+                                    <a href="http://instagram.com/boutsourcing">
+                                        <img src="/img/footer/instagram.svg">
+                                    </a>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="https://www.facebook.com/pages/Business-Outsourcing-Services-doo/164089493616696">
+                                        <img src="/img/footer/facebook.svg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <span class="copyright">© Boutsourcing d.o.o. 2019 | All rights reserved.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="row p-5">
+                        <div class="col-8">
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="#">Services</a>
+                                    <ul class="footer-submenu">
+                                        <li>
+                                            <a href="/services/dedicated-teams.html">Dedicated Teams</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/design.html">Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/product-development.html">Product Development</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/technical_&_customer_support.html">Technical & Customer Support</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="/references.html">References</a>
+                                    <a href="/about-us.html">About Us</a>
+                                    <a href="/careers.html">Careers</a>
+                                    <a href="/contact-us.html">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         <!-- Scripts -->
-
+        <script src="/vendor/components/jquery/jquery.min.js"></script>
+        <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/common.js"></script>
+        <script src="/js/header.js"></script>
         <script type="text/javascript">
-            // Add class to loaded page
-
-            if (document.readyState === 'complete') {
-                // good to go!
-            }
-            var interval = setInterval(function() {
-                if (document.readyState === 'complete') {
-                    clearInterval(interval);
-
-                    // Page is ready
-
-                    $("body").addClass("loaded");
-                }
-            }, 100);
-
-            // Menu toogle class
-
-            $(document).ready(function() {
-                $(".nav-button").click(function() {
-                    $(this).toggleClass("in");
-                    $(".nav").toggleClass("in");
-                    $(".nav-curtain").toggleClass("in");
-                });
-                $(".nav-curtain").click(function() {
-                    $(this).removeClass("in");
-                    $(".nav-button").removeClass("in");
-                    $(".nav").removeClass("in");
-                });
-            });
-
             // Google Analytics
 
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -1,0 +1,121 @@
+.header-container {
+    height: 100%;
+}
+
+@media (min-width: 992px) {
+    .header {
+        padding: 0 0 0 60px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 10;
+        height: 90px;
+        position: absolute;
+    }
+    .header .logo {
+        width: 168px;
+        display: block;
+    }
+    .header .logo-sm {
+        display: none;
+    }
+    .menu-container {
+        box-sizing: border-box;
+    }
+    .menu {
+        margin: 0;
+        list-style-type: none;
+    }
+    ul.menu > li {
+        cursor: pointer;
+    }
+    ul.menu > li > a {
+        padding: 20px 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: #243647;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    ul.menu li {
+        width: calc(100% / 6);
+        height: 100%;
+    }
+    ul.menu li:hover .sub-menu,
+    .sub-menu:hover {
+        transform: scaleY(1);
+    }
+    /* Sub-menu */
+    .sub-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-wrap: wrap;
+        transform: scaleY(0);
+        transform-origin: 0 0;
+        transition: all .2s ease-in-out;
+    }
+    ul.sub-menu li {
+        text-transform: uppercase;
+        display: inline-block;
+        width: 50%;
+        height: 107px;
+        box-sizing: border-box;
+        vertical-align: middle;
+        position: relative;
+    }
+    /* Little circle in the middle*/
+    ul.sub-menu li:nth-child(even):nth-last-child(n+4):after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: #50E29D;
+        position: absolute;
+        display: block;
+        right: -6px;
+        bottom: -5px;
+        z-index: 10;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+    ul.sub-menu li:nth-child(even){
+        border-right: 1px solid #50E29D;
+    }
+    ul.sub-menu li:nth-child(n+4) {
+        border-top: 1px solid #50E29D;
+    }
+    ul.sub-menu li img,
+    ul.sub-menu li a {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    ul.sub-menu li img {
+        margin-right: 30px;
+    }
+    ul.sub-menu li .dedicated-teams {
+        margin-left: 6px;
+        margin-right: 34px;
+    }
+    ul.sub-menu li .technical-customer-support {
+        margin-right: 29px;
+    }
+    ul.sub-menu li a {
+        padding: 30px;
+        text-decoration: none;
+        font-size: 14px;
+        color: #243647;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+    }
+    .menu-burger {
+        display: none;
+    }
+}
+

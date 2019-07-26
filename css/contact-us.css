@@ -1,0 +1,129 @@
+.section-lead {
+    height: 564px;
+    padding-top: 90px;
+    z-index: 5;
+}
+.section-lead-hero {
+    background: #242F4E url("../img/screen/large/contact-us/contact-us-hero.png") no-repeat;
+    background-size: cover;
+}
+.section-lead .info * {
+    color: #FFFFFF;
+}
+.section-lead .info .title {
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+.section-lead .info p {
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.contact-section {
+    margin-top: -60px;
+    z-index: 6;
+}
+.contact-form {
+    padding: 65px 100px;
+}
+.contact-form form {
+    padding: 0;
+}
+.form-title {
+    margin-bottom: 70px;
+}
+
+.info-section {
+    margin-top: 100px;
+}
+.map iframe {
+    width: 100%;
+    min-height: 450px;
+}
+.info-section .subtitle {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.info-section address {
+    font-size: 16px;
+    line-height: 28px;
+    color: #243647;
+}
+
+@media (max-width: 991px) {
+    .section-lead {
+        height: 460px;
+        padding-top: 0;
+    }
+    .section-lead .info .title {
+        margin-top: 100px;
+    }
+}
+@media (max-width: 767px) {
+    .section-lead {
+        height: 200px;
+        padding: 0;
+    }
+    .section-lead-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-lead .info .title {
+        margin: 0;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .section-lead-info {
+        margin-top: -50px;
+        z-index: 6;
+    }
+    .lead-info {
+        padding: 15px 25px 55px;
+        margin-bottom: 40px;
+    }
+    .lead-info p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #243647;
+        line-height: 24px;
+    }
+
+    .contact-section {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 50px;
+    }
+    .contact-form {
+        padding: 55px 30px 30px;
+    }
+    .form-title {
+        text-align: left;
+    }
+
+    .info-section {
+        margin-top: 80px;
+    }
+    .info-section .subtitle {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .info-section address {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .info-section .info {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 20px;
+    }
+    .info-section .map {
+        margin-bottom: 0;
+    }
+    .info-section .map iframe {
+        min-height: 280px;
+    }
+}

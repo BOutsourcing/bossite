@@ -1,0 +1,195 @@
+.section-lead-hero {
+    background: #242F4E url("../img/screen/large/services/design/design.png") no-repeat;
+    background-size: cover;
+}
+.lead-title .title + .title {
+    margin-top: 55px;
+}
+.design-section,
+.key-benefits-section {
+    padding-right: 200px;
+}
+.design-section .title {
+    margin-top: 35px;
+}
+.design-step {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.design-step .icon {
+    margin: 0 auto 20px;
+    transition: all 0.2s linear;
+}
+.design-step .icon-discovery {
+    width: 61px;
+    height: 66px;
+    background: url("../img/services/design/steps/discovery.svg") no-repeat;
+    background-size: cover;
+}
+.design-step:hover .icon-discovery,
+.design-step.active .icon-discovery {
+    background: url("../img/services/design/steps/discovery-hover.svg") no-repeat;
+    background-size: cover;
+}
+.design-step .icon-research {
+    width: 89px;
+    height: 48px;
+    margin-bottom: 30px;
+    background: url("../img/services/design/steps/research.svg") no-repeat;
+    background-size: cover;
+}
+.design-step:hover .icon-research,
+.design-step.active .icon-research {
+    background: url("../img/services/design/steps/research-hover.svg") no-repeat;
+    background-size: cover;
+}
+.design-step .icon-create {
+    width: 64px;
+    height: 64px;
+    background: url("../img/services/design/steps/create.svg") no-repeat;
+    background-size: cover;
+}
+.design-step:hover .icon-create,
+.design-step.active .icon-create {
+    background: url("../img/services/design/steps/create-hover.svg") no-repeat;
+    background-size: cover;
+}
+.design-step .icon-implement {
+    width: 65px;
+    height: 65px;
+    background: url("../img/services/design/steps/implement.svg") no-repeat;
+    background-size: cover;
+}
+.design-step:hover .icon-implement,
+.design-step.active .icon-implement {
+    background: url("../img/services/design/steps/implement-hover.svg") no-repeat;
+    background-size: cover;
+}
+.design-step .subtitle {
+    margin-bottom: 0;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: bold;
+}
+.nav-border-b {
+    width: 100%;
+    height: 1px;
+    background-color: #C7CFDF;
+    position: relative;
+}
+.nav-border-b hr {
+    width: 25%;
+    height: 7px;
+    margin: 0;
+    background-color: #50E29D;
+    border: none;
+    transition: .3s ease-in-out;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+.design-step-research.active ~ .nav-border-b hr {
+    margin-left: 25%;
+}
+.design-step-create.active ~ .nav-border-b hr {
+    margin-left: 50%;
+}
+.design-step-implement.active ~ .nav-border-b hr {
+    margin-left: 75%;
+}
+.how-do-we-do-it-section .tab-content {
+    padding-top: 35px;
+}
+.design-steps .control {
+    display: none;
+}
+
+.our-recent-work-section .title {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 991px) {
+    .lead-title .title + .title {
+        margin-top: 0;
+    }
+    .design-section .title {
+        margin-top: 0;
+    }
+}
+@media (max-width: 767px) {
+    .lead-title .title + .title {
+        margin-top: 15px;
+    }
+    .separator-green {
+         margin: 10px 0;
+     }
+    .design-step {
+        padding-top: 0;
+    }
+    .design-step .subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .section-special-m-t {
+        margin-top: 50px;
+    }
+    .our-recent-work-section .title {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 575px) {
+    .how-do-we-do-it-section {
+        touch-action: none;
+    }
+    .how-do-we-do-it-section .tab-content {
+        padding-top: 20px;
+    }
+    .design-steps {
+        height: 130px;
+        position: relative;
+    }
+    .design-steps .control {
+        width: 32px;
+        top: auto;
+        bottom: 22px;
+        z-index: 5;
+        display: block;
+    }
+    .design-steps .carousel-control-next-icon,
+    .design-steps .carousel-control-prev-icon {
+        width: 16px;
+        height: 28px;
+        margin-bottom: 0;
+    }
+    .design-step {
+        width: 80%;
+        padding-bottom: 15px;
+        border-bottom: 7px solid #50E29D;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateX(120%);
+        transition: transform 0.2s linear;
+        z-index: 2;
+    }
+    .design-step.active {
+        transform: translateX(0) !important;
+        transition: transform 0.4s linear;
+    }
+    .nav-border-b {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+        bottom: 3px;
+        z-index: 1;
+    }
+    .nav-border-b hr {
+        display: none;
+    }
+}

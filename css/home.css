@@ -1,0 +1,404 @@
+.overflow-v {
+    overflow: visible !important;
+}
+.section-lead {
+    height: 720px;
+    padding: 140px 50px 50px;
+    color: #243647;
+}
+.section-lead-hero {
+    background: url("../img/screen/large/home/software-development-experts.png") no-repeat;
+    background-size: cover;
+}
+.section-lead .title {
+    font-size: 48px;
+    line-height: 72px;
+}
+.section-lead p {
+    font-size: 22px;
+    line-height: 30px;
+}
+.section-lead .btn {
+    margin-top: 50px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.section {
+    margin-top: 120px;
+}
+.section .title {
+    margin-bottom: 30px;
+}
+
+.portfolio-box,
+.portfolio-boxes a.d-block {
+    height: 100%;
+}
+.portfolio-boxes {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 50px;
+}
+.portfolio-box, .portfolio-box .subtitle {
+    color: #ffffff;
+}
+.portfolio-box {
+    height: 412px;
+    padding: 75px 60px 55px;
+    position: relative;
+}
+.portfolio-box .pos-abs-bottom {
+    padding: 0 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 55px;
+}
+.portfolio-monitoring-tool {
+    background: url("../img/screen/large/home/employee-monitoring-tool.png") no-repeat;
+    background-size: cover;
+}
+.portfolio-management-system {
+    background: url("../img/screen/large/home/competency-management-system.png") no-repeat;
+    background-size: cover;
+}
+.portfolio-management-solution {
+    background: url("../img/screen/large/home/access-management-solution.png") no-repeat;
+    background-size: cover;
+}
+.portfolio-box .subtitle {
+    margin-bottom: 100px;
+}
+.portfolio-management-solution .subtitle {
+    margin-bottom: 58px;
+}
+.portfolio-box hr {
+    width: 130px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border-top: 5px solid #19E69B;
+}
+.portfolio-box p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.client-boxes {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 30px;
+}
+.client-info-boxes {
+    margin-top: 0;
+}
+.client-quote,
+.client-quote .quote-icon,
+.client-quote p {
+    transition: all 0.2s linear;
+}
+.client-quote .info {
+    padding: 35px 55px 90px 110px;
+}
+.client-box p {
+    font-size: 20px;
+    line-height: 26px;
+}
+.quote-icon {
+    width: 43px;
+    height: 34px;
+    background: url("../img/home/quotation-icon-grey.svg") no-repeat;
+    background-size: cover;
+}
+.client-quote .quote-icon {
+    position: absolute;
+    top: 4px;
+    left: -73px;
+}
+.client-box:hover .client-quote {
+    background-color: #F2F4F8;
+}
+.client-box:hover .client-quote .quote-icon {
+    background: url("../img/home/quotation-icon-green.svg") no-repeat;
+    background-size: cover;
+}
+.client-box:hover .client-quote p {
+    color: #243647;
+}
+.client-info {
+    padding-left: 110px;
+    padding-right: 55px;
+    margin-top: -60px;
+}
+.client-info .name {
+    margin-top: 20px;
+    color: #243647;
+}
+
+.section-work-life-balance {
+    padding: 40px 80px;
+    margin-top: 150px;
+    height: 160px;
+    background-color: #F8F9FD;
+}
+.work-life-balance-info {
+    padding: 4px 20px;
+    margin-left: 135px;
+    border-left: 8px solid #50E29D;
+}
+.work-life-balance-img {
+    height: auto !important;
+    position: absolute;
+    left: 0;
+    top: -95px;
+}
+
+.employee-boxes {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 30px;
+}
+.employee {
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+}
+.employee-box .info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 50px 40px 40px 100px;
+    background-color: rgba(36, 54, 71, 0.3);
+    transform: translateY(100%);
+    transition: transform 0.1s linear;
+}
+.employee-box .info .quote-icon {
+    background: url("../img/home/quotation-icon-green.svg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 6px;
+    left: -65px;
+}
+.employee-box .info p,
+.employee-box .info .name {
+    color: #FFFFFF;
+}
+.employee-box .info .name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.employee-box .info p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+}
+.employee:hover .info {
+    transform: translateY(0);
+    transition: transform 0.2s linear;
+}
+.employee-first {
+    background: #242F4E url("../img/home/employee-first.png") no-repeat;
+    background-size: cover;
+}
+.employee-second {
+    background: #242F4E url("../img/home/employee-second.png") no-repeat;
+    background-size: cover;
+}
+.section-what-employees-say .section-link-row {
+    margin-top: 50px;
+}
+
+.section-schedule-consultation {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.schedule-consultation {
+    margin-bottom: 50px;
+}
+.section-schedule-consultation form {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (min-width: 992px) {
+    .header {
+        background-color: transparent;
+        transition: all 0.2s 0.1s linear;
+    }
+    .header.submenu-hover {
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: all 0.2s linear;
+    }
+    .client-quote {
+        height: 100%;
+    }
+}
+@media (max-width: 1440px) {
+    .portfolio-box {
+        padding: 50px 40px 40px;
+    }
+    .portfolio-box .pos-abs-bottom {
+        bottom: 40px;
+    }
+}
+@media (max-width: 1200px) {
+    .portfolio-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .work-life-balance-info {
+        margin-left: 120px;
+    }
+    .employee-box .info {
+        padding: 40px 30px 20px 80px;
+        transform: translateY(0);
+    }
+    .employee-box .info .quote-icon {
+        width: 35px;
+        height: 28px;
+        left: -50px;
+    }
+}
+@media (max-width: 991px) {
+    .section-lead {
+        height: 440px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .section-lead-hero,
+    .section-portfolio,
+    .section-schedule-consultation {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-lead-hero .info {
+        width: auto;
+    }
+
+    .portfolio-boxes,
+    .client-boxes,
+    .employee-boxes {
+        padding: 0;
+    }
+    .portfolio-box {
+        padding: 75px 60px 55px;
+        margin-bottom: 40px;
+    }
+    .portfolio-box .pos-abs-bottom {
+        bottom: 55px;
+    }
+    .client-box,
+    .employee-box {
+        margin-bottom: 50px;
+    }
+    .client-box .client-quote {
+        background-color: #F2F4F8;
+    }
+    .client-box .client-quote .quote-icon {
+        background: url("../img/home/quotation-icon-green.svg") no-repeat;
+        background-size: cover;
+    }
+    .client-box .client-quote p {
+        color: #243647;
+    }
+    .employee-box .info {
+         padding: 50px 40px 40px 100px;
+     }
+    .section-what-employees-say .section-link-row {
+        margin-top: 0;
+    }
+    .section-work-life-balance {
+        padding: 40px 20px;
+        margin-top: 80px;
+        height: auto;
+    }
+    .section-work-life-balance .section-link {
+        margin-top: 40px;
+        margin-left: 120px;
+    }
+    .schedule-consultation {
+        text-align: center;
+    }
+}
+@media (max-width: 767px) {
+    .section-lead {
+        height: auto;
+        padding: 30px 20px;
+    }
+    .section-lead .info {
+        margin-top: 0;
+    }
+    .section-lead .title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .section-lead .btn {
+        font-size: inherit;
+        line-height: inherit;
+    }
+    .section-lead p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .section {
+        margin-top: 50px;
+    }
+
+    .services-info {
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    .portfolio-box {
+        min-height: 250px;
+        height: auto;
+        padding: 50px 20px 80px;
+        margin-bottom: 20px;
+    }
+    .portfolio-box .subtitle {
+        margin-bottom: 0;
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .portfolio-box hr {
+        margin-bottom: 10px;
+    }
+    .portfolio-box .pos-abs-bottom {
+        bottom: 20px;
+    }
+
+    .section-what-clients-say {
+        padding-top: 0;
+        border-top: none;
+    }
+    .client-box p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .employee-box .info {
+        padding: 40px 40px 40px 80px;
+    }
+    .employee-box .info p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .employee {
+        height: 340px;
+    }
+}
+@media (max-width: 500px) {
+    .employee-box .info {
+        padding: 40px 20px 20px 60px;
+    }
+    .employee-box .info p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

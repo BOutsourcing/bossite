@@ -2,8 +2,11 @@
     "name": "boutsourcing/bossite",
     "description": "Boutsourcing Web Presentation",
     "require": {
+        "twbs/bootstrap": "4.3.1",
+        "components/jquery": "^3.3",
         "swiftmailer/swiftmailer": "^5.4",
-        "symfony/http-foundation": "^3.0"
+        "symfony/http-foundation": "^3.4",
+        "components/font-awesome": "^5.4"
     },
     "autoload": {
         "psr-4": {"BOS\\": "src/"}
@@ -13,5 +16,10 @@
             "name": "Info",
             "email": "hr@boutsourcing.com"
         }
-    ]
+    ],
+    "config": {
+        "platform": {
+            "php": "5.6"
+        }
+    }
 }

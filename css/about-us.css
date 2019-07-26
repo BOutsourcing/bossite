@@ -1,0 +1,226 @@
+.section-lead {
+    height: 497px;
+    padding: 140px 50px 50px;
+}
+.section-lead-hero {
+    background: #242F4E url("../img/screen/large/about-us/about-us-hero.png") no-repeat;
+    background-size: cover;
+}
+
+.section {
+    margin-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.section .title {
+    margin-bottom: 30px;
+}
+.section p {
+    color: #243647;
+}
+
+.info-section {
+    margin-top: 80px;
+}
+.info-section .separator-green {
+    margin: 30px auto;
+}
+
+.management-section .title {
+    margin-bottom: 80px;
+}
+.profile img {
+    max-width: 180px;
+    margin-bottom: 30px;
+}
+.profile .name, .profile .position {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+.profile .name {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.modal-body .profile {
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.modal-body .profile .position {
+    margin-bottom: 60px;
+}
+
+.who-we-are-section .title {
+    margin-bottom: 10px;
+}
+.who-we-are-section .info + .info {
+    margin-top: 30px;
+}
+.who-we-are-section .default-color {
+    color: #748494;
+}
+
+.boutsourcing-life-section {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.boutsourcing-life-section .subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+}
+.boutsourcing-life-section .title {
+    margin-bottom: 30px;
+}
+.gallery .insta-photo {
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.gallery .insta-link {
+    padding: 4px;
+}
+.gallery .insta-link .photo-data {
+    background-color: rgba(36, 54, 71, 0.8);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.1s linear;
+}
+.photo-data * {
+    vertical-align: middle;
+    display: none;
+}
+.photo-data .icon {
+    margin-right: 5px;
+}
+.photo-data .number {
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+}
+.gallery .insta-link:hover .photo-data {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s linear;
+}
+
+.gallery .no-gutters>[class*=col-] {
+    transition: all 0.2s linear;
+}
+
+.modal-backdrop {
+    background-color: rgba(64, 64, 65, 0.7);
+}
+.modal-backdrop.show {
+    opacity: 1;
+}
+.modal-content {
+    border: none;
+    border-radius: 0;
+}
+.modal-body {
+    padding: 30px 15px;
+}
+.modal-body .close-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.modal-body p {
+     color: inherit;
+ }
+@media (min-width: 992px) {
+    .modal-xl {
+        max-width: 800px;
+    }
+    .modal-body {
+        padding: 60px 45px;
+    }
+    .modal-body .close-icon {
+        top: 60px;
+        right: 45px;
+    }
+}
+@media (min-width: 1200px) {
+    .modal-xl {
+        max-width: 1000px;
+    }
+}
+@media (min-width: 1400px) {
+    .modal-xl {
+        max-width: 1200px;
+    }
+}
+@media (max-width: 991px) {
+    .section-lead {
+        height: 330px;
+        padding-top: 50px;
+    }
+    .section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .profile {
+        margin-bottom: 60px;
+    }
+    .modal-body .profile {
+        padding-top: 20px;
+    }
+    .modal-body .profile .position {
+        margin-bottom: 20px;
+    }
+
+    .brainstorming {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    /*.gallery .insta-link .photo-data {*/
+        /*background-color: rgba(36, 54, 71, 0.4);*/
+        /*opacity: 1;*/
+        /*visibility: visible;*/
+    /*}*/
+}
+@media (max-width: 767px) {
+    .section-lead {
+        height: 200px;
+    }
+
+    .section {
+        margin-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .management-section .title {
+        margin-bottom: 30px;
+    }
+    .profile .name, .profile .position {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .boutsourcing-life-section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 575px) {
+    .profile {
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-top: 1px solid #E7EAF2;
+    }
+}
+

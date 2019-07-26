@@ -1,0 +1,206 @@
+.section-lead {
+    height: 590px;
+    padding-top: 90px;
+}
+.section-lead-hero {
+    background: #242F4E url("../img/screen/large/references/references-hero.png") no-repeat;
+    background-size: cover;
+}
+.section-lead .info {
+    padding: 10px 20px;
+}
+.section-lead .info h1 {
+    margin-top: 130px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+.section-lead .info p {
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.section {
+    margin-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.section-clients .title {
+    margin-bottom: 50px;
+}
+.row-clients > [class*='col-'] {
+    margin-bottom: 80px;
+}
+.client-box {
+    height: 100%;
+    background-color: #F3F6FD;
+}
+.client-box .preview {
+    height: 350px;
+    position: relative;
+}
+.client-box .preview.evolution {
+    background: url("../img/screen/large/references/evolution.png") no-repeat;
+    background-size: cover;
+}
+.client-box .preview.dossier {
+    background: url("../img/screen/large/references/dossier.png") no-repeat;
+    background-size: cover;
+}
+.client-box .preview.appsco {
+    background: url("../img/screen/large/references/appsco.png") no-repeat;
+    background-size: cover;
+}
+.client-box .preview.brocon {
+    background: url("../img/screen/large/references/brocon.png") no-repeat;
+    background-size: cover;
+}
+.client-box .preview.club-collaborator {
+    background: url("../img/screen/large/references/club-collaborator.png") no-repeat;
+    background-size: cover;
+}
+.client-box .preview.mysiteshop {
+    background: url("../img/screen/large/references/mysiteshop.png") no-repeat;
+    background-size: cover;
+}
+.preview .sticky-label {
+    min-width: 80%;
+    height: 68px;
+    padding: 5px 15px;
+    color: #243647;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 58px;
+    opacity: 0.9;
+    background-color: #50E29D;
+    position: absolute;
+    bottom: -32px;
+    left: 15px;
+}
+.client-box .info {
+    height: 370px;
+    padding: 60px 30px 20px;
+    position: relative;
+}
+.pos-abs-bottom {
+     position: absolute;
+     left: 0;
+     right: 0;
+     bottom: 20px;
+     padding: 0 30px;
+ }
+.client-box .name {
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 58px;
+}
+.client-box .description {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 38px;
+}
+.client-box .website {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media (max-width: 1440px) {
+    .section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media (max-width: 991px) {
+    .section-lead {
+        height: 330px;
+        padding-top: 0;
+    }
+    .section-lead .info h1 {
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    .section-lead .info p {
+        line-height: 32px;
+    }
+    .client-box .info,
+    .pos-abs-bottom {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .section-lead {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .section-lead-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-lead .info h1 {
+        margin: 0;
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .lead-info {
+        padding-left: 20px!important;
+        padding-right: 20px!important;
+    }
+    .lead-info p {
+        color: #243647;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+
+    .section {
+        margin-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-clients .title {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .row-clients {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .row-clients > [class*='col-'] {
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .client-box .preview {
+        height: 140px;
+    }
+    .preview .sticky-label {
+        height: 26px;
+        padding: 5px 6px;
+        font-size: 12px;
+        line-height: 16px;
+        bottom: -13px;
+        left: 10px;
+    }
+    .client-box .info {
+        height: 150px;
+        padding-top: 30px;
+    }
+    .client-box .name {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .client-box .description {
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .client-box .info,
+    .pos-abs-bottom {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

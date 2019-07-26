@@ -1,0 +1,199 @@
+.font-default {
+    color: #243647;
+}
+
+.open-positions-section {
+    padding-bottom: 40px;
+}
+.open-positions-section .title {
+    margin-top: 90px;
+    margin-bottom: 0;
+}
+.separator-green {
+    margin: 30px 0;
+}
+.open-positions-section .subtitle {
+    font-size: 24px;
+}
+.open-positions {
+    margin-top: 50px;
+}
+.open-position {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #242F4E;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    transition: all 0.2s linear;
+}
+.open-position .position {
+    color: #ffffff;
+    transition: all 0.2s linear;
+}
+.open-position:hover .position {
+    color: #50E29D;
+}
+
+.office-section {
+    height: 393px;
+    background: url("/img/careers/office-preview.png") no-repeat;
+    background-size: cover;
+}
+
+.section {
+    margin-top: 100px;
+}
+.section .title {
+    margin-bottom: 30px;
+}
+.section p {
+    margin-bottom: 20px;
+}
+
+div.dotted-background {
+    position: relative;
+    overflow: visible;
+}
+img.dotted-background {
+    position: absolute;
+    top: 170px;
+    right: 0;
+    z-index: -1;
+}
+
+.work-life-section .box {
+    padding: 90px 45px 70px;
+}
+.work-life-header {
+    margin-bottom: 20px;
+}
+.work-life-header img {
+    position: absolute;
+    right: 0;
+}
+.work-life-header .work-img {
+    bottom: 45px;
+}
+.work-life-header .life-img {
+    bottom: 25px;
+}
+.work-life-section .title {
+    font-size: 42px;
+    line-height: 56px;
+}
+.work-life-section p {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.gains-section .box {
+    margin-bottom: 100px;
+}
+.gains-section .name {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #243647;
+    text-transform: uppercase;
+}
+.gains-section .name.private-health-insurance,
+.gains-section .name.sport-team-activities,
+.gains-section .name.fruit-refreshments {
+    margin-top: 25px;
+}
+
+@media (min-width: 992px) {
+    .header {
+        position: relative;
+    }
+}
+@media (max-width: 991px) {
+    .section:not(.work-life-section),
+    .open-positions-section .title,
+    .open-positions-row {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .work-life-section .box,
+    .atmosphere-section {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .section p, .section .title {
+        text-align: left;
+    }
+}
+@media (max-width: 767px) {
+    .section:not(.work-life-section),
+    .open-positions-section .title,
+    .open-positions-row {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .open-positions-section {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .open-positions-section .title {
+        margin-top: 0;
+    }
+    .separator-green {
+        height: 3px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .open-positions-section .subtitle {
+        font-size: 20px;
+    }
+    .open-positions {
+        margin-top: 30px;
+    }
+
+    .section {
+        margin-top: 50px;
+    }
+
+    .work-life-section .box, .atmosphere-section {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    .work-life-section .work-box {
+        margin-bottom: 120px;
+    }
+    .work-life-section .title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .work-life-section p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+    .work-life-header .work-img {
+        width: 72px;
+        bottom: -10px;
+    }
+    .work-life-header .life-img {
+        width: 75px;
+        bottom: -10px;
+    }
+
+    .atmosphere-section {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .gains-section span {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .gains-section img {
+        width: 68px;
+        height: 68px;
+        margin-top: 0 !important;
+    }
+    footer {
+        margin-top: 0 !important;
+    }
+}

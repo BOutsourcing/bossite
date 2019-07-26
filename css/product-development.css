@@ -1,0 +1,39 @@
+.section-lead-hero {
+    background: #242F4E url("../img/screen/large/services/product-development/software-product-development.png") no-repeat;
+    background-size: cover;
+}
+.process-flow-section .title {
+    margin-bottom: 80px;
+}
+.section-industries .title {
+    margin-bottom: 60px;
+}
+.section-industries img {
+    margin-bottom: 30px;
+}
+.section-industries p {
+    color: #243647;
+    text-transform: uppercase;
+}
+.section p.text-special {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #243647;
+}
+
+@media (max-width: 767px) {
+    .process-flow-section .title,
+    .section-industries .title {
+        margin-bottom: 30px;
+    }
+    .section p.text-special {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .section-industries img {
+        width: 64px;
+        margin-bottom: 15px;
+    }
+}
