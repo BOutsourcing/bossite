@@ -166,18 +166,18 @@
                         <h1 class="form-title font-weight-normal">
                             Contact us and let's create something <br class="d-none d-xl-block"> great together!
                         </h1>
-                        <form>
+                        <form method="POST" action="/phpscripts/contact_send.php">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter your full name">
+                                <input type="text" class="form-control" placeholder="Enter your full name" name="name">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Enter your email">
+                                <input type="email" class="form-control" placeholder="Enter your email" name="email">
                             </div>
                             <!-- <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Phone number">
                             </div> -->
                             <div class="form-group last">
-                                <textarea class="form-control" rows="8" placeholder="Tell us a bit about your project and how we can help you."></textarea>
+                                <textarea class="form-control" rows="8" placeholder="Tell us a bit about your project and how we can help you." name="message"></textarea>
                             </div>
                             <div class="text-right">
                                 <button type="submit" class="btn btn-primary">SEND</button>
