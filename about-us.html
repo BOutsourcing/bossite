@@ -30,16 +30,16 @@
         <meta name="msapplication-navbutton-color" content="#0f3458">
         <meta name="apple-mobile-web-app-status-bar-style" content="#0f3458">
 
-        <link rel="stylesheet" type="text/css" href="/css/fonts.css">
-        <link rel="stylesheet" href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/vendor/components/font-awesome/css/fontawesome-all.css">
-        <link rel="stylesheet" type="text/css" href="/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
-        <link rel="stylesheet" type="text/css" href="/css/header.css">
-        <link rel="stylesheet" type="text/css" href="/css/header-sm.css">
-        <link rel="stylesheet" type="text/css" href="/css/services-section.css">
-        <link rel="stylesheet" type="text/css" href="/css/about-us.css">
-        <link rel="stylesheet" type="text/css" href="/css/footer.css">
+        <link rel="stylesheet" type="text/css" href="/css/fonts.css?v=2.0">
+        <link rel="stylesheet" href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css?v=2.0">
+        <link rel="stylesheet" href="/vendor/components/font-awesome/css/fontawesome-all.css?v=2.0">
+        <link rel="stylesheet" type="text/css" href="/css/reset.css?v=2.0">
+        <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.0">
+        <link rel="stylesheet" type="text/css" href="/css/header.css?v=2.0">
+        <link rel="stylesheet" type="text/css" href="/css/header-sm.css?v=2.0">
+        <link rel="stylesheet" type="text/css" href="/css/services-section.css?v=2.0">
+        <link rel="stylesheet" type="text/css" href="/css/about-us.css?v=2.0">
+        <link rel="stylesheet" type="text/css" href="/css/footer.css?v=2.0">
     </head>
     <body>
         <header class="container-fluid header">
@@ -62,7 +62,7 @@
                                 <a href="/" data-target="header">Home</a>
                             </li>
                             <li data-submenu="container">
-                                <a href="/services/dedicated-teams.html" data-target="services">
+                                <a href="#" data-target="services">
                                     Services
                                     <i class="fa fa-chevron-right d-inline-block d-lg-none float-right"></i>
                                 </a>
@@ -419,11 +419,13 @@
             </div>
         </div>
 
-        <div class="container-fluid boutsourcing-life-section gallery">
+        <div id="instaGallery" class="container-fluid boutsourcing-life-section gallery" data-count="12">
             <div class="row">
                 <div class="col-12 text-center">
                     <h3 class="subtitle">Follow us to find out more about life</h3>
-                    <h1 class="title">@Boutsourcing</h1>
+                    <a href="http://instagram.com/boutsourcing" target="_blank" class="d-block">
+                        <h1 class="title">@Boutsourcing</h1>
+                    </a>
                 </div>
             </div>
             <div class="row no-gutters">
@@ -431,52 +433,49 @@
                     <div class="row no-gutters">
                         <div class="col-12 col-sm-4">
                             <div class="row no-gutters">
-                                <div class="col-12">
-                                    <a href="#" class="insta-link d-block">
-                                        <div class="insta-photo"
-                                             style="background-image: url('/img/about-us/gallery/insta-1.jpg')">
+                                <div class="col-12 insta-photo-box">
+                                    <a href="#" target="_blank" class="insta-link d-block">
+                                        <div class="insta-photo">
                                             <div class="row align-items-center text-center photo-data">
                                                 <div class="col-6 text-right">
                                                     <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
-                                                    <span class="number number-of-likes">33</span>
+                                                    <span class="number number-of-likes insta-likes"></span>
                                                 </div>
                                                 <div class="col-6 text-left">
                                                     <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
-                                                    <span class="number number-of-comments">9</span>
+                                                    <span class="number number-of-comments insta-comments"></span>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-12">
-                                    <a href="#" class="insta-link d-block">
-                                        <div class="insta-photo"
-                                             style="background-image: url('/img/about-us/gallery/insta-2.jpg')">
+                                <div class="col-12 insta-photo-box">
+                                    <a href="#" target="_blank" class="insta-link d-block">
+                                        <div class="insta-photo">
                                             <div class="row align-items-center text-center photo-data">
                                                 <div class="col-6 text-right">
                                                     <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
-                                                    <span class="number number-of-likes">33</span>
+                                                    <span class="number number-of-likes insta-likes"></span>
                                                 </div>
                                                 <div class="col-6 text-left">
                                                     <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
-                                                    <span class="number number-of-comments">9</span>
+                                                    <span class="number number-of-comments insta-comments"></span>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-12">
-                                    <a href="#" class="insta-link d-block">
-                                        <div class="insta-photo"
-                                             style="background-image: url('/img/about-us/gallery/insta-3.jpg')">
+                                <div class="col-12 insta-photo-box">
+                                    <a href="#" target="_blank" class="insta-link d-block">
+                                        <div class="insta-photo">
                                             <div class="row align-items-center text-center photo-data">
                                                 <div class="col-6 text-right">
                                                     <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
-                                                    <span class="number number-of-likes">33</span>
+                                                    <span class="number number-of-likes insta-likes"></span>
                                                 </div>
                                                 <div class="col-6 text-left">
                                                     <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
-                                                    <span class="number number-of-comments">9</span>
+                                                    <span class="number number-of-comments insta-comments"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -486,18 +485,17 @@
                         </div>
                         <div class="col-12 col-sm-8">
                             <div class="row no-gutters">
-                                <div class="col-12">
-                                    <a href="#" class="insta-link d-block">
-                                        <div class="insta-photo"
-                                             style="background-image: url('/img/about-us/gallery/insta-4.jpg')">
+                                <div class="col-12 insta-photo-box">
+                                    <a href="#" target="_blank" class="insta-link d-block">
+                                        <div class="insta-photo">
                                             <div class="row align-items-center text-center photo-data">
                                                 <div class="col-6 text-right">
                                                     <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
-                                                    <span class="number number-of-likes">33</span>
+                                                    <span class="number number-of-likes insta-likes"></span>
                                                 </div>
                                                 <div class="col-6 text-left">
                                                     <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
-                                                    <span class="number number-of-comments">9</span>
+                                                    <span class="number number-of-comments insta-comments"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -505,35 +503,33 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="row no-gutters">
-                                        <div class="col-12 col-sm-6">
-                                            <a href="#" class="insta-link d-block">
-                                                <div class="insta-photo"
-                                                     style="background-image: url('/img/about-us/gallery/insta-5.jpg')">
+                                        <div class="col-12 col-sm-6 insta-photo-box">
+                                            <a href="#" target="_blank" class="insta-link d-block">
+                                                <div class="insta-photo">
                                                     <div class="row align-items-center text-center photo-data">
                                                         <div class="col-6 text-right">
                                                             <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
-                                                            <span class="number number-of-likes">33</span>
+                                                            <span class="number number-of-likes insta-likes"></span>
                                                         </div>
                                                         <div class="col-6 text-left">
                                                             <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
-                                                            <span class="number number-of-comments">9</span>
+                                                            <span class="number number-of-comments insta-comments"></span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-12 col-sm-6">
-                                            <a href="#" class="insta-link d-block">
-                                                <div class="insta-photo"
-                                                     style="background-image: url('/img/about-us/gallery/insta-6.jpg')">
+                                        <div class="col-12 col-sm-6 insta-photo-box">
+                                            <a href="#" target="_blank" class="insta-link d-block">
+                                                <div class="insta-photo">
                                                     <div class="row align-items-center text-center photo-data">
                                                         <div class="col-6 text-right">
                                                             <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
-                                                            <span class="number number-of-likes">33</span>
+                                                            <span class="number number-of-likes insta-likes"></span>
                                                         </div>
                                                         <div class="col-6 text-left">
                                                             <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
-                                                            <span class="number number-of-comments">9</span>
+                                                            <span class="number number-of-comments insta-comments"></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -549,52 +545,49 @@
                     <div class="row no-gutters display-flex">
                         <div class="col-12 col-sm-4">
                             <div class="row no-gutters">
-                                <div class="col-12">
-                                    <a href="#" class="insta-link d-block">
-                                        <div class="insta-photo"
-                                             style="background-image: url('/img/about-us/gallery/insta-7.jpg')">
+                                <div class="col-12 insta-photo-box">
+                                    <a href="#" target="_blank" class="insta-link d-block">
+                                        <div class="insta-photo">
                                             <div class="row align-items-center text-center photo-data">
                                                 <div class="col-6 text-right">
                                                     <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
-                                                    <span class="number number-of-likes">33</span>
+                                                    <span class="number number-of-likes insta-likes"></span>
                                                 </div>
                                                 <div class="col-6 text-left">
                                                     <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
-                                                    <span class="number number-of-comments">9</span>
+                                                    <span class="number number-of-comments insta-comments"></span>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-12">
-                                    <a href="#" class="insta-link d-block">
-                                        <div class="insta-photo"
-                                             style="background-image: url('/img/about-us/gallery/insta-8.jpg')">
+                                <div class="col-12 insta-photo-box">
+                                    <a href="#" target="_blank" class="insta-link d-block">
+                                        <div class="insta-photo">
                                             <div class="row align-items-center text-center photo-data">
                                                 <div class="col-6 text-right">
                                                     <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
-                                                    <span class="number number-of-likes">33</span>
+                                                    <span class="number number-of-likes insta-likes"></span>
                                                 </div>
                                                 <div class="col-6 text-left">
                                                     <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
-                                                    <span class="number number-of-comments">9</span>
+                                                    <span class="number number-of-comments insta-comments"></span>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-12">
-                                    <a href="#" class="insta-link d-block">
-                                        <div class="insta-photo"
-                                             style="background-image: url('/img/about-us/gallery/insta-9.jpg')">
+                                <div class="col-12 insta-photo-box">
+                                    <a href="#" target="_blank" class="insta-link d-block">
+                                        <div class="insta-photo">
                                             <div class="row align-items-center text-center photo-data">
                                                 <div class="col-6 text-right">
                                                     <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
-                                                    <span class="number number-of-likes">33</span>
+                                                    <span class="number number-of-likes insta-likes"></span>
                                                 </div>
                                                 <div class="col-6 text-left">
                                                     <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
-                                                    <span class="number number-of-comments">9</span>
+                                                    <span class="number number-of-comments insta-comments"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -606,35 +599,33 @@
                             <div class="row no-gutters">
                                 <div class="col-12">
                                     <div class="row no-gutters">
-                                        <div class="col-12 col-sm-6">
-                                            <a href="#" class="insta-link d-block">
-                                                <div class="insta-photo"
-                                                     style="background-image: url('/img/about-us/gallery/insta-10.jpg')">
+                                        <div class="col-12 col-sm-6 insta-photo-box">
+                                            <a href="#" target="_blank" class="insta-link d-block">
+                                                <div class="insta-photo">
                                                     <div class="row align-items-center text-center photo-data">
                                                         <div class="col-6 text-right">
                                                             <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
-                                                            <span class="number number-of-likes">33</span>
+                                                            <span class="number number-of-likes insta-likes"></span>
                                                         </div>
                                                         <div class="col-6 text-left">
                                                             <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
-                                                            <span class="number number-of-comments">9</span>
+                                                            <span class="number number-of-comments insta-comments"></span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-12 col-sm-6">
-                                            <a href="#" class="insta-link d-block">
-                                                <div class="insta-photo"
-                                                     style="background-image: url('/img/about-us/gallery/insta-11.jpg')">
+                                        <div class="col-12 col-sm-6 insta-photo-box">
+                                            <a href="#" target="_blank" class="insta-link d-block">
+                                                <div class="insta-photo">
                                                     <div class="row align-items-center text-center photo-data">
                                                         <div class="col-6 text-right">
                                                             <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
-                                                            <span class="number number-of-likes">33</span>
+                                                            <span class="number number-of-likes insta-likes"></span>
                                                         </div>
                                                         <div class="col-6 text-left">
                                                             <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
-                                                            <span class="number number-of-comments">9</span>
+                                                            <span class="number number-of-comments insta-comments"></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -642,18 +633,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <a href="#" class="insta-link d-block">
-                                        <div class="insta-photo"
-                                             style="background-image: url('/img/about-us/gallery/insta-12.jpg')">
+                                <div class="col-12 insta-photo-box">
+                                    <a href="#" target="_blank" class="insta-link d-block">
+                                        <div class="insta-photo">
                                             <div class="row align-items-center text-center photo-data">
                                                 <div class="col-6 text-right">
                                                     <img src="/img/about-us/gallery/like-icon.svg" alt="Likes" class="icon">
-                                                    <span class="number number-of-likes">33</span>
+                                                    <span class="number number-of-likes insta-likes"></span>
                                                 </div>
                                                 <div class="col-6 text-left">
                                                     <img src="/img/about-us/gallery/comment-icon.svg" alt="Comments" class="icon">
-                                                    <span class="number number-of-comments">9</span>
+                                                    <span class="number number-of-comments insta-comments"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -754,6 +744,7 @@
         <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="/js/common.js"></script>
         <script src="/js/header.js"></script>
+        <script src="/js/instagram-gallery.js"></script>
         <script type="text/javascript">
             // Google Analytics
 

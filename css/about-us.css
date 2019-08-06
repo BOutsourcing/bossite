@@ -78,8 +78,8 @@
     width: 100%;
     padding-bottom: 100%;
     background-size: cover;
-    background-position: center;
     position: relative;
+    opacity: 0;
 }
 .gallery .insta-link {
     padding: 4px;
@@ -98,7 +98,6 @@
 }
 .photo-data * {
     vertical-align: middle;
-    display: none;
 }
 .photo-data .icon {
     margin-right: 5px;

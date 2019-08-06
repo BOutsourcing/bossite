@@ -263,6 +263,9 @@
         height: 28px;
         left: -50px;
     }
+    .employee-box .info p {
+        opacity: 0.8;
+    }
 }
 @media (max-width: 991px) {
     .section-lead {
