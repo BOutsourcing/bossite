@@ -30,17 +30,17 @@
     <meta name="msapplication-navbutton-color" content="#0f3458">
     <meta name="apple-mobile-web-app-status-bar-style" content="#0f3458">
 
-    <link rel="stylesheet" type="text/css" href="/css/fonts.css">
-    <link rel="stylesheet" href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/vendor/components/font-awesome/css/fontawesome-all.css">
-    <link rel="stylesheet" type="text/css" href="/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/header.css">
-    <link rel="stylesheet" type="text/css" href="/css/header-sm.css">
-    <link rel="stylesheet" type="text/css" href="/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="/css/services.css">
-    <link rel="stylesheet" type="text/css" href="/css/carousel.css">
-    <link rel="stylesheet" type="text/css" href="/css/design.css">
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css?v=2.0">
+    <link rel="stylesheet" href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css?v=2.0">
+    <link rel="stylesheet" href="/vendor/components/font-awesome/css/fontawesome-all.css?v=2.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css?v=2.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.0">
+    <link rel="stylesheet" type="text/css" href="/css/header.css?v=2.0">
+    <link rel="stylesheet" type="text/css" href="/css/header-sm.css?v=2.0">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css?v=2.0">
+    <link rel="stylesheet" type="text/css" href="/css/services.css?v=2.0">
+    <link rel="stylesheet" type="text/css" href="/css/carousel.css?v=2.0">
+    <link rel="stylesheet" type="text/css" href="/css/design.css?v=2.0">
 </head>
 <body>
     <header class="container-fluid header">
@@ -63,7 +63,7 @@
                             <a href="/" data-target="header">Home</a>
                         </li>
                         <li data-submenu="container">
-                            <a href="/services/dedicated-teams.html" data-target="services">
+                            <a href="#" data-target="services">
                                 Services
                                 <i class="fa fa-chevron-right d-inline-block d-lg-none float-right"></i>
                             </a>
@@ -156,26 +156,26 @@
         </div>
     </div>
 
-    <div id="designSteps" class="container-fluid section how-do-we-do-it-section">
+    <div id="navTabs" class="container-fluid section how-do-we-do-it-section">
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="title">How do we do it?</h1>
             </div>
         </div>
         <div class="row no-gutters align-items-end justify-content-between nav design-steps" role="tablist">
-            <a id="discovery-tab" class="d-block col-sm-3 nav-link design-step design-step-discovery active" href="#discovery" data-toggle="tab" role="tab" aria-controls="discovery" aria-selected="true">
+            <a id="discovery-tab" class="d-block col-sm-3 nav-link nav-tab design-step design-step-discovery active" href="#discovery" data-toggle="tab" role="tab" aria-controls="discovery" aria-selected="true">
                 <div class="icon icon-discovery"></div>
                 <h4 class="subtitle">Discover</h4>
             </a>
-            <a id="research-tab" class="d-block col-sm-3 nav-link design-step design-step-research" href="#research" data-toggle="tab" role="tab" aria-controls="research" aria-selected="true">
+            <a id="research-tab" class="d-block col-sm-3 nav-link nav-tab design-step design-step-research" href="#research" data-toggle="tab" role="tab" aria-controls="research" aria-selected="true">
                 <div class="icon icon-research"></div>
                 <h4 class="subtitle">Research</h4>
             </a>
-            <a id="create-tab" class="d-block col-sm-3 nav-link design-step design-step-create" href="#create" data-toggle="tab" role="tab" aria-controls="create" aria-selected="true">
+            <a id="create-tab" class="d-block col-sm-3 nav-link nav-tab design-step design-step-create" href="#create" data-toggle="tab" role="tab" aria-controls="create" aria-selected="true">
                 <div class="icon icon-create"></div>
                 <h4 class="subtitle">Create</h4>
             </a>
-            <a id="implement-tab" class="d-block col-sm-3 nav-link design-step design-step-implement" href="#implement" data-toggle="tab" role="tab" aria-controls="implement" aria-selected="true">
+            <a id="implement-tab" class="d-block col-sm-3 nav-link nav-tab design-step design-step-implement" href="#implement" data-toggle="tab" role="tab" aria-controls="implement" aria-selected="true">
                 <div class="icon icon-implement"></div>
                 <h4 class="subtitle">Implement</h4>
             </a>
@@ -436,45 +436,7 @@
     <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/common.js"></script>
     <script src="/js/header.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            var stepsContainer = $('#designSteps'),
-                controlNext = stepsContainer.find('#controlNext'),
-                controlPrev = stepsContainer.find('#controlPrev'),
-                showNextTab = function() {
-                    var currentStep = $('.design-step.active');
-
-                    currentStep.css('transform','translateX(-120%)');
-                    currentStep.next('.design-step').tab('show');
-
-                    if (0 === currentStep.next('.design-step').next('.design-step').length) {
-                        controlNext.hide();
-                    }
-
-                    if (controlPrev.is(':hidden')) {
-                        controlPrev.show();
-                    }
-                },
-                showPreviousTab = function() {
-                    var currentStep = $('.design-step.active');
-
-                    currentStep.css('transform','translateX(120%)');
-                    currentStep.prev('.design-step').tab('show');
-
-                    if (0 === currentStep.prev('.design-step').prev('.design-step').length) {
-                        controlPrev.hide();
-                    }
-
-                    if (controlNext.is(':hidden')) {
-                        controlNext.show();
-                    }
-                };
-
-            controlPrev.hide();
-            controlNext.on('click', showNextTab);
-            controlPrev.on('click', showPreviousTab);
-        });
-    </script>
+    <script src="/js/tabs-mobile-navigation.js"></script>
     <script type="text/javascript">
         // Google Analytics
 

@@ -204,3 +204,12 @@
         padding-right: 10px;
     }
 }
+@media (max-width: 400px) {
+    .club-collaborator .sticky-label {
+        width: 98%;
+        left: 1%;
+        padding-left: 3px;
+        padding-right: 3px;
+        font-size: 11px;
+    }
+}
