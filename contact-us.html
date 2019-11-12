@@ -39,6 +39,18 @@
         <link rel="stylesheet" type="text/css" href="/css/header-sm.css?v=2.0">
         <link rel="stylesheet" type="text/css" href="/css/contact-us.css?v=2.0">
         <link rel="stylesheet" type="text/css" href="/css/footer.css?v=2.0">
+        <script src="https://www.google.com/recaptcha/api.js?render=6LcTP8IUAAAAAEQywPHf_CDoAWhFkv13qgFX3Ls1"></script>
+        <script>
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LcTP8IUAAAAAEQywPHf_CDoAWhFkv13qgFX3Ls1', {action: 'contactus'}).then(function(token) {
+                    fetch('/phpscripts/verify-recaptcha.php?action=contactus&token='+token, {
+                        credentials: 'same-origin'
+                    }).then(function(response) {
+                        response.json().then(function(data) {});
+                    });
+                });
+            });
+        </script>
     </head>
     <body>
         <header class="container-fluid header">
